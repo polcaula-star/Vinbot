@@ -1,0 +1,204 @@
+{
+  "seo": {
+    "title": "Vinbot | Vendez plus sur Vinted. Gérez moins.",
+    "description": "Organisez annonces, renouvellements, messages et offres Vinted dans un seul espace avec Vinbot."
+  },
+  "ui": {
+    "navigation": "Navigation principale",
+    "brand_home": "Accueil Vinbot",
+    "language": "Langue",
+    "language_switch": "Changer de langue",
+    "feature_explore": "Explorer la fonctionnalité",
+    "menu_open": "Ouvrir le menu",
+    "menu_close": "Fermer le menu",
+    "hero_visual": "Aperçu du tableau de bord Vinbot",
+    "scroll_cue": "DÉCOUVRIR VINBOT"
+  },
+  "header": {
+    "benefits_label": "Avantages",
+    "workflow_label": "Fonctionnement",
+    "guide_label": "Guide",
+    "features_label": "Fonctionnalités",
+    "audience_label": "Pour qui",
+    "faq_label": "Questions fréquentes",
+    "login_label": "Se connecter",
+    "login_url": "https://start.vinbot.app/"
+  },
+  "hero": {
+    "eyebrow": "AUTOMATISATION POUR LES VENDEURS ACTIFS VINTED",
+    "title": "Moins de tâches répétitives. Plus de contrôle sur votre activité.",
+    "description": "Vinbot réunit des outils pour préparer vos annonces, garder vos articles visibles et configurer des automatisations selon votre façon de vendre.",
+    "primary_label": "Demander un accès anticipé",
+    "secondary_label": "Explorer les fonctionnalités",
+    "primary_url": "https://start.vinbot.app/",
+    "secondary_url": "#funciones",
+    "note": "L’accès initial est limité aux vendeurs disposant d’un inventaire et d’une activité en cours."
+  },
+  "dashboard": {
+    "kicker": "TABLEAU DE BORD",
+    "title": "Votre espace de travail",
+    "active_items": "Articles actifs",
+    "catalog": "Votre catalogue",
+    "organized": "Tout est organisé",
+    "activity": "Activité récente",
+    "view_all": "Tout voir",
+    "draft": "Brouillon préparé",
+    "ready": "Prêt à vérifier",
+    "review": "À vérifier",
+    "renewal": "Renouvellement programmé",
+    "upcoming": "Prochaine tâche",
+    "scheduled": "Programmé",
+    "conversation": "Conversation active",
+    "tracking": "Suivi organisé",
+    "uptodate": "À jour",
+    "note_title": "Tout est en ordre",
+    "note_body": "Votre activité, centralisée",
+    "caption": "UNE FAÇON PLUS CLAIRE DE TRAVAILLER"
+  },
+  "benefit_section": {
+    "eyebrow": "LE VRAI FREIN",
+    "title": "Vendre un article n’est pas difficile. Répéter le processus des centaines de fois, si.",
+    "description": "Lorsque votre catalogue grandit, publier, renouveler, répondre et négocier ne sont plus des tâches ponctuelles. Elles deviennent le travail qui ralentit votre activité."
+  },
+  "featureCatalogue": {
+    "eyebrow": "CATALOGUE DES FONCTIONNALITÉS",
+    "title": "Tout votre flux de vente, réuni au même endroit",
+    "description": "Découvrez les outils que vous pouvez activer et adapter à votre activité."
+  },
+  "ecosystem_section": {
+    "eyebrow": "UN SEUL CENTRE DE CONTRÔLE",
+    "title": "Tout s’articule autour de votre activité.",
+    "description": "Préparez vos annonces, gardez votre catalogue actif et consultez l’activité dans un même espace. Vous choisissez les outils à activer et les règles que chacun doit suivre.",
+    "diagram_label": "Fonctionnalités Vinbot reliées autour d’un centre de contrôle",
+    "nodes": [
+      { "icon": "sparkles", "label": "Brouillons IA" },
+      { "icon": "refresh-cw", "label": "Renouvellements" },
+      { "icon": "message-circle", "label": "Réponses aux likes" },
+      { "icon": "handshake", "label": "Négociation" },
+      { "icon": "package-search", "label": "Inventaire" },
+      { "icon": "activity", "label": "Activité" }
+    ]
+  },
+  "quick_catalog": {
+    "eyebrow": "CATALOGUE DES FONCTIONNALITÉS",
+    "title": "Tout votre flux de vente, réuni au même endroit",
+    "description": "Explorez les outils que vous pouvez activer et adapter à votre activité."
+  },
+  "quick_features": [
+    { "tag": "IA", "title": "Brouillons IA", "description": "Préparez titres et descriptions à vérifier avant publication." },
+    { "tag": "VISIBILITÉ", "title": "Renouvellement des articles", "description": "Gardez vos annonces actives avec une stratégie que vous maîtrisez." },
+    { "tag": "RÉPONSES", "title": "Réponses aux likes", "description": "Configurez des messages pour répondre plus vite à l’intérêt." },
+    { "tag": "RÈGLES", "title": "Négociation par règles", "description": "Définissez marges et conditions avant d’automatiser chaque négociation." },
+    { "tag": "STRATÉGIE", "title": "Stratégie de négociation", "description": "Ajustez le comportement de chaque automatisation à votre manière de vendre." }
+  ],
+  "how_section": {
+    "eyebrow": "COMMENT ÇA FONCTIONNE",
+    "title": "Configurez une fois.\nGardez le contrôle.",
+    "description": ""
+  },
+  "steps": [
+    { "icon": "layers-2", "title": "Organisez votre activité", "description": "Accédez à Vinbot et travaillez dans un environnement conçu pour votre catalogue et vos comptes." },
+    { "icon": "list-checks", "title": "Définissez vos règles", "description": "Choisissez les automatisations à activer, le moment où elles interviennent et les limites qu’elles doivent respecter." },
+    { "icon": "scan-eye", "title": "Supervisez depuis un seul endroit", "description": "Consultez l’activité, ajustez votre stratégie et gardez le contrôle sans répéter les mêmes tâches." }
+  ],
+  "benefits": [
+    { "icon": "sparkles", "title": "Publiez avec cohérence", "description": "Partez d’une bonne base pour chaque annonce au lieu de tout rédiger à zéro." },
+    { "icon": "eye", "title": "Gardez vos articles visibles", "description": "Évitez que de belles pièces soient oubliées pendant que vous sourcez, préparez ou expédiez des commandes." },
+    { "icon": "messages-square", "title": "Répondez sans perdre de marge", "description": "Transformez l’intérêt en conversations utiles sans improviser chaque offre." }
+  ],
+  "features_section": {
+    "eyebrow": "FONCTIONNALITÉS VINBOT",
+    "title": "Cinq outils pour une activité plus organisée",
+    "description": "Explorez les outils que vous pouvez activer et adapter à votre activité."
+  },
+  "feature_story": {
+    "eyebrow": "OUTILS VINBOT",
+    "title": "Votre activité Vinted, étape par étape et au même endroit",
+    "intro": "Vinbot vous aide à préparer les annonces, garder vos articles actifs, répondre à l’intérêt et négocier selon les règles que vous définissez. Vous décidez ce que vous activez et quand."
+  },
+  "feature_catalog": [
+    { "tag": "IA", "title": "Brouillons IA", "description": "Préparez titres et descriptions avant publication.", "href": "#borradores-con-ia" },
+    { "tag": "AUTOMATISATION", "title": "Renouvellement des articles", "description": "Gardez vos articles actifs avec une routine que vous définissez.", "href": "#renovaciones" },
+    { "tag": "INTÉRÊT", "title": "Réponses aux likes", "description": "Transformez l’intérêt en conversation sans répéter les mêmes tâches.", "href": "#respuestas-a-likes" },
+    { "tag": "NÉGOCIATION", "title": "Négociation par règles", "description": "Négociez les offres selon les marges et conditions que vous définissez.", "href": "#negociador-vinbot" },
+    { "tag": "STRATÉGIE", "title": "Stratégie de négociation", "description": "Définissez votre mode de négociation avant d’automatiser.", "href": "#estrategia-de-negociacion" },
+    { "tag": "CONTRÔLE", "title": "Inventaire et activité", "description": "Voyez ce qui est actif, en attente et à vérifier.", "href": "#inventario-y-actividad" }
+  ],
+  "feature_blocks": [
+    { "id": "borradores-con-ia", "tag": "PUBLICATION IA", "title": "Préparez chaque annonce avec une base claire avant de la publier", "text": "Uploadez les photos et ajoutez les informations essentielles comme la marque, la taille, les mesures ou le prix. Vinbot vous aide à convertir ces éléments en un brouillon plus structuré afin que vous le vérifiiez avant la première publication.", "points": ["Partir des données réelles que vous ajoutez pour chaque article.", "Générer une proposition de titre et de description.", "Vérifier et ajuster le contenu avant de publier."], "closing": "L’IA vous aide à aller plus vite ; la décision finale reste la vôtre.", "cta": "Demander un accès anticipé", "image": "/assets/BROUILLONS%20IA.png", "image_alt": "Brouillons IA pour préparer des annonces", "side": "left" },
+    { "id": "renovaciones", "tag": "AUTOMATISATION", "title": "Gardez vos articles visibles sans dépendre de votre mémoire quotidienne", "text": "Quand vous gérez beaucoup d’annonces, renouveler les articles manuellement prend une grande partie de la journée. Vinbot vous permet de définir une routine de renouvellement pour rendre cette tâche répétitive plus organisée.", "points": ["Choisir quels articles inclure dans le renouvellement.", "Configurer la manière dont la routine doit fonctionner.", "Avoir une vue claire des articles encore actifs."], "closing": "Vous définissez la stratégie ; Vinbot réduit le travail répétitif.", "cta": "Demander un accès anticipé", "image": "/assets/RENOUVELLEMENT%20IA.png", "image_alt": "Renouvellement d’articles dans Vinbot", "side": "right" },
+    { "id": "respuestas-a-likes", "tag": "INTÉRÊT ET MESSAGES", "title": "Profitez de l’intérêt sans réécrire le même message encore et encore", "text": "Quand une personne montre de l’intérêt pour un de vos articles, répondre rapidement peut être utile, mais répéter le même processus des dizaines de fois prend du temps. Vinbot vous permet de configurer des réponses aux likes et de garder cette partie de votre activité plus organisée.", "points": ["Configurer le message que vous souhaitez utiliser.", "Centraliser les actions liées aux personnes intéressées.", "Vérifier l’activité et les réponses en attente depuis votre tableau de bord."], "closing": "Le but n’est pas de paraître automatique : c’est d’éviter de répéter des tâches que vous avez déjà définies.", "cta": "Demander un accès anticipé", "image": "/assets/LIKES%20FR%20IA.png", "image_alt": "Réponses automatiques aux likes dans Vinbot", "side": "left" },
+    { "id": "negociador-vinbot", "tag": "NÉGOCIATION", "title": "Négociez selon vos règles, pas au hasard", "text": "Chaque article a une marge et chaque vendeur a sa propre façon de négocier. Vinbot vous aide à appliquer une logique cohérente aux conversations et aux offres à partir des limites que vous aurez définies.", "points": ["Définir le prix minimum ou la marge à protéger.", "Fixer le type de remise que vous êtes prêt à envisager.", "Maintenir une réponse cohérente quand plusieurs négociations sont ouvertes."], "closing": "Avant d’automatiser une négociation, vous définissez les conditions.", "cta": "Demander un accès anticipé", "image": "/assets/BOT%20NEGOCIATEUR%20IA.png", "image_alt": "Bot négociateur Vinbot", "side": "right" },
+    { "id": "estrategia-de-negociacion", "tag": "CONFIGURATION", "title": "Décidez comment vous voulez négocier avant que la conversation ne commence", "text": "L’automatisation n’a de sens que si elle reflète votre façon de vendre. Cette section vous permet de définir une stratégie de négociation avant de l’activer : quelle marge vous souhaitez maintenir, quelles remises vous envisagez et comment Vinbot doit se comporter dans chaque cas.", "points": ["Définir les limites avant d’activer une automatisation.", "Aligner vos réponses avec la valeur de chaque article.", "Éviter d’improviser des remises lorsque plusieurs conversations sont ouvertes."], "closing": "Une stratégie claire vous permet d’automatiser avec plus de jugement et de conserver le contrôle.", "cta": "Demander un accès anticipé", "image": "/assets/STRATEGIE%20FR%20IA.png", "image_alt": "Stratégie de négociation dans Vinbot", "side": "left" },
+    { "id": "inventario-y-actividad", "tag": "CONTRÔLE DE L’ACTIVITÉ", "title": "Ayez sous les yeux ce qui est actif, en attente et à vérifier", "text": "Depuis une même vue, vous pouvez consulter l’état de votre catalogue et repérer rapidement quels articles sont actifs, lesquels sont encore en brouillon et quelles annonces demandent une action.", "points": ["Consultez l’état général de votre inventaire d’un seul coup d’œil.", "Repérez les articles actifs, les brouillons, les ventes et les réservations.", "Vérifiez ou republiez chaque article directement depuis sa fiche."], "closing": "Moins de temps perdu entre les listes et plus de clarté sur votre activité.", "cta": "Demander un accès anticipé", "image": "/assets/inventario-vinbot-demo-fr.png", "image_alt": "Vue d’inventaire Vinbot claire et organisée", "side": "left" }
+  ],
+  "features": [
+    { "category": "PUBLICATION", "title": "Créez de meilleures annonces, sans repartir de zéro.", "description": "Générez des titres et des descriptions avec l’IA à partir des informations de chaque article. Relisez, ajustez et préparez chaque brouillon avant publication.", "image": "/assets/BROUILLONS%20IA.png", "image_alt": "Brouillons de publication assistés par l’IA" },
+    { "category": "VISIBILITÉ", "title": "Gardez votre catalogue en mouvement.", "description": "Configurez le renouvellement de vos articles pour maintenir l’activité de votre dressing sans vérifier chaque annonce une par une.", "image": "/assets/RENOUVELLEMENT%20IA.png", "image_alt": "Configuration du renouvellement automatique des articles" },
+    { "category": "NÉGOCIATION", "title": "Répondez avec une stratégie, pas dans l’urgence.", "description": "Le bot négociateur répond selon les conditions définies pour votre compte et vous aide à maintenir des échanges commerciaux cohérents.", "image": "/assets/BOT%20NEGOCIATEUR%20IA.png", "image_alt": "Configuration du bot négociateur Vinbot" },
+    { "category": "CONTRÔLE", "title": "Décidez jusqu’où vous souhaitez négocier.", "description": "Définissez vos marges, remises et règles pour que chaque conversation respecte votre manière de vendre.", "image": "/assets/STRATEGIE%20FR%20IA.png", "image_alt": "Configuration de la stratégie de négociation" },
+    { "category": "CONVERSION", "title": "Ne laissez pas un signe d’intérêt se refroidir.", "description": "Configurez des messages destinés aux utilisateurs qui ajoutent vos articles à leurs favoris et transformez l’intérêt en opportunité de vente.", "image": "/assets/LIKES%20FR%20IA.png", "image_alt": "Configuration des messages automatiques pour les favoris" }
+  ],
+  "audience": {
+    "eyebrow": "CONÇU POUR GRANDIR",
+    "title": "Pour les vendeurs qui prennent déjà Vinted au sérieux.",
+    "description": "Vinbot s’adresse aux personnes qui gèrent un volume réel, souhaitent professionnaliser leur activité et préfèrent consacrer leur temps à acheter et vendre plutôt qu’à répéter des tâches.",
+    "cards": [
+      { "title": "Catalogue important", "description": "Plus d’articles ne devrait pas vouloir dire plus de chaos." },
+      { "title": "Une activité structurée", "description": "Vos règles, vos marges et votre façon de vendre restent les vôtres." },
+      { "title": "Une croissance maîtrisée", "description": "Une base plus claire pour travailler avec un ou plusieurs comptes." }
+    ]
+  },
+  "closing": {
+    "eyebrow": "ACCÈS INITIAL",
+    "title": "Commencez à organiser votre activité avec Vinbot",
+    "description": "Demandez un accès anticipé et découvrez quelles outils correspondent à votre façon de vendre.",
+    "primary_label": "Demander un accès anticipé",
+    "primary_url": "https://start.vinbot.app/",
+    "secondary_text": "L’accès et l’abonnement sont gérés directement depuis Vinbot."
+  },
+  "faq_section": {
+    "eyebrow": "QUESTIONS FRÉQUENTES",
+    "title": "Des réponses claires sur Vinbot."
+  },
+  "faq": [
+    { "question": "Que peut faire Vinbot ?", "answer": "Vinbot réunit des outils pour préparer les annonces, garder vos articles visibles, répondre à l’intérêt des acheteurs et configurer des automatisations selon votre manière de vendre." },
+    { "question": "Dois-je activer toutes les fonctionnalités ?", "answer": "Non. Vous pouvez activer uniquement les outils qui correspondent à votre activité et laisser les autres désactivés tant que vous ne souhaitez pas les tester." },
+    { "question": "Puis-je vérifier la configuration avant de l’activer ?", "answer": "Oui. Vinbot a été pensé pour que vous puissiez définir vos règles, marges et messages avant d’activer une automatisation." },
+    { "question": "Vinbot est-il lié à Vinted ?", "answer": "Non. Vinbot est un service indépendant et n’est ni affilié à Vinted, ni associé à Vinted, ni approuvé par Vinted." },
+    { "question": "Comment demander un accès ?", "answer": "Cliquez sur « Demander un accès anticipé » et complétez le processus directement depuis Vinbot." },
+    { "question": "Dans quelles langues est-il disponible ?", "answer": "Vinbot est disponible en espagnol, catalan, anglais et français." }
+  ],
+  "testimonials": [],
+  "testimonials_fallback": {
+    "eyebrow": "CONÇU À PARTIR DE L’ACTIVITÉ RÉELLE",
+    "title": "Un outil créé pour celles et ceux qui gèrent un catalogue actif",
+    "description": "Vinbot est né de l’expérience quotidienne des annonces, renouvellements, messages et négociations. Chaque fonctionnalité est donc pensée pour réduire les tâches répétitives sans vous faire perdre le contrôle.",
+    "points": ["Configurez les règles selon votre manière de vendre.", "Suivez l’activité dans une organisation plus claire.", "Activez uniquement les outils dont vous avez vraiment besoin."],
+    "testimonials_eyebrow": "EXPÉRIENCE D’UTILISATION",
+    "testimonials_title": "Avis de vendeurs qui ont déjà essayé Vinbot",
+    "testimonials_description": "Des retours réels de personnes qui utilisent Vinbot pour mieux organiser leur activité."
+  },
+  "footer": {
+    "tagline": "Gestion intelligente pour vendeurs Vinted.",
+    "product_heading": "Produit",
+    "access_heading": "Accès",
+    "legal_heading": "Mentions légales",
+    "language_heading": "Langue",
+    "benefits_label": "Avantages",
+    "audience_label": "Pour qui",
+    "request_label": "Demander un accès anticipé",
+    "request_url": "https://start.vinbot.app/",
+    "login_label": "Se connecter",
+    "login_url": "https://start.vinbot.app/",
+    "faq_label": "Questions fréquentes",
+    "guide_label": "Guide",
+    "privacy_label": "Confidentialité",
+    "terms_label": "Conditions",
+    "contact_label": "Contact",
+    "faq_url": "#preguntas",
+    "how_label": "Fonctionnement",
+    "features_label": "Fonctionnalités",
+    "notice": "Vinbot est un service indépendant et n’est ni affilié à Vinted, ni associé à Vinted, ni approuvé par Vinted."
+  }
+}

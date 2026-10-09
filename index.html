@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f8fb" />
+    <meta name="description" content="Vende más en Vinted. Gestiona menos. Vinbot te ayuda a organizar y automatizar el trabajo diario de tu negocio." />
+    <meta property="og:title" content="Vinbot | Vende más en Vinted. Gestiona menos." />
+    <meta property="og:description" content="Ahorra tiempo, organiza tu negocio y mantén el control con Vinbot." />
+    <meta property="og:type" content="website" />
+    <script>
+      (() => {
+        const supported = ['es', 'ca', 'en', 'fr'];
+        const routeLocale = location.pathname.split('/').filter(Boolean)[0] || '';
+        const queryLocale = new URLSearchParams(location.search).get('lang');
+        let savedLocale = 'es';
+        try { savedLocale = localStorage.getItem('vinbot-locale') || 'es'; } catch {}
+        const requestedLocale = supported.includes(queryLocale) ? queryLocale : routeLocale === 'es' ? 'es' : supported.includes(routeLocale) ? routeLocale : savedLocale;
+        const activeLocale = supported.includes(requestedLocale) ? requestedLocale : 'es';
+        document.documentElement.lang = activeLocale;
+        if (activeLocale !== 'es') document.documentElement.classList.add('i18n-loading');
+      })();
+    </script>
+    <link rel="icon" href="/assets/Monograma%20VB%20blanco%20sobre%20azul%20vivo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/cms-overrides.css" />
+    <link rel="stylesheet" href="/conversion-sections.css" />
+    <link rel="stylesheet" href="/i18n.css" />
+    <title>Vinbot | Vende más en Vinted. Gestiona menos.</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" id="brand-home" href="#inicio" aria-label="Vinbot, inicio">
+        <img src="/assets/Monograma%20VB%20blanco%20sobre%20azul%20vivo.png" alt="" width="38" height="38" />
+        <span>vinbot</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal" id="main-navigation">
+        <div class="nav-links">
+          <a href="#funciones">Funciones</a>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a id="header-guide" href="/guia?lang=es">Guía</a>
+          <a href="#preguntas">Preguntas frecuentes</a>
+        </div>
+        <div class="nav-utilities">
+          <div class="language-select" data-language-switcher>
+            <button class="language-trigger" type="button" aria-label="Cambiar idioma" aria-haspopup="menu" aria-expanded="false">
+              <img data-language-current-flag src="/assets/flags/es.svg" alt="" width="18" height="13" />
+              <span data-language-current-name>Español</span>
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="language-options" role="menu" hidden>
+              <button class="language-option" type="button" role="menuitemradio" data-locale="es" aria-checked="false"><img src="/assets/flags/es.svg" alt="" width="18" height="13" /><span>Español</span><i data-lucide="check" aria-hidden="true"></i></button>
+              <button class="language-option" type="button" role="menuitemradio" data-locale="ca" aria-checked="false"><img src="/assets/flags/ca.svg" alt="" width="18" height="13" /><span>Català</span><i data-lucide="check" aria-hidden="true"></i></button>
+              <button class="language-option" type="button" role="menuitemradio" data-locale="en" aria-checked="false"><img src="/assets/flags/en.svg" alt="" width="18" height="13" /><span>English</span><i data-lucide="check" aria-hidden="true"></i></button>
+              <button class="language-option" type="button" role="menuitemradio" data-locale="fr" aria-checked="false"><img src="/assets/flags/fr.svg" alt="" width="18" height="13" /><span>Français</span><i data-lucide="check" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <a class="header-login" id="header-login" href="https://start.vinbot.app/">Iniciar sesión <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a class="button button-primary mobile-nav-access header-access" id="header-access" href="https://start.vinbot.app/">Solicitar acceso anticipado <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"><i data-lucide="menu" aria-hidden="true"></i></button>
+    </header>
+
+    <p id="locale-error" class="locale-error" role="alert" hidden></p>
+
+    <main>
+      <section class="hero section-surface-ice" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span><span id="hero-eyebrow">PARA VENDEDORES QUE QUIEREN CRECER EN VINTED</span></p>
+          <h1 id="hero-title">Vende más en Vinted.<br /><span>Gestiona menos.</span></h1>
+          <p class="hero-description" id="hero-description">Vinbot reúne las tareas repetitivas de tu operativa en un solo lugar: prepara publicaciones con IA, mantiene tu catálogo activo y responde según las reglas que tú marcas.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="hero-primary" href="https://start.vinbot.app/">Solicitar acceso anticipado <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            <a class="button button-secondary" id="hero-secondary" href="#como-funciona">Ver cómo funciona</a>
+          </div>
+          <div class="hero-note"><i data-lucide="circle-check" aria-hidden="true"></i><span>Acceso inicial limitado para vendedores con inventario y operativa activa.</span></div>
+        </div>
+        <div class="hero-visual" id="hero-visual" aria-label="Vista previa de la plataforma Vinbot">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="app-window hero-window">
+            <div class="window-top"><div class="window-brand"><img src="/assets/Monograma%20VB%20blanco%20sobre%20azul%20vivo.png" alt="" /> vinbot</div><div class="window-dots"><b></b><b></b><b></b></div></div>
+            <div class="app-layout">
+              <aside class="app-sidebar"><span class="sidebar-active"><i data-lucide="layout-dashboard"></i></span><span><i data-lucide="package"></i></span><span><i data-lucide="messages-square"></i></span><span><i data-lucide="settings-2"></i></span></aside>
+              <div class="app-content">
+                <div class="app-greeting"><div><span class="app-kicker" id="dashboard-kicker">PANEL DE CONTROL</span><h3 id="dashboard-title">Tu espacio de trabajo</h3></div><span class="avatar">V</span></div>
+                <div class="mini-summary"><div><span id="dashboard-active-items">Artículos activos</span><strong id="dashboard-catalog">Tu catálogo</strong><small><i data-lucide="boxes"></i> <span id="dashboard-organized">Todo organizado</span></small></div><div class="summary-icon"><i data-lucide="package-check"></i></div></div>
+                <div class="app-section-title"><span id="dashboard-activity">Actividad reciente</span><span class="soft-link"><span id="dashboard-view-all">Ver todo</span> <i data-lucide="arrow-up-right"></i></span></div>
+                <div class="activity-row"><span class="activity-symbol symbol-a"><i data-lucide="sparkles"></i></span><span class="activity-text"><b id="dashboard-draft">Borrador preparado</b><small id="dashboard-ready">Listo para revisar</small></span><span class="activity-status" id="dashboard-review">En revisión</span></div>
+                <div class="activity-row"><span class="activity-symbol symbol-b"><i data-lucide="refresh-cw"></i></span><span class="activity-text"><b id="dashboard-renewal">Renovación programada</b><small id="dashboard-upcoming">Próxima tarea</small></span><span class="activity-status status-blue" id="dashboard-scheduled">Programado</span></div>
+                <div class="activity-row"><span class="activity-symbol symbol-c"><i data-lucide="message-circle"></i></span><span class="activity-text"><b id="dashboard-conversation">Conversación activa</b><small id="dashboard-tracking">Seguimiento organizado</small></span><span class="activity-status status-mint" id="dashboard-uptodate">Al día</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note"><span class="floating-check"><i data-lucide="check"></i></span><span><b id="dashboard-note-title">Todo en orden</b><small id="dashboard-note-body">Tu actividad, centralizada</small></span></div>
+          <div class="hero-caption" id="dashboard-caption">Creado a partir de la operativa real de vendedores de Vinted.</div>
+        </div>
+        <a class="scroll-cue" id="scroll-cue" href="#beneficios"><span></span><span id="scroll-cue-text">DESLIZA PARA DESCUBRIR</span></a>
+      </section>
+
+      <section class="catalog-section section-surface-ice" aria-labelledby="catalog-title">
+        <div class="section-heading catalog-heading">
+          <div>
+            <p class="eyebrow" id="catalog-eyebrow">CATÁLOGO DE FUNCIONES</p>
+            <h2 id="catalog-title">Todo el flujo de venta, organizado en un solo lugar</h2>
+          </div>
+          <p class="section-intro" id="catalog-description">Explora las herramientas que puedes activar y adaptar a tu operativa.</p>
+        </div>
+        <div class="feature-mini-grid" id="feature-mini-grid">
+          <a class="feature-mini-card" href="#funciones"><span class="mini-badge">IA</span><h3>Borradores con IA</h3><p>Prepara títulos y descripciones para revisar antes de publicar.</p><span class="mini-arrow"><i data-lucide="arrow-right"></i></span></a>
+          <a class="feature-mini-card" href="#funciones"><span class="mini-badge">VISIBILIDAD</span><h3>Renovación de artículos</h3><p>Mantén tus anuncios activos con una estrategia definida por ti.</p><span class="mini-arrow"><i data-lucide="arrow-right"></i></span></a>
+          <a class="feature-mini-card" href="#funciones"><span class="mini-badge">RESPUESTAS</span><h3>Respuestas a likes</h3><p>Configura mensajes para responder al interés con más rapidez.</p><span class="mini-arrow"><i data-lucide="arrow-right"></i></span></a>
+          <a class="feature-mini-card" href="#funciones"><span class="mini-badge">REGLAS</span><h3>Negociación con reglas</h3><p>Define márgenes y condiciones antes de automatizar cada negociación.</p><span class="mini-arrow"><i data-lucide="arrow-right"></i></span></a>
+          <a class="feature-mini-card" href="#funciones"><span class="mini-badge">ESTRATEGIA</span><h3>Estrategia de negociación</h3><p>Ajusta el comportamiento de cada automatización a tu forma de vender.</p><span class="mini-arrow"><i data-lucide="arrow-right"></i></span></a>
+        </div>
+      </section>
+
+      <section class="ecosystem-section section-surface-dark section-transition-soft transition-from-ice" aria-labelledby="ecosystem-title">
+        <div class="ecosystem-layout">
+          <div class="ecosystem-copy">
+            <p class="eyebrow ecosystem-eyebrow" id="ecosystem-eyebrow">UN SOLO CENTRO DE CONTROL</p>
+            <h2 id="ecosystem-title">Todo se conecta alrededor de tu operativa.</h2>
+            <span class="ecosystem-accent" aria-hidden="true"></span>
+            <p id="ecosystem-description">Prepara publicaciones, mantén el catálogo activo y revisa la actividad desde un mismo entorno. Tú decides qué activar y las reglas que debe seguir cada función.</p>
+          </div>
+          <div class="ecosystem-diagram" id="ecosystem-diagram" role="img" aria-label="Funciones de Vinbot conectadas alrededor de un centro de control">
+            <svg class="ecosystem-connections" viewBox="0 0 500 500" aria-hidden="true" focusable="false">
+              <circle class="ecosystem-ring" cx="250" cy="250" r="158" />
+              <path d="M250 250 C250 208 250 160 250 94" />
+              <path d="M250 250 C288 215 331 176 385 144" />
+              <path d="M250 250 C297 263 344 291 390 350" />
+              <path d="M250 250 C250 295 250 343 250 408" />
+              <path d="M250 250 C211 282 167 322 110 355" />
+              <path d="M250 250 C206 236 158 207 108 148" />
+            </svg>
+            <div class="ecosystem-orbit-track" aria-hidden="true"><span></span></div>
+            <div class="ecosystem-core" aria-hidden="true"><img src="/assets/vinbot-monogram-transparent.svg" alt="" /></div>
+            <div class="ecosystem-nodes" id="ecosystem-nodes"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section section-surface-light section-transition-soft transition-from-dark" id="beneficios">
+        <div class="section-heading benefits-heading"><div><p class="eyebrow">EL CUELLO DE BOTELLA</p><h2>El problema no es vender una prenda. Es repetir el proceso cientos de veces.</h2></div><p class="section-intro">Cuando el catálogo crece, publicar, renovar, responder y negociar deja de ser una tarea puntual. Se convierte en el trabajo que impide que tu negocio avance.</p></div>
+        <div class="benefit-grid" id="benefit-grid">
+          <article class="benefit-item"><span class="benefit-icon"><i data-lucide="sparkles"></i></span><h3>Publica con consistencia</h3><p>Empieza cada anuncio con una buena base y evita redactar siempre desde cero.</p></article>
+          <article class="benefit-item"><span class="benefit-icon icon-turquoise"><i data-lucide="eye"></i></span><h3>Mantén tus artículos visibles</h3><p>Evita que las piezas se queden olvidadas mientras tú te ocupas de comprar, preparar o enviar.</p></article>
+          <article class="benefit-item"><span class="benefit-icon icon-coral"><i data-lucide="messages-square"></i></span><h3>Responde sin perder margen</h3><p>Convierte el interés en conversaciones útiles sin improvisar cada oferta.</p></article>
+        </div>
+      </section>
+
+      <section class="workflow-section features-section section-surface-ice section-transition-soft transition-from-light" id="funciones">
+        <div class="feature-story">
+          <p class="eyebrow" id="feature-story-eyebrow">HERRAMIENTAS VINBOT</p>
+          <h2 id="feature-story-title">Tu operativa de Vinted, paso a paso y en un mismo lugar</h2>
+          <p id="feature-story-intro">Vinbot te ayuda a preparar publicaciones, mantener artículos activos, responder al interés y negociar siguiendo las reglas que tú defines. Tú decides qué activar y cuándo hacerlo.</p>
+        </div>
+        <div class="feature-catalog-grid" id="feature-catalog-grid" aria-label="Funciones de Vinbot"></div>
+        <div class="feature-detail-stack" id="feature-detail-stack"></div>
+      </section>
+
+      <section class="workflow-section how-section section-surface-light section-transition-soft transition-from-ice" id="como-funciona">
+        <div class="workflow-top section-heading"><div><p class="eyebrow">CÓMO FUNCIONA</p><h2>Configuras una vez.<br /><span>Sigues teniendo el control.</span></h2></div></div>
+        <div class="steps-grid" id="steps-grid">
+          <article class="step-item"><span class="step-number">01</span><span class="step-icon"><i data-lucide="layers-2"></i></span><h3>Organiza tu operativa</h3><p>Accede a Vinbot y trabaja desde un entorno preparado para tu catálogo y tus cuentas.</p></article>
+          <article class="step-item"><span class="step-number">02</span><span class="step-icon step-icon-2"><i data-lucide="list-checks"></i></span><h3>Marca tus reglas</h3><p>Decide qué automatizaciones activar, cuándo actuar y qué límites debe respetar cada una.</p></article>
+          <article class="step-item"><span class="step-number">03</span><span class="step-icon step-icon-3"><i data-lucide="scan-eye"></i></span><h3>Supervisa desde un solo lugar</h3><p>Revisa la actividad, ajusta la estrategia y mantén el control sin volver a hacer las mismas tareas.</p></article>
+        </div>
+      </section>
+
+      <section class="audience-section section-surface-ice section-transition-soft transition-from-light" id="para-quien">
+        <div class="audience-intro"><p class="eyebrow" id="audience-eyebrow">HECHO PARA CRECER</p><h2 id="audience-title">Para vendedores que ya se toman Vinted en serio.</h2><p id="audience-description">Vinbot está pensado para quienes gestionan volumen, quieren profesionalizar su operativa y prefieren dedicar el tiempo a comprar y vender, no a repetir tareas.</p></div>
+        <div class="audience-grid" id="audience-grid">
+          <article><span>01</span><h3>Catálogo con volumen</h3><p>Más artículos no debería implicar más caos.</p></article>
+          <article><span>02</span><h3>Operativa con método</h3><p>Tus reglas, tus márgenes y tu forma de vender siguen siendo tuyos.</p></article>
+          <article><span>03</span><h3>Crecimiento ordenado</h3><p>Una base más clara para trabajar una o varias cuentas.</p></article>
+        </div>
+      </section>
+
+      <section class="faq-section section-surface-ice section-transition-soft transition-from-light" id="preguntas">
+        <div class="faq-layout">
+          <div class="faq-heading">
+            <p class="eyebrow" id="faq-eyebrow">PREGUNTAS FRECUENTES</p>
+            <h2 id="faq-title">Respuestas claras<br />sobre Vinbot.</h2>
+          </div>
+          <div class="faq-list" id="faq-list">
+            <details class="faq-item">
+              <summary>¿Qué es Vinbot?<i data-lucide="plus" aria-hidden="true"></i></summary>
+              <p>Vinbot es una plataforma de gestión para vendedores de Vinted. Reúne herramientas para preparar publicaciones, renovar artículos y configurar respuestas y negociaciones según tus reglas.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Para quién está pensado?<i data-lucide="plus" aria-hidden="true"></i></summary>
+              <p>Está pensado especialmente para vendedores con un catálogo activo que quieren ahorrar tiempo y trabajar con más orden.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Puedo decidir qué automatiza Vinbot?<i data-lucide="plus" aria-hidden="true"></i></summary>
+              <p>Sí. Tú decides qué funciones activar y defines las condiciones, márgenes y mensajes que debe respetar cada automatización.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Cómo solicito acceso?<i data-lucide="plus" aria-hidden="true"></i></summary>
+              <p>Haz clic en “Solicitar acceso anticipado” y entra en Vinbot para continuar con el proceso.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Vinbot está vinculado a Vinted?<i data-lucide="plus" aria-hidden="true"></i></summary>
+              <p>No. Vinbot no está afiliado, asociado ni respaldado por Vinted.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="opinions-section section-surface-ice" id="opiniones" aria-labelledby="opinions-title">
+        <img class="opinions-watermark" src="/assets/Monograma%20VB%20blanco%20sobre%20azul%20vivo.png" alt="" aria-hidden="true" />
+        <div class="opinions-content" id="opinions-content"></div>
+      </section>
+
+      <section class="closing-section final-access section-surface-dark section-transition-soft transition-from-ice" id="acceso">
+        <div class="final-access__content closing-content">
+          <p class="eyebrow eyebrow-light final-access__eyebrow"><span class="final-access__dot" aria-hidden="true"></span><span id="closing-eyebrow">ACCESO INICIAL</span></p>
+          <h2 id="closing-title">Estamos abriendo Vinbot a un grupo inicial de vendedores.</h2>
+          <p id="closing-description">Solicita acceso y descubre si Vinbot encaja con la forma en que gestionas tu negocio en Vinted.</p>
+          <div class="closing-actions"><a class="button button-light" id="closing-primary" href="https://start.vinbot.app/">Solicitar acceso anticipado <i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
+          <p class="closing-secondary" id="closing-secondary">El acceso y la suscripción se gestionan directamente desde Vinbot.</p>
+        </div>
+        <img class="final-access__monogram" src="/assets/vinbot-monogram-transparent.svg" alt="" aria-hidden="true" />
+      </section>
+
+    </main>
+
+    <footer class="site-footer section-surface-dark">
+      <div class="footer-column footer-brand-column"><a class="brand footer-brand" href="#inicio"><img src="/assets/Monograma%20VB%20blanco%20sobre%20azul%20vivo.png" alt="" width="34" height="34" /><span>vinbot</span></a><p class="footer-copy">Gestión inteligente para vendedores de Vinted.</p></div>
+      <nav class="footer-column footer-product" id="footer-product-nav" aria-label="Producto"><h2 id="footer-product-heading">Producto</h2><a id="footer-benefits" href="#beneficios">El cuello de botella</a><a id="footer-features" href="#funciones">Funciones</a><a id="footer-how" href="#como-funciona">Cómo funciona</a><a id="footer-audience" href="#para-quien">Para quién</a><a id="footer-guide" href="/guia?lang=es">Guía</a><a id="footer-faq" href="#preguntas">Preguntas frecuentes</a></nav>
+      <nav class="footer-column footer-access" id="footer-access-nav" aria-label="Acceso"><h2 id="footer-access-heading">Acceso</h2><a id="footer-request" href="https://start.vinbot.app/">Solicitar acceso anticipado</a><a id="footer-login" href="https://start.vinbot.app/">Iniciar sesión</a></nav>
+      <nav class="footer-column footer-legal" id="footer-legal-nav" aria-label="Legal"><h2 id="footer-legal-heading">Legal</h2><a id="footer-privacy" href="https://vinbot.app/privacy">Privacidad</a><a id="footer-terms" href="https://vinbot.app/terms">Términos</a><a id="footer-contact" href="https://vinbot.app/contact">Contacto</a></nav>
+      <nav class="footer-column footer-languages" id="footer-language-nav" aria-label="Idioma"><h2 id="footer-language-heading">Idioma</h2><div class="language-select" data-language-switcher>
+        <button class="language-trigger" type="button" aria-label="Cambiar idioma" aria-haspopup="menu" aria-expanded="false">
+          <img data-language-current-flag src="/assets/flags/es.svg" alt="" width="18" height="13" />
+          <span data-language-current-name>Español</span>
+          <i data-lucide="chevron-down" aria-hidden="true"></i>
+        </button>
+        <div class="language-options" role="menu" hidden>
+          <button class="language-option" type="button" role="menuitemradio" data-locale="es" aria-checked="false"><img src="/assets/flags/es.svg" alt="" width="18" height="13" /><span>Español</span><i data-lucide="check" aria-hidden="true"></i></button>
+          <button class="language-option" type="button" role="menuitemradio" data-locale="ca" aria-checked="false"><img src="/assets/flags/ca.svg" alt="" width="18" height="13" /><span>Català</span><i data-lucide="check" aria-hidden="true"></i></button>
+          <button class="language-option" type="button" role="menuitemradio" data-locale="en" aria-checked="false"><img src="/assets/flags/en.svg" alt="" width="18" height="13" /><span>English</span><i data-lucide="check" aria-hidden="true"></i></button>
+          <button class="language-option" type="button" role="menuitemradio" data-locale="fr" aria-checked="false"><img src="/assets/flags/fr.svg" alt="" width="18" height="13" /><span>Français</span><i data-lucide="check" aria-hidden="true"></i></button>
+        </div>
+      </div></nav>
+      <p class="footer-notice">Vinbot no está afiliado, asociado ni respaldado por Vinted.</p>
+    </footer>
+  </body>
+</html>

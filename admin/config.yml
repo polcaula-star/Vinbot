@@ -1,0 +1,265 @@
+local_backend: false
+backend:
+  name: github
+  repo: TU_USUARIO_GITHUB/Vinbot
+  branch: main
+  base_url: https://vinbot.app
+  auth_endpoint: api/auth
+  auth_scope: public_repo
+media_folder: assets/uploads
+public_folder: /assets/uploads
+publish_mode: simple
+locale: es
+collections:
+  - name: landing
+    label: Contenido de la landing
+    files:
+      - name: home
+        label: Página principal
+        file: content/landing.json
+        format: json
+        fields: &landing_fields
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Título de página, name: title, widget: string }
+              - { label: Descripción SEO, name: description, widget: text }
+          - label: Accesibilidad e interfaz
+            name: ui
+            widget: object
+            fields:
+              - { label: Etiqueta de navegación, name: navigation, widget: string }
+              - { label: Etiqueta de idioma, name: language, widget: string }
+              - { label: Etiqueta abrir menú, name: menu_open, widget: string }
+              - { label: Etiqueta cerrar menú, name: menu_close, widget: string }
+              - { label: Descripción del panel, name: hero_visual, widget: string }
+              - { label: Texto para bajar, name: scroll_cue, widget: string }
+              - { label: Descripción del logo, name: brand_home, widget: string }
+          - label: Panel del hero
+            name: dashboard
+            widget: object
+            fields:
+              - { label: Etiqueta superior, name: kicker, widget: string }
+              - { label: Titular, name: title, widget: string }
+              - { label: Artículos activos, name: active_items, widget: string }
+              - { label: Catálogo, name: catalog, widget: string }
+              - { label: Estado organizado, name: organized, widget: string }
+              - { label: Actividad reciente, name: activity, widget: string }
+              - { label: Enlace ver todo, name: view_all, widget: string }
+              - { label: Borrador, name: draft, widget: string }
+              - { label: Estado listo, name: ready, widget: string }
+              - { label: Estado revisión, name: review, widget: string }
+              - { label: Renovación, name: renewal, widget: string }
+              - { label: Próxima tarea, name: upcoming, widget: string }
+              - { label: Estado programado, name: scheduled, widget: string }
+              - { label: Conversación, name: conversation, widget: string }
+              - { label: Seguimiento, name: tracking, widget: string }
+              - { label: Estado al día, name: uptodate, widget: string }
+              - { label: Nota, name: note_title, widget: string }
+              - { label: Texto de nota, name: note_body, widget: string }
+              - { label: Pie del panel, name: caption, widget: string }
+          - label: Navegación
+            name: header
+            widget: object
+            fields:
+              - { label: Enlace a beneficios, name: benefits_label, widget: string }
+              - { label: Enlace a cómo funciona, name: workflow_label, widget: string }
+              - { label: Enlace a la guía, name: guide_label, widget: string }
+              - { label: Enlace a funciones, name: features_label, widget: string }
+              - { label: Enlace a para quién, name: audience_label, widget: string }
+              - { label: Enlace a preguntas frecuentes, name: faq_label, widget: string }
+              - { label: Botón de acceso, name: login_label, widget: string }
+              - { label: Enlace de acceso, name: login_url, widget: string }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Frase superior, name: eyebrow, widget: string }
+              - { label: Titular, name: title, widget: string }
+              - { label: Texto, name: description, widget: text }
+              - { label: Texto del botón principal, name: primary_label, widget: string }
+              - { label: Texto del botón secundario, name: secondary_label, widget: string }
+              - { label: Enlace del botón principal, name: primary_url, widget: string, default: 'https://start.vinbot.app/' }
+              - { label: Enlace del botón secundario, name: secondary_url, widget: string, default: '#como-funciona' }
+              - { label: Texto de apoyo, name: note, widget: string }
+          - label: Problema y beneficios
+            name: benefit_section
+            widget: object
+            fields:
+              - { label: Frase superior, name: eyebrow, widget: string }
+              - { label: Titular, name: title, widget: string, hint: 'Usa un salto de línea si quieres dividir el titular.' }
+              - { label: Texto, name: description, widget: text }
+          - label: Cómo funciona
+            name: how_section
+            widget: object
+            fields:
+              - { label: Frase superior, name: eyebrow, widget: string }
+              - { label: Titular, name: title, widget: string, hint: 'Usa un salto de línea si quieres dividir el titular.' }
+              - { label: Texto, name: description, widget: text }
+          - label: Pasos
+            name: steps
+            widget: list
+            min: 3
+            max: 3
+            fields:
+              - { label: Icono Lucide, name: icon, widget: string }
+              - { label: Titular, name: title, widget: string }
+              - { label: Texto, name: description, widget: text }
+          - label: Para quién
+            name: audience
+            widget: object
+            fields:
+              - { label: Frase superior, name: eyebrow, widget: string }
+              - { label: Titular, name: title, widget: string }
+              - { label: Texto, name: description, widget: text }
+              - label: Tarjetas
+                name: cards
+                widget: list
+                min: 3
+                max: 3
+                fields:
+                  - { label: Titular, name: title, widget: string }
+                  - { label: Texto, name: description, widget: text }
+          - label: Encabezado de funciones
+            name: features_section
+            widget: object
+            fields:
+              - { label: Frase superior, name: eyebrow, widget: string }
+              - { label: Titular, name: title, widget: string, hint: 'Usa un salto de línea si quieres dividir el titular.' }
+              - { label: Texto, name: description, widget: text }
+          - label: Catálogo de funciones
+            name: featureCatalogue
+            widget: object
+            fields:
+              - { label: Etiqueta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text }
+          - label: Un solo centro de control
+            name: ecosystem_section
+            widget: object
+            fields:
+              - { label: Etiqueta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Texto, name: description, widget: text }
+              - { label: Descripción accesible del gráfico, name: diagram_label, widget: string }
+              - label: Nodos de funciones
+                name: nodes
+                widget: list
+                min: 6
+                max: 6
+                fields:
+                  - { label: Icono Lucide, name: icon, widget: string }
+                  - { label: Etiqueta, name: label, widget: string }
+          - label: Beneficios
+            name: benefits
+            widget: list
+            min: 3
+            max: 3
+            fields:
+              - { label: Icono Lucide, name: icon, widget: string, hint: 'Ejemplos: sparkles, eye, messages-square, layers-2' }
+              - { label: Titular, name: title, widget: string }
+              - { label: Texto, name: description, widget: text }
+          - label: Así funciona Vinbot
+            name: features
+            widget: list
+            min: 5
+            max: 5
+            fields:
+              - { label: Categoría breve, name: category, widget: string }
+              - { label: Titular, name: title, widget: string }
+              - { label: Texto, name: description, widget: text }
+              - { label: Captura de pantalla, name: image, widget: image, required: false }
+              - { label: Descripción accesible de la imagen, name: image_alt, widget: string, required: false }
+          - label: Conversión final
+            name: closing
+            widget: object
+            fields:
+              - { label: Frase superior, name: eyebrow, widget: string }
+              - { label: Titular, name: title, widget: string }
+              - { label: Texto, name: description, widget: text }
+              - { label: Texto del botón principal, name: primary_label, widget: string }
+              - { label: Enlace del botón principal, name: primary_url, widget: string, default: 'https://start.vinbot.app/' }
+              - { label: Texto secundario, name: secondary_text, widget: text }
+          - label: Preguntas frecuentes
+            name: faq_section
+            widget: object
+            fields:
+              - { label: Frase superior, name: eyebrow, widget: string }
+              - { label: Titular, name: title, widget: string }
+          - label: Preguntas y respuestas
+            name: faq
+            widget: list
+            min: 5
+            max: 5
+            fields:
+              - { label: Pregunta, name: question, widget: string }
+              - { label: Respuesta, name: answer, widget: text }
+          - label: Opiniones reales aprobadas
+            name: testimonials
+            widget: list
+            required: false
+            min: 0
+            max: 10
+            summary: '{{author}} · {{locale}} · {{approved}}'
+            fields:
+              - { label: Testimonio autorizado, name: quote, widget: text }
+              - { label: Nombre o alias autorizado, name: author, widget: string }
+              - { label: Tipo de vendedor, name: role, widget: string }
+              - { label: Fecha, name: date, widget: string }
+              - { label: Idioma, name: locale, widget: select, options: ['es', 'ca', 'en', 'fr'] }
+              - { label: Aprobado y autorizado para publicar, name: approved, widget: boolean, default: false }
+          - label: Bloque honesto sin testimonios
+            name: testimonials_fallback
+            widget: object
+            fields:
+              - { label: Etiqueta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Texto, name: description, widget: text }
+              - label: Puntos
+                name: points
+                widget: list
+                min: 3
+                max: 3
+                field: { label: Punto, name: point, widget: string }
+              - { label: Etiqueta de opiniones, name: testimonials_eyebrow, widget: string }
+              - { label: Título de opiniones, name: testimonials_title, widget: string }
+              - { label: Texto de opiniones, name: testimonials_description, widget: text }
+          - label: Pie de página
+            name: footer
+            widget: object
+            fields:
+              - { label: Texto de apoyo, name: tagline, widget: string }
+              - { label: Texto del enlace de acceso, name: login_label, widget: string }
+              - { label: Enlace de acceso, name: login_url, widget: string }
+              - { label: Título de producto, name: product_heading, widget: string }
+              - { label: Título de acceso, name: access_heading, widget: string }
+              - { label: Título legal, name: legal_heading, widget: string }
+              - { label: Texto de solicitar acceso, name: request_label, widget: string }
+              - { label: Enlace de solicitar acceso, name: request_url, widget: string, default: 'https://start.vinbot.app/' }
+              - { label: Texto del enlace de problemas, name: benefits_label, widget: string }
+              - { label: Texto del enlace a funciones, name: features_label, widget: string }
+              - { label: Texto del enlace a cómo funciona, name: how_label, widget: string }
+              - { label: Texto del enlace de para quién, name: audience_label, widget: string }
+              - { label: Texto del enlace a preguntas, name: faq_label, widget: string }
+              - { label: Texto del enlace a la guía, name: guide_label, widget: string }
+              - { label: Texto del enlace de privacidad, name: privacy_label, widget: string }
+              - { label: Texto del enlace de términos, name: terms_label, widget: string }
+              - { label: Texto del enlace de contacto, name: contact_label, widget: string }
+              - { label: Enlace a preguntas, name: faq_url, widget: string }
+              - { label: Aviso legal, name: notice, widget: string }
+      - name: catalan
+        label: Català
+        file: locales/ca.json
+        format: json
+        fields: *landing_fields
+      - name: english
+        label: English
+        file: locales/en.json
+        format: json
+        fields: *landing_fields
+      - name: french
+        label: Français
+        file: locales/fr.json
+        format: json
+        fields: *landing_fields

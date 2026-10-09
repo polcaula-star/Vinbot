@@ -1,0 +1,296 @@
+{
+  "interface": {
+    "es": {
+      "page_title": "Guía Vinbot | Centro de ayuda",
+      "guide_label": "Guía",
+      "language_switch": "Cambiar idioma",
+      "home_label": "Inicio",
+      "access_label": "Solicitar acceso anticipado",
+      "category_heading": "Categorías",
+      "category_select": "Seleccionar categoría",
+      "articles_heading": "Guías publicadas",
+      "empty_category": "Guías en preparación",
+      "back_label": "Volver a la guía",
+      "breadcrumb_guide": "Guía",
+      "toc_heading": "En esta guía",
+      "introduction_heading": "Introducción",
+      "steps_heading": "Pasos",
+      "related_heading": "Artículos relacionados",
+      "previous_label": "Anterior",
+      "next_label": "Siguiente",
+      "updated_label": "Actualizado",
+      "reading_time_suffix": "min de lectura",
+      "tip_heading": "Consejo",
+      "notice_heading": "Aviso",
+      "cta_title": "¿Quieres verlo en tu propia operativa?",
+      "cta_button": "Solicitar acceso anticipado",
+      "not_found_title": "Esta guía no está disponible",
+      "not_found_text": "El artículo todavía no está publicado en este idioma.",
+      "error_text": "No se ha podido cargar la guía. Vuelve a intentarlo más tarde.",
+      "legal_notice": "Vinbot es un servicio independiente y no está afiliado, asociado ni respaldado por Vinted."
+    },
+    "ca": {
+      "page_title": "Guia Vinbot | Centre d’ajuda",
+      "guide_label": "Guia",
+      "language_switch": "Canviar idioma",
+      "home_label": "Inici",
+      "access_label": "Sol·licitar accés anticipat",
+      "category_heading": "Categories",
+      "category_select": "Selecciona una categoria",
+      "articles_heading": "Guies publicades",
+      "empty_category": "Guies en preparació",
+      "back_label": "Torna a la guia",
+      "breadcrumb_guide": "Guia",
+      "toc_heading": "En aquesta guia",
+      "introduction_heading": "Introducció",
+      "steps_heading": "Passos",
+      "related_heading": "Articles relacionats",
+      "previous_label": "Anterior",
+      "next_label": "Següent",
+      "updated_label": "Actualitzat",
+      "reading_time_suffix": "min de lectura",
+      "tip_heading": "Consell",
+      "notice_heading": "Avís",
+      "cta_title": "Vols veure-ho en la teva pròpia operativa?",
+      "cta_button": "Sol·licitar accés anticipat",
+      "not_found_title": "Aquesta guia no està disponible",
+      "not_found_text": "L’article encara no està publicat en aquest idioma.",
+      "error_text": "No s’ha pogut carregar la guia. Torna-ho a provar més tard.",
+      "legal_notice": "Vinbot és un servei independent i no està afiliat, associat ni avalat per Vinted."
+    },
+    "en": {
+      "page_title": "Vinbot Guide | Help centre",
+      "guide_label": "Guide",
+      "language_switch": "Change language",
+      "home_label": "Home",
+      "access_label": "Request early access",
+      "category_heading": "Categories",
+      "category_select": "Choose a category",
+      "articles_heading": "Published guides",
+      "empty_category": "Guides in preparation",
+      "back_label": "Back to the guide",
+      "breadcrumb_guide": "Guide",
+      "toc_heading": "In this guide",
+      "introduction_heading": "Introduction",
+      "steps_heading": "Steps",
+      "related_heading": "Related guides",
+      "previous_label": "Previous",
+      "next_label": "Next",
+      "updated_label": "Updated",
+      "reading_time_suffix": "min read",
+      "tip_heading": "Tip",
+      "notice_heading": "Notice",
+      "cta_title": "Want to see it in your own workflow?",
+      "cta_button": "Request early access",
+      "not_found_title": "This guide is unavailable",
+      "not_found_text": "This article has not been published in this language yet.",
+      "error_text": "The guide could not be loaded. Please try again later.",
+      "legal_notice": "Vinbot is an independent service and is not affiliated with, associated with or endorsed by Vinted."
+    },
+    "fr": {
+      "page_title": "Guide Vinbot | Centre d’aide",
+      "guide_label": "Guide",
+      "language_switch": "Changer de langue",
+      "home_label": "Accueil",
+      "access_label": "Demander un accès anticipé",
+      "category_heading": "Catégories",
+      "category_select": "Choisir une catégorie",
+      "articles_heading": "Guides publiés",
+      "empty_category": "Guides en préparation",
+      "back_label": "Retour au guide",
+      "breadcrumb_guide": "Guide",
+      "toc_heading": "Dans ce guide",
+      "introduction_heading": "Introduction",
+      "steps_heading": "Étapes",
+      "related_heading": "Guides associés",
+      "previous_label": "Précédent",
+      "next_label": "Suivant",
+      "updated_label": "Mis à jour",
+      "reading_time_suffix": "min de lecture",
+      "tip_heading": "Conseil",
+      "notice_heading": "À savoir",
+      "cta_title": "Envie de le voir dans votre propre activité ?",
+      "cta_button": "Demander un accès anticipé",
+      "not_found_title": "Ce guide n’est pas disponible",
+      "not_found_text": "Cet article n’est pas encore publié dans cette langue.",
+      "error_text": "Le guide n’a pas pu être chargé. Veuillez réessayer plus tard.",
+      "legal_notice": "Vinbot est un service indépendant et n’est ni affilié à Vinted, ni associé à Vinted, ni approuvé par Vinted."
+    }
+  },
+  "home": {
+    "es": {
+        "page_title": "Guía Vinbot | Centro de ayuda",
+    "eyebrow": "GUÍAS VINBOT",
+    "title": "Aprende a sacar más partido a cada función.",
+    "description": "Encuentra guías claras para configurar, revisar y adaptar Vinbot a tu forma de trabajar."
+    },
+    "ca": {
+        "page_title": "Guia Vinbot | Centre d’ajuda",
+      "eyebrow": "GUIES VINBOT",
+      "title": "Aprèn a treure més partit de cada funció.",
+      "description": "Troba guies clares per configurar, revisar i adaptar Vinbot a la teva manera de treballar."
+    },
+    "en": {
+        "page_title": "Vinbot Guide | Help centre",
+      "eyebrow": "VINBOT GUIDES",
+      "title": "Get more from every feature.",
+      "description": "Find clear guides to configure, review and adapt Vinbot to the way you work."
+    },
+    "fr": {
+        "page_title": "Guide Vinbot | Centre d’aide",
+      "eyebrow": "GUIDES VINBOT",
+      "title": "Tirez le meilleur parti de chaque fonctionnalité.",
+      "description": "Trouvez des guides clairs pour configurer, vérifier et adapter Vinbot à votre manière de travailler."
+    }
+  },
+  "categories": [
+    {
+      "id": "borradores-ia",
+      "icon": "sparkles",
+      "locales": {
+        "es": { "title": "Borradores con IA", "description": "Prepara títulos y descripciones para revisar antes de publicar." },
+        "ca": { "title": "Esborranys amb IA", "description": "Prepara títols i descripcions per revisar abans de publicar." },
+        "en": { "title": "AI drafts", "description": "Prepare titles and descriptions to review before publishing." },
+        "fr": { "title": "Brouillons IA", "description": "Préparez les titres et descriptions à vérifier avant publication." }
+      }
+    },
+    {
+      "id": "renovacion-visibilidad",
+      "icon": "refresh-cw",
+      "locales": {
+        "es": { "title": "Renovación y visibilidad", "description": "Aprende a mantener tus publicaciones activas con una estrategia definida por ti." },
+        "ca": { "title": "Renovació i visibilitat", "description": "Aprèn a mantenir les publicacions actives amb una estratègia definida per tu." },
+        "en": { "title": "Renewals and visibility", "description": "Learn to keep listings active with a strategy you define." },
+        "fr": { "title": "Renouvellement et visibilité", "description": "Apprenez à garder vos annonces actives avec une stratégie définie par vous." }
+      }
+    },
+    {
+      "id": "respuestas-likes",
+      "icon": "message-circle",
+      "locales": {
+        "es": { "title": "Respuestas a likes", "description": "Configura respuestas para atender el interés con más rapidez." },
+        "ca": { "title": "Respostes a likes", "description": "Configura respostes per atendre l’interès amb més rapidesa." },
+        "en": { "title": "Replies to likes", "description": "Set up replies to respond to interest more quickly." },
+        "fr": { "title": "Réponses aux likes", "description": "Configurez des réponses pour traiter l’intérêt plus rapidement." }
+      }
+    },
+    {
+      "id": "negociacion-reglas",
+      "icon": "handshake",
+      "locales": {
+        "es": { "title": "Negociación con reglas", "description": "Define límites, márgenes y condiciones antes de automatizar una negociación." },
+        "ca": { "title": "Negociació amb regles", "description": "Defineix límits, marges i condicions abans d’automatitzar una negociació." },
+        "en": { "title": "Rule-based negotiation", "description": "Set limits, margins and conditions before automating a negotiation." },
+        "fr": { "title": "Négociation par règles", "description": "Définissez les limites, marges et conditions avant d’automatiser une négociation." }
+      }
+    },
+    {
+      "id": "estrategia-negociacion",
+      "icon": "sliders-horizontal",
+      "locales": {
+        "es": { "title": "Estrategia de negociación", "description": "Ajusta el comportamiento de cada automatización a tu manera de vender." },
+        "ca": { "title": "Estratègia de negociació", "description": "Ajusta el comportament de cada automatització a la teva manera de vendre." },
+        "en": { "title": "Negotiation strategy", "description": "Adjust each automation to the way you sell." },
+        "fr": { "title": "Stratégie de négociation", "description": "Adaptez chaque automatisation à votre manière de vendre." }
+      }
+    },
+    {
+      "id": "inventario-actividad",
+      "icon": "package-search",
+      "locales": {
+        "es": { "title": "Inventario y actividad", "description": "Ten a la vista lo que está activo, pendiente o requiere revisión." },
+        "ca": { "title": "Inventari i activitat", "description": "Tingues a la vista què està actiu, pendent o requereix revisió." },
+        "en": { "title": "Inventory and activity", "description": "See what is active, pending or needs attention." },
+        "fr": { "title": "Inventaire et activité", "description": "Repérez ce qui est actif, en attente ou à vérifier." }
+      }
+    }
+  ],
+  "article_template": {
+    "slug": "",
+    "category": "",
+    "status": "draft",
+    "date": null,
+    "reading_time_minutes": null,
+    "image_by_locale": { "es": "", "ca": "", "en": "", "fr": "" },
+    "locales": {
+      "es": { "title": "", "summary": "", "introduction": "", "steps": [] },
+      "ca": { "title": "", "summary": "", "introduction": "", "steps": [] },
+      "en": { "title": "", "summary": "", "introduction": "", "steps": [] },
+      "fr": { "title": "", "summary": "", "introduction": "", "steps": [] }
+    },
+    "related": []
+  },
+  "articles": [
+    {
+      "slug": "empezar-con-vinbot",
+      "category": "borradores-ia",
+      "status": "published",
+      "related": [],
+      "locales": {
+        "es": {
+          "title": "Cómo empezar con Vinbot",
+          "summary": "Conoce el recorrido básico de Vinbot: preparar un artículo, revisar un borrador y elegir qué herramientas quieres activar.",
+          "introduction": "Puedes empezar con un artículo y decidir paso a paso qué parte de tu operativa quieres organizar con Vinbot.",
+          "steps": [
+            { "title": "Accede a Vinbot", "body": "Entra en tu panel para tener una visión ordenada de tu operativa." },
+            { "title": "Añade la información esencial de un artículo", "body": "Sube las fotografías y completa los datos básicos que necesitas para preparar una publicación." },
+            { "title": "Revisa el borrador", "body": "Vinbot puede ayudarte a estructurar el título y la descripción. Antes de la primera publicación, tú revisas y decides el resultado." },
+            { "title": "Configura solo las herramientas que necesitas", "body": "Puedes organizar renovaciones, respuestas a likes y reglas de negociación según tu forma de vender." },
+            { "title": "Consulta la actividad desde tu panel", "body": "Revisa inventario, artículos activos, borradores y tareas pendientes desde una misma operativa." }
+          ],
+          "cta_title": "¿Quieres verlo en tu propia operativa?"
+        },
+        "ca": {
+          "title": "Com començar amb Vinbot",
+          "summary": "Descobreix el recorregut bàsic de Vinbot: prepara un article, revisa un esborrany i tria quines eines vols activar.",
+          "introduction": "Pots començar amb un article i decidir pas a pas quina part de la teva operativa vols organitzar amb Vinbot.",
+          "steps": [
+            { "title": "Accedeix a Vinbot", "body": "Entra al teu tauler per tenir una visió ordenada de la teva operativa." },
+            { "title": "Afegeix la informació essencial d’un article", "body": "Puja les fotografies i completa les dades bàsiques que necessites per preparar una publicació." },
+            { "title": "Revisa l’esborrany", "body": "Vinbot et pot ajudar a estructurar el títol i la descripció. Abans de la primera publicació, tu revises i decideixes el resultat." },
+            { "title": "Configura només les eines que necessites", "body": "Pots organitzar renovacions, respostes a likes i regles de negociació segons la teva manera de vendre." },
+            { "title": "Consulta l’activitat des del teu tauler", "body": "Revisa l’inventari, els articles actius, els esborranys i les tasques pendents des d’una mateixa operativa." }
+          ],
+          "cta_title": "Vols veure-ho en la teva pròpia operativa?"
+        },
+        "en": {
+          "title": "Getting started with Vinbot",
+          "summary": "Learn the basic Vinbot workflow: prepare an item, review a draft and choose which tools you want to activate.",
+          "introduction": "Start with one item and decide step by step which parts of your workflow you want to organise with Vinbot.",
+          "steps": [
+            { "title": "Sign in to Vinbot", "body": "Open your dashboard for an organised view of your workflow." },
+            { "title": "Add the essential details for an item", "body": "Upload photos and complete the basic details you need to prepare a listing." },
+            { "title": "Review the draft", "body": "Vinbot can help structure the title and description. You review the result and decide what to publish." },
+            { "title": "Set up only the tools you need", "body": "Organise renewals, replies to likes and negotiation rules to match the way you sell." },
+            { "title": "Check activity from your dashboard", "body": "Review inventory, active items, drafts and pending tasks in one workflow." }
+          ],
+          "cta_title": "Want to see it in your own workflow?"
+        },
+        "fr": {
+          "title": "Bien démarrer avec Vinbot",
+          "summary": "Découvrez le parcours de base dans Vinbot : préparer un article, vérifier un brouillon et choisir les outils à activer.",
+          "introduction": "Commencez par un article et décidez étape par étape quelles parties de votre activité vous souhaitez organiser avec Vinbot.",
+          "steps": [
+            { "title": "Accédez à Vinbot", "body": "Ouvrez votre tableau de bord pour avoir une vue organisée de votre activité." },
+            { "title": "Ajoutez les informations essentielles d’un article", "body": "Ajoutez les photos et renseignez les informations de base nécessaires à la préparation d’une annonce." },
+            { "title": "Vérifiez le brouillon", "body": "Vinbot peut vous aider à structurer le titre et la description. Vous vérifiez le résultat et décidez quoi publier." },
+            { "title": "Configurez uniquement les outils dont vous avez besoin", "body": "Organisez les renouvellements, les réponses aux likes et les règles de négociation selon votre manière de vendre." },
+            { "title": "Consultez l’activité depuis votre tableau de bord", "body": "Vérifiez l’inventaire, les articles actifs, les brouillons et les tâches en attente dans une même activité." }
+          ],
+          "cta_title": "Envie de le voir dans votre propre activité ?"
+        }
+      }
+    },
+    { "slug": "preparar-tu-primera-operativa", "category": "borradores-ia", "status": "draft", "locales": { "es": { "title": "Cómo preparar tu primera operativa", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "crear-borrador-con-ia", "category": "borradores-ia", "status": "draft", "locales": { "es": { "title": "Cómo crear un borrador con IA", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "revisar-titulo-descripcion", "category": "borradores-ia", "status": "draft", "locales": { "es": { "title": "Cómo revisar un título y una descripción antes de publicar", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "organizar-renovaciones", "category": "renovacion-visibilidad", "status": "draft", "locales": { "es": { "title": "Cómo organizar las renovaciones de artículos", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "configurar-respuestas-likes", "category": "respuestas-likes", "status": "draft", "locales": { "es": { "title": "Cómo configurar respuestas a likes", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "crear-estrategia-negociacion", "category": "estrategia-negociacion", "status": "draft", "locales": { "es": { "title": "Cómo crear una estrategia de negociación", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "funciona-negociador-vinbot", "category": "negociacion-reglas", "status": "draft", "locales": { "es": { "title": "Cómo funciona el negociador Vinbot", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "revisar-inventario-publicaciones", "category": "inventario-actividad", "status": "draft", "locales": { "es": { "title": "Cómo revisar tu inventario y publicaciones", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "estados-articulos", "category": "inventario-actividad", "status": "draft", "locales": { "es": { "title": "Qué significan los estados de tus artículos", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "preguntas-frecuentes-vinbot", "category": "ayuda-y-preguntas", "status": "draft", "locales": { "es": { "title": "Preguntas frecuentes sobre Vinbot", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } },
+    { "slug": "reportar-incidencia", "category": "ayuda-y-preguntas", "status": "draft", "locales": { "es": { "title": "Cómo reportar una incidencia", "summary": "", "introduction": "", "steps": [] }, "ca": { "title": "", "summary": "", "introduction": "", "steps": [] }, "en": { "title": "", "summary": "", "introduction": "", "steps": [] }, "fr": { "title": "", "summary": "", "introduction": "", "steps": [] } } }
+  ]
+}
