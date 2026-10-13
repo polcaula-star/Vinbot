@@ -3,8 +3,10 @@ const languageNames = { es: 'Español', ca: 'Català', en: 'English', fr: 'Fran�
 const params = new URLSearchParams(window.location.search);
 const requestedLocale = params.get('lang');
 const locale = supportedLocales.includes(requestedLocale) ? requestedLocale : 'es';
-const slug = window.location.pathname.replace(/^\/guia\/?/, '').split('/')[0];
-const guideUrl = slug => `/guia${slug ? `/${encodeURIComponent(slug)}` : ''}?lang=${locale}`;
+const routeSlug = window.location.pathname.replace(new RegExp("^/(?:guia|guide)/?"), "").split("/")[0];
+const slug = params.get("category") || routeSlug;
+// Query-based links work even on static hosts without a /guia/:slug rewrite.
+const guideUrl = category => `/guide/?${category ? `category=${encodeURIComponent(category)}&` : ""}lang=${locale}`;
 const page = document.querySelector('#guide-app');
 
 function isCompleteTranslation(article, localeCode) {
@@ -27,6 +29,66 @@ function make(tag, className, text) {
 
 function text(copy, key) {
   return copy[key] || '';
+}
+
+function screenshotButton(image, copy) {
+  const button = make('button', 'article-screenshot-button');
+  button.type = 'button';
+  button.dataset.guideScreenshot = '';
+  button.setAttribute('aria-label', `${text(copy, 'zoom_screenshot')}: ${image.alt}`);
+  const img = document.createElement('img');
+  img.src = image.src;
+  img.alt = image.alt;
+  img.loading = 'lazy';
+  button.append(img);
+  return button;
+}
+
+function createVideoSlot(article, title, copy) {
+  const slot = make('section', 'article-video-slot');
+  slot.append(make('h2', '', text(copy, 'video_heading')));
+  if (article.video_url) {
+    let videoUrl;
+    try {
+      const parsedUrl = new URL(article.video_url);
+      if (parsedUrl.protocol !== 'https:' || !['www.youtube-nocookie.com', 'www.youtube.com', 'player.vimeo.com'].includes(parsedUrl.hostname)) {
+        throw new Error('Unsupported video host');
+      }
+      videoUrl = parsedUrl.href;
+    } catch (error) {
+      console.error('Vinbot guide video URL must use a supported HTTPS video host.', error);
+    }
+    if (videoUrl) {
+      const frame = document.createElement('iframe');
+      frame.src = videoUrl;
+      frame.title = `${text(copy, 'video_heading')}: ${title}`;
+      frame.loading = 'lazy';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      slot.append(frame);
+      return slot;
+    }
+  }
+  slot.append(make('p', '', text(copy, 'video_upcoming')));
+  return slot;
+}
+
+function wireScreenshotDialog() {
+  const dialog = document.querySelector('#guide-screenshot-dialog');
+  const image = dialog?.querySelector('img');
+  if (!dialog || !image) return;
+  document.addEventListener('click', event => {
+    const trigger = event.target.closest('[data-guide-screenshot]');
+    if (!trigger) return;
+    const source = trigger.querySelector('img');
+    if (!source) return;
+    image.src = source.src;
+    image.alt = source.alt;
+    dialog.showModal();
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
 }
 
 function categoryFor(guide, article) {
@@ -72,6 +134,12 @@ function renderHeaderAndFooter(copy, home) {
   if (access) access.href = 'https://start.vinbot.app/';
   const trigger = document.querySelector('.language-trigger');
   if (trigger) trigger.setAttribute('aria-label', copy.language_switch);
+  const screenshotClose = document.querySelector('.guide-screenshot-close');
+  if (screenshotClose) {
+    screenshotClose.textContent = text(copy, 'close_screenshot');
+    screenshotClose.setAttribute('aria-label', text(copy, 'close_screenshot'));
+  }
+  document.querySelector('.guide-screenshot-dialog')?.setAttribute('aria-label', text(copy, 'zoom_screenshot'));
   document.querySelector('[data-current-language]').textContent = languageNames[locale];
   document.querySelector('[data-current-flag]').src = `/assets/flags/${locale}.svg`;
   document.querySelectorAll('.language-menu [data-locale]').forEach(option => {
@@ -221,11 +289,7 @@ function renderArticle(guide, article, copy) {
   if (localizedImage && articleCopy.image_alt) screenshots.unshift({ src: localizedImage, alt: articleCopy.image_alt });
   screenshots.filter(image => image?.src && image?.alt).forEach(image => {
     const figure = make('figure', 'article-figure');
-    const img = document.createElement('img');
-    img.src = image.src;
-    img.alt = image.alt;
-    img.loading = 'lazy';
-    figure.append(img);
+    figure.append(screenshotButton(image, copy));
     if (image.caption) figure.append(make('figcaption', '', image.caption));
     body.append(figure);
   });
@@ -240,6 +304,9 @@ function renderArticle(guide, article, copy) {
     section.id = id;
     section.append(make('h2', '', `${index + 1}. ${step.title}`));
     section.append(make('p', '', step.body));
+    if (step.screenshot?.src && step.screenshot?.alt) {
+      section.append(screenshotButton(step.screenshot, copy));
+    }
     body.append(section);
   });
   if (articleCopy.tip?.text) {
@@ -254,6 +321,7 @@ function renderArticle(guide, article, copy) {
     notice.append(make('p', '', articleCopy.notice.text));
     body.append(notice);
   }
+  body.append(createVideoSlot(article, articleCopy.title, copy));
   toc.append(tocList);
   columns.append(toc, body);
 
@@ -347,6 +415,7 @@ function wireLanguageMenu() {
 
 async function startGuide() {
   wireLanguageMenu();
+  wireScreenshotDialog();
   try {
     const response = await fetch('/content/guide.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error('Guide data could not be loaded');

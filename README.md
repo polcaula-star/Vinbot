@@ -4,7 +4,7 @@ Landing pública estática para vendedores profesionales de Vinted. Se publica g
 
 ## Guía de ayuda
 
-La guía pública usa las rutas `/guia?lang=es|ca|en|fr` y `/guia/<slug>?lang=es|ca|en|fr`. Su contenido vive separado de la interfaz en `content/guide.json`. Para añadir un artículo, agrega su slug, categoría, estado y traducciones bajo `locales`; solo se publicará cuando tenga `status: "published"` y título, resumen, introducción y pasos completos en el idioma solicitado. Los borradores y las traducciones incompletas permanecen ocultos. Las fechas, capturas, consejos y avisos son opcionales y solo aparecen cuando se añaden datos reales.
+La guía pública usa las rutas `/guia?lang=es|ca|en|fr` y `/guia/<slug>?lang=es|ca|en|fr`. Su contenido vive separado de la interfaz en `content/guide.json`. Para añadir un artículo, agrega su slug, categoría, estado y traducciones bajo `locales`; solo se publicará cuando tenga `status: "published"` y título, resumen, introducción y pasos completos en el idioma solicitado. Los borradores y las traducciones incompletas permanecen ocultos. Las fechas, capturas, capturas opcionales dentro de cada paso (`steps[].screenshot`), consejos y avisos solo aparecen cuando se añaden datos reales. `video_url` es opcional y admite enlaces HTTPS de inserción de YouTube o Vimeo; mientras no se indique, la guía muestra el espacio reservado para el videotutorial. Las guías desplegables de la landing usan `feature_blocks[].points`, `feature_blocks[].closing`, capturas opcionales por paso (`feature_blocks[].step_screenshots`) y un `feature_blocks[].video_url` opcional.
 
 ## Publicar en Cloudflare Pages
 
@@ -73,7 +73,7 @@ Cuando DNS, Pages, Access y OAuth estén configurados, abre <https://vinbot.app/
 
 En Cloudflare Pages: `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`, `ALLOWED_GITHUB_LOGIN`, `GITHUB_OAUTH_SCOPE`, `CF_ACCESS_TEAM_DOMAIN`, `CF_ACCESS_AUD` y `ADMIN_EMAIL`. En `admin/config.yml`: el propietario real del repositorio. En GitHub: la OAuth App con callback `https://vinbot.app/api/callback`. En Zero Trust: proveedor GitHub y política Access limitada a tu correo.
 
-Conecta el dominio `vinbot.app` antes de iniciar OAuth, porque GitHub valida el callback exacto. La dashboard existente no se modifica y los botones de prueba y acceso apuntan a <https://start.vinbot.app/>.
+Conecta el dominio `vinbot.app` antes de iniciar OAuth, porque GitHub valida el callback exacto. El panel existente no se modifica. Los botones de planes y acceso llevan a <https://start.vinbot.app/>, donde se inicia sesión y se usa el flujo de suscripción existente; la landing no construye enlaces de checkout ni modifica cobros. La selección directa de un plan concreto debe conectarse cuando la aplicación publique una ruta de selección de plan verificable.
 
 El enlace de contacto inicial es `mailto:contacto@vinbot.app`; confirma que ese buzón exista o reemplázalo por la dirección oficial desde el editor `/admin` antes de publicar.
 

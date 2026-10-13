@@ -481,6 +481,17 @@ select {
   margin: 10px 0 28px;
 }
 
+.article-screenshot-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
+  cursor: zoom-in;
+}
+
 .article-figure img {
   display: block;
   width: 100%;
@@ -488,6 +499,87 @@ select {
   border: 1px solid var(--guide-line);
   border-radius: 8px;
   background: var(--guide-surface);
+}
+
+.article-step .article-screenshot-button {
+  margin-top: 16px;
+}
+
+.article-step .article-screenshot-button img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+}
+
+.article-video-slot {
+  margin-top: 28px;
+  padding: 17px;
+  border: 1px dashed #aac6d6;
+  border-radius: 8px;
+  background: #f7fafc;
+}
+
+.article-video-slot h2 {
+  margin: 0 0 8px;
+  color: var(--guide-ink);
+  font: 700 15px Manrope, sans-serif;
+}
+
+.article-video-slot p {
+  margin: 0;
+  color: var(--guide-muted);
+  font-size: 13px;
+}
+
+.article-video-slot iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 6px;
+}
+
+.guide-screenshot-dialog {
+  width: min(1120px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100vh - 32px);
+  padding: 14px;
+  overflow: auto;
+  border: 1px solid var(--guide-line);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 25px 80px rgba(9, 28, 53, .35);
+}
+
+.guide-screenshot-dialog::backdrop {
+  background: rgba(8, 25, 47, .78);
+}
+
+.guide-screenshot-dialog form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.guide-screenshot-close {
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid var(--guide-line);
+  border-radius: 7px;
+  background: var(--guide-surface);
+  color: var(--guide-ink);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.guide-screenshot-dialog > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 105px);
+  object-fit: contain;
 }
 
 .article-figure figcaption {
