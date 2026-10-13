@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#eef7ff" />
-    <meta name="description" content="Vinbot organiza el trabajo repetitivo de tu operativa de Vinted para que puedas centrarte en vender." />
-    <meta property="og:title" content="Vinbot | Automatización inteligente para Vinted" />
-    <meta property="og:description" content="Tú marcas las reglas. Vinbot hace el trabajo repetitivo." />
+    <meta name="description" content="Automatiza tus ventas en Vinted con Vinbot. Gestiona tus anuncios, utiliza herramientas de inteligencia artificial y ahorra tiempo." />
+    <meta property="og:title" content="Vinbot | Automatiza tus ventas en Vinted" />
+    <meta property="og:description" content="Automatiza tus ventas en Vinted con Vinbot. Gestiona tus anuncios, utiliza herramientas de inteligencia artificial y ahorra tiempo." />
     <meta property="og:type" content="website" />
     <script>
       (() => {
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="/styles.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="/main.js" defer></script>
-    <title>Vinbot | Automatización inteligente para Vinted</title>
+    <title>Vinbot | Automatiza tus ventas en Vinted</title>
   </head>
   <body>
     <a class="skip-link" href="#contenido" data-copy="skip">Saltar al contenido</a>
@@ -46,7 +46,7 @@
           <a href="#como-funciona" data-copy="navHow">Cómo funciona</a>
           <a href="#guias" data-copy="navFeatures">Funciones y guías</a>
           <a href="#planes" data-copy="navPlans">Planes</a>
-          
+          <a href="#guias" data-copy="navGuides">Guías</a>
           <a href="#preguntas" data-copy="navFaq">Preguntas</a>
         </div>
         <div class="nav-actions">
@@ -77,8 +77,8 @@
             <h1 data-copy="heroTitle">Automatiza tu Vinted. Incluso con el ordenador apagado.</h1>
             <p class="hero-description" data-copy="heroDescription">Vinbot trabaja por ti las 24 horas: renueva tus anuncios, negocia con compradores y automatiza tus ventas mientras tú te dedicas a lo que realmente importa.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#configura" data-copy="heroPrimary">Encontrar mi plan <i data-lucide="arrow-right" aria-hidden="true"></i></a>
-              <a class="button button-secondary" href="#guias" data-copy="heroSecondary">Ver funciones</a>
+              <a class="button button-primary" href="https://start.vinbot.app/" data-copy="heroPrimary">Empieza con Vinbot <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a class="button button-secondary" href="#como-funciona" data-copy="heroSecondary">Descubre cómo funciona</a>
             </div>
             <p class="hero-note"><i data-lucide="circle-check" aria-hidden="true"></i><span data-copy="heroNote">Tu configuración sigue trabajando aunque no tengas el ordenador abierto.</span></p>
           </div>
@@ -132,6 +132,7 @@
                 <div class="choice-row">
                   <button type="button" class="choice" data-value="basic" aria-pressed="false" data-copy="automationBasic">Herramientas básicas</button>
                   <button type="button" class="choice" data-value="sales" aria-pressed="false" data-copy="automationSales">Automatizar mis ventas</button>
+                  <button type="button" class="choice" data-value="exclusive" aria-pressed="false" data-copy="automationExclusive">Mensajes por favoritos o promoción avanzada</button>
                 </div>
               </fieldset>
               <button class="button button-primary planner-submit" type="submit" data-copy="plannerAction">Ver mi recomendación <i data-lucide="arrow-right" aria-hidden="true"></i></button>
@@ -153,46 +154,73 @@
             <h2 data-copy="pricingTitle">El plan adecuado para cada forma de vender.</h2>
             <p data-copy="pricingDescription">Compara las funciones incluidas y elige el plan que mejor cubre tu operativa.</p>
           </div>
+          <div class="billing-toggle" role="group" aria-label="Periodo de facturación">
+            <button class="billing-option is-active" type="button" data-billing-period="monthly" aria-pressed="true" data-copy="monthlyLabel">Mensual</button>
+            <button class="billing-option" type="button" data-billing-period="annual" aria-pressed="false" data-copy="annualLabel">Anual (20 % de descuento)</button>
+          </div>
           <div class="pricing-grid" id="pricing-grid" aria-live="polite">
             <article class="pricing-card" data-plan-id="basic">
+              <div class="pricing-badges"></div>
               <h3>Básico</h3>
+              <p class="pricing-description">Para empezar a vender de forma organizada.</p>
               <p class="pricing-price">29,99 €<span>/mes</span></p>
+              <span class="pricing-tax-note">IVA incluido</span>
+              <p class="pricing-account-note">Precio para una cuenta. Las cuentas adicionales se facturan por separado.</p>
               <ul class="pricing-features">
-                <li><i data-lucide="check" aria-hidden="true"></i>Hasta 150 anuncios activos</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Una cuenta</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Herramientas básicas</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Soporte por email</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>1 cuenta de Vinted</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Renovación manual de hasta 150 artículos</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Sincronización y gestión del inventario</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Herramientas básicas del dashboard</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Soporte por correo electrónico</li>
               </ul>
-              <a class="button button-secondary" href="https://start.vinbot.app/" aria-label="Elegir el plan Básico">Continuar en Vinbot <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a class="button button-secondary" href="https://start.vinbot.app/" aria-label="Elegir el plan Básico">Elegir Básico <i data-lucide="arrow-right" aria-hidden="true"></i></a>
             </article>
             <article class="pricing-card" data-plan-id="pro">
-              <p class="pricing-badge">Recomendado</p>
+              <div class="pricing-badges"><p class="pricing-badge pricing-badge--popular">Más popular</p></div>
               <h3>Pro</h3>
+              <p class="pricing-description">Automatiza tus ventas y ahorra tiempo cada día.</p>
               <p class="pricing-price">49,99 €<span>/mes</span></p>
+              <span class="pricing-tax-note">IVA incluido</span>
+              <p class="pricing-account-note">Precio para una cuenta. Las cuentas adicionales se facturan por separado.</p>
               <ul class="pricing-features">
-                <li><i data-lucide="check" aria-hidden="true"></i>Anuncios ilimitados</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Una cuenta</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Precios con IA</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Bot negociador</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Auto-renovación</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Panel de analíticas</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Soporte prioritario</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Todas las funciones del Básico</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>1 cuenta de Vinted</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Renovación ilimitada de artículos</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Autorrenovación ilimitada y programada</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Creación de anuncios con inteligencia artificial: genera títulos y descripciones a partir de imágenes</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Bot negociador y gestión automática de ofertas</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Panel de analíticas y soporte prioritario</li>
               </ul>
-              <a class="button button-primary" href="https://start.vinbot.app/" aria-label="Elegir el plan Pro">Continuar en Vinbot <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a class="button button-primary" href="https://start.vinbot.app/" aria-label="Elegir el plan Pro">Elegir Pro <i data-lucide="arrow-right" aria-hidden="true"></i></a>
             </article>
             <article class="pricing-card" data-plan-id="enterprise">
+              <div class="pricing-badges"></div>
               <h3>Enterprise</h3>
+              <p class="pricing-description">Automatización avanzada para vendedores profesionales.</p>
               <p class="pricing-price">69,99 €<span>/mes</span></p>
+              <span class="pricing-tax-note">IVA incluido</span>
+              <p class="pricing-account-note">2 cuentas de Vinted incluidas en el precio.</p>
               <ul class="pricing-features">
-                <li><i data-lucide="check" aria-hidden="true"></i>Todas las funciones del Pro</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Multicuenta</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Analíticas avanzadas</li>
-                <li><i data-lucide="check" aria-hidden="true"></i>Soporte dedicado</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Todas las funcionalidades del Pro</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>2 cuentas de Vinted incluidas, con todas las funciones del Pro en ambas</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Gestión multicuenta</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>Posibilidad de añadir una tercera cuenta por 29,99 €/mes</li>
+                <li class="is-coming-soon"><i data-lucide="clock-3" aria-hidden="true"></i>Mensajes automáticos cuando se reciben likes <small class="coming-soon-label">Próximamente</small></li>
+                <li class="is-coming-soon"><i data-lucide="clock-3" aria-hidden="true"></i>Posicionamiento de anuncios <small class="coming-soon-label">Próximamente</small></li>
+                <li class="is-coming-soon"><i data-lucide="clock-3" aria-hidden="true"></i>Promoción de anuncios <small class="coming-soon-label">Próximamente</small></li>
               </ul>
-              <a class="button button-secondary" href="https://start.vinbot.app/" aria-label="Elegir el plan Enterprise">Continuar en Vinbot <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a class="button button-secondary" href="https://start.vinbot.app/" aria-label="Elegir el plan Enterprise">Elegir Enterprise <i data-lucide="arrow-right" aria-hidden="true"></i></a>
             </article>
           </div>
-          <p class="pricing-note" data-copy="pricingNote">Desde aquí accederás a Vinbot para completar la suscripción o gestionar tu plan actual.</p>
+          <p class="pricing-note" data-copy="pricingNote">Los botones abren Vinbot para consultar o gestionar tu suscripción; esta web no activa cargos ni modifica planes.</p>
+          <details class="pricing-comparison">
+            <summary data-copy="comparisonTitle">Compara todas las funcionalidades</summary>
+            <div class="comparison-content">
+              <div class="comparison-scroll" id="comparison-table" role="region" aria-label="Tabla comparativa de planes" tabindex="0"></div>
+              <p class="pricing-note" data-copy="pendingFeaturesNote">Las funciones marcadas como pendientes no se anuncian como disponibles hasta verificar su funcionamiento.</p>
+              <p class="pricing-note" data-copy="comparisonAccountLabel">Enterprise incluye dos cuentas por 69,99 €/mes, IVA incluido. Puedes añadir una tercera cuenta por 29,99 €/mes. La integración del cargo adicional se realizará más adelante.</p>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -261,11 +289,14 @@
           <p data-copy="footerTagline">Tu asistente de automatización para Vinted.</p>
           <p class="footer-notice" data-copy="footerNotice">Vinbot es una herramienta independiente y no está afiliada a Vinted.</p>
         </div>
-        <nav aria-label="Producto"><h2 data-copy="footerProduct">Producto</h2><a href="#guias" data-copy="navFeatures">Funciones y guías</a><a href="#planes" data-copy="navPlans">Planes</a><a href="#como-funciona" data-copy="navHow">Cómo funciona</a></nav>
+        <nav aria-label="Producto"><h2 data-copy="footerProduct">Producto</h2><a href="#guias" data-copy="navFeatures">Funciones y guías</a><a href="#planes" data-copy="navPlans">Planes</a><a href="#como-funciona" data-copy="navHow">Cómo funciona</a><a href="#guias" data-copy="navGuides">Guías</a></nav>
         <nav aria-label="Acceso"><h2 data-copy="footerAccess">Acceso</h2><a href="https://start.vinbot.app/" data-copy="login">Iniciar sesión</a><a href="#configura" data-copy="configure">Encontrar mi plan</a><a href="#preguntas" data-copy="navFaq">Preguntas</a></nav>
         <nav aria-label="Legal"><h2 data-copy="footerLegal">Legal</h2><a href="https://vinbot.app/privacy" data-copy="footerPrivacy">Privacidad</a><a href="https://vinbot.app/terms" data-copy="footerTerms">Términos</a><a href="https://vinbot.app/contact" data-copy="footerContact">Contacto</a></nav>
       </div>
     </footer>
+    <div class="mobile-cta">
+      <a class="button button-primary" href="https://start.vinbot.app/" data-copy="mobileCta">Empieza con Vinbot</a>
+    </div>
     <dialog class="screenshot-dialog" id="screenshot-dialog" aria-label="Captura de pantalla ampliada">
       <form method="dialog"><button class="screenshot-dialog-close" aria-label="Cerrar captura" data-copy="closeScreenshot">Cerrar</button></form>
       <img alt="" />
