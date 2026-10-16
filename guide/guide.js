@@ -44,13 +44,16 @@ function screenshotButton(image, copy) {
   return button;
 }
 
-function createVideoSlot(article, title, copy) {
-  const slot = make('section', 'article-video-slot');
-  slot.append(make('h2', '', text(copy, 'video_heading')));
-  if (article.video_url) {
+function createVideoSlot(article, title, copy, { hero = false } = {}) {
+  const slot = make(hero ? 'figure' : 'section', hero
+    ? 'article-figure article-video-slot article-hero-video'
+    : 'article-video-slot');
+  if (!hero) slot.append(make('h2', '', text(copy, 'video_heading')));
+  const videoUrlForLocale = article.video_url_by_locale?.[locale] || article.video_url;
+  if (videoUrlForLocale) {
     let videoUrl;
     try {
-      const parsedUrl = new URL(article.video_url);
+      const parsedUrl = new URL(videoUrlForLocale);
       if (parsedUrl.protocol !== 'https:' || !['www.youtube-nocookie.com', 'www.youtube.com', 'player.vimeo.com'].includes(parsedUrl.hostname)) {
         throw new Error('Unsupported video host');
       }
@@ -61,11 +64,20 @@ function createVideoSlot(article, title, copy) {
     if (videoUrl) {
       const frame = document.createElement('iframe');
       frame.src = videoUrl;
-      frame.title = `${text(copy, 'video_heading')}: ${title}`;
-      frame.loading = 'lazy';
+      frame.title = `${text(copy, 'video_accessible_title')}: ${title}`;
+      frame.loading = hero ? 'eager' : 'lazy';
+      frame.allow = 'encrypted-media; picture-in-picture; fullscreen';
       frame.allowFullscreen = true;
       frame.referrerPolicy = 'strict-origin-when-cross-origin';
       slot.append(frame);
+      const youtubeVideo = videoUrl.match(/^https:\/\/www\.youtube\.com\/embed\/([A-Za-z0-9_-]+)$/);
+      if (youtubeVideo) {
+        const youtubeLink = make('a', 'article-video-youtube-link', text(copy, 'video_youtube_link'));
+        youtubeLink.href = `https://www.youtube.com/watch?v=${youtubeVideo[1]}`;
+        youtubeLink.target = '_blank';
+        youtubeLink.rel = 'noopener noreferrer';
+        slot.append(youtubeLink);
+      }
       return slot;
     }
   }
@@ -225,6 +237,10 @@ function renderNotFound(copy) {
   page.replaceChildren();
   document.title = `${copy.not_found_title} | ${copy.guide_label}`;
   document.querySelector('meta[name="description"]')?.setAttribute('content', copy.not_found_text);
+  const robots = document.createElement('meta');
+  robots.name = 'robots';
+  robots.content = 'noindex,follow';
+  document.head.append(robots);
   const section = make('section', 'not-found');
   section.append(make('h1', '', text(copy, 'not_found_title')));
   section.append(make('p', '', text(copy, 'not_found_text')));
@@ -269,6 +285,10 @@ function renderArticle(guide, article, copy) {
   if (article.reading_time_minutes) {
     header.append(make('p', 'article-reading-time', `${article.reading_time_minutes} ${copy.reading_time_suffix}`));
   }
+  const hasVideo = Boolean(article.video_url_by_locale?.[locale] || article.video_url);
+  const usesHeroVideo = article.slug === 'mensajes-automaticos-eventos' && hasVideo;
+  wrapper.append(crumbs, header);
+  if (usesHeroVideo) wrapper.append(createVideoSlot(article, articleCopy.title, copy, { hero: true }));
 
   const columns = make('div', 'article-columns');
   const toc = make('nav', 'article-toc');
@@ -284,6 +304,7 @@ function renderArticle(guide, article, copy) {
   const introduction = make('p', '', articleCopy.introduction);
   introduction.id = 'guide-introduction';
   body.append(introduction);
+  if (hasVideo && !usesHeroVideo) body.append(createVideoSlot(article, articleCopy.title, copy));
   const screenshots = [...(articleCopy.screenshots || [])];
   const localizedImage = article.image_by_locale?.[locale];
   if (localizedImage && articleCopy.image_alt) screenshots.unshift({ src: localizedImage, alt: articleCopy.image_alt });
@@ -321,7 +342,7 @@ function renderArticle(guide, article, copy) {
     notice.append(make('p', '', articleCopy.notice.text));
     body.append(notice);
   }
-  body.append(createVideoSlot(article, articleCopy.title, copy));
+  if (!hasVideo) body.append(createVideoSlot(article, articleCopy.title, copy));
   toc.append(tocList);
   columns.append(toc, body);
 
@@ -330,7 +351,7 @@ function renderArticle(guide, article, copy) {
   const ctaButton = make('a', 'access-button', text(copy, 'cta_button'));
   ctaButton.href = 'https://start.vinbot.app/';
   cta.append(ctaButton);
-  wrapper.append(crumbs, header, columns, cta);
+  wrapper.append(columns, cta);
 
   const related = (article.related || []).map(relatedSlug => guide.articles.find(item => item.slug === relatedSlug))
     .filter(item => item && isCompleteTranslation(item, locale));
@@ -384,6 +405,7 @@ function wireLanguageMenu() {
     menu.hidden = !open;
   });
   switcher?.querySelectorAll('[data-locale]').forEach(option => option.addEventListener('click', () => {
+    document.querySelector('.article-video-slot iframe')?.removeAttribute('src');
     const nextUrl = new URL(window.location.href);
     nextUrl.searchParams.set('lang', option.dataset.locale);
     window.location.assign(`${nextUrl.pathname}${nextUrl.search}`);
@@ -445,6 +467,10 @@ async function startGuide() {
     document.documentElement.classList.remove('i18n-loading');
   } catch (error) {
     console.error('Vinbot guide could not be loaded.', error);
+    const robots = document.createElement('meta');
+    robots.name = 'robots';
+    robots.content = 'noindex,follow';
+    document.head.append(robots);
     const errorCopy = {
       es: 'No se ha podido cargar la guía. Vuelve a intentarlo más tarde.',
       ca: 'No s’ha pogut carregar la guia. Torna-ho a provar més tard.',

@@ -73,6 +73,7 @@
     "nodes": [
       { "icon": "sparkles", "label": "Borradores con IA" },
       { "icon": "refresh-cw", "label": "Renovaciones" },
+      { "icon": "messages-square", "label": "Mensajes automáticos" },
       { "icon": "message-circle", "label": "Respuestas a likes · Próximamente" },
       { "icon": "handshake", "label": "Negociación" },
       { "icon": "package-search", "label": "Inventario" },
@@ -87,6 +88,7 @@
   "quick_features": [
     { "tag": "IA", "title": "Borradores con IA", "description": "Prepara títulos y descripciones para revisar antes de publicar." },
     { "tag": "VISIBILIDAD", "title": "Renovación de artículos", "description": "Mantén tus anuncios activos con una estrategia definida por ti." },
+    { "tag": "MENSAJES", "title": "Mensajes automáticos", "description": "Informa a tus compradores en cada etapa de la compra con avisos personalizables." },
     { "tag": "PRÓXIMAMENTE", "title": "Mensajes automáticos por likes", "description": "Esta función estará disponible próximamente." },
     { "tag": "REGLAS", "title": "Negociación con reglas", "description": "Define márgenes y condiciones antes de automatizar cada negociación." },
     { "tag": "ESTRATEGIA", "title": "Estrategia de negociación", "description": "Ajusta el comportamiento de cada automatización a tu forma de vender." }
@@ -142,17 +144,18 @@
   },
   "features_section": {
     "eyebrow": "FUNCIONES DE VINBOT",
-    "title": "Cinco herramientas para una operativa más ordenada",
+    "title": "Herramientas para una operativa más ordenada",
     "description": "Explora herramientas que puedes activar y adaptar a tu operativa."
   },
   "feature_story": {
     "eyebrow": "HERRAMIENTAS VINBOT",
     "title": "Tu operativa de Vinted, paso a paso y en un mismo lugar",
-    "intro": "Vinbot te ayuda a preparar publicaciones, mantener artículos activos, responder al interés y negociar siguiendo las reglas que tú defines. Tú decides qué activar y cuándo hacerlo."
+    "intro": "Vinbot te ayuda a preparar publicaciones, mantener artículos activos, enviar mensajes en cada etapa de la compra y negociar siguiendo las reglas que tú defines. Tú decides qué activar y cuándo hacerlo."
   },
   "feature_catalog": [
     { "tag": "IA", "title": "Borradores con IA", "description": "Prepara títulos y descripciones antes de publicar.", "href": "#borradores-con-ia" },
     { "tag": "AUTOMATIZACIÓN", "title": "Renovación de artículos", "description": "Mantén tus artículos activos con una rutina definida por ti.", "href": "#renovaciones" },
+    { "tag": "MENSAJES", "title": "Mensajes automáticos", "description": "Mantén informados a tus compradores en cada etapa de la compra con mensajes personalizados.", "href": "#mensajes-automaticos" },
     { "tag": "PRÓXIMAMENTE", "title": "Mensajes automáticos por likes", "description": "Esta función estará disponible próximamente.", "href": "#respuestas-a-likes" },
     { "tag": "NEGOCIACIÓN", "title": "Negociación con reglas", "description": "Negocia ofertas según los márgenes y condiciones que defines.", "href": "#negociador-vinbot" },
     { "tag": "CONFIGURACIÓN", "title": "Estrategia de negociación", "description": "Configura cómo quieres negociar antes de automatizar.", "href": "#estrategia-de-negociacion" },
@@ -161,6 +164,7 @@
   "feature_blocks": [
     {"id":"borradores-con-ia","tag":"PUBLICACIÓN CON IA","title":"Prepara cada anuncio con una base clara antes de publicarlo","text":"Sube las fotografías e introduce los datos esenciales del artículo, como la marca, la talla, las medidas o el precio. Vinbot te ayuda a convertir esa información en un borrador más ordenado para que lo revises antes de la primera publicación.","points":["Abre Borradores con IA y prepara el artículo con sus fotos y datos reales: marca, talla, medidas y precio.","En la configuración, completa Nombre de la tienda si quieres que aparezcan sus hashtags; déjalo vacío para usar solo hashtags del artículo.","Completa Sobre tu negocio si quieres que la IA use esa información en las descripciones y palabras clave; revisa y ajusta el borrador antes de publicarlo."],"closing":"Sustituye los datos de ejemplo por los de tu tienda o deja vacíos los campos opcionales. Comprueba siempre el texto generado antes de publicar.","cta":"Solicitar acceso anticipado","image":"/assets/Borradores%20con%20IA%20vinbot.png","image_alt":"Borradores con IA para preparar publicaciones","side":"left"},
     {"id":"renovaciones","tag":"AUTOMATIZACIÓN","title":"Mantén tus artículos activos sin depender de acordarte cada día","text":"Cuando gestionas muchos anuncios, renovar artículos manualmente acaba ocupando una parte enorme del día. Vinbot te permite definir una rutina de renovación para mantener organizada esta tarea repetitiva.","points":["Entra en Configuración > Preferencias y localiza Auto-renovación de artículos.","Activa el interruptor Activar auto-renovación y elige una frecuencia: diaria, cada 2 o 3 días, semanal, quincenal, mensual o manual.","Define el límite diario por cuenta y activa las cuentas que quieras incluir en Cuentas a renovar.","Busca o filtra los productos y marca los que quieras renovar; Seleccionar todos y Ninguno afectan a la selección de artículos."],"closing":"Solo se renuevan los artículos marcados y de las cuentas activadas. El límite diario se aplica por cuenta; elige una frecuencia y un límite prudentes.","cta":"Solicitar acceso anticipado","image":"/assets/Vinbot%20app%20Renovaci%C3%B3%20articles.png","image_alt":"Herramienta de renovación de artículos","side":"right"},
+    {"id":"mensajes-automaticos","tag":"MENSAJES","title":"Mantén informados a tus compradores en cada etapa de la compra","text":"Activa avisos para los eventos de compra y personaliza cada mensaje con tu propio estilo. Tú eliges qué comunicaciones enviar y puedes revisar o ajustar la configuración cuando lo necesites.","points":["Entra en Configuración y abre Mensajes de evento.","Marca la casilla de cada aviso que quieras activar.","Pulsa el icono del lápiz junto a un mensaje para personalizar su texto y guarda los cambios.","Configura mensajes de compra y envío, reservas y retrasos, incidencias de pedidos, devoluciones y reembolsos, ofertas y valoraciones.","Revisa el resumen de mensajes activados y confirma los textos que recibirán tus compradores.","Vuelve al apartado cuando quieras modificar un texto o activar o desactivar un aviso."],"closing":"Activa solo los mensajes que encajen con tu forma de gestionar los pedidos. Los mensajes por likes son una función distinta y estarán disponibles próximamente.","cta":"Solicitar acceso anticipado","image":"/assets/vinbot/mascota/vinbot-missatges.png","image_alt":"Mascota de Vinbot para la guía de mensajes automáticos","side":"left"},
     {"id":"respuestas-a-likes","tag":"PRÓXIMAMENTE","title":"Mensajes automáticos cuando recibes likes","text":"La automatización de mensajes al recibir likes estará disponible próximamente. Esta función todavía no se puede activar.","points":[],"closing":"Próximamente","cta":"Solicitar acceso anticipado","image":"/assets/Vinbot%20Vot%20me%20gusta.png","image_alt":"Vista previa de mensajes automáticos por likes","side":"left"},
     {"id":"negociador-vinbot","tag":"NEGOCIACIÓN","title":"Negocia siguiendo tus reglas, no con descuentos al azar","text":"Cada artículo tiene un margen y cada vendedor tiene una forma distinta de negociar. Vinbot te ayuda a aplicar una lógica coherente en las conversaciones y ofertas, partiendo de los límites que hayas definido.","points":["Abre Bot negociador y revisa los indicadores de negociaciones de hoy, descuento promedio y respuestas pendientes.","Usa Control maestro del bot para habilitar o deshabilitar todas sus características a la vez.","Configura por separado Respuestas conversacionales y Bot de negociación según quieras contestar preguntas de productos o negociar ofertas.","Revisa los cambios en la actividad de las nuevas conversaciones y negociaciones."],"closing":"Los cambios de configuración se aplican inmediatamente a las conversaciones y negociaciones nuevas.","cta":"Solicitar acceso anticipado","image":"/assets/VOT%20Negociador%20vinbot.png","image_alt":"Bot negociador de Vinbot","side":"right"},
     {"id":"estrategia-de-negociacion","tag":"CONFIGURACIÓN","title":"Decide cómo quieres negociar antes de que empiece la conversación","text":"La automatización solo tiene sentido cuando refleja tu forma de vender. Esta sección permite definir una estrategia de negociación antes de activarla: cuánto margen quieres mantener, qué descuentos contemplas y cómo debe comportarse Vinbot en cada caso.","points":["Abre Estrategia de negociación y activa la Estrategia de punto de inicio si quieres que la primera contraoferta aplique un descuento.","Ajusta el descuento inicial con el control visible y elige una estrategia: Conservador, Moderado o Agresivo.","Define el número de rondas de negociación y los límites máximos de descuento en porcentaje y en euros.","Activa Enviar un mensaje con cada oferta solo si quieres que el bot escriba también al comprador cuando envía una oferta."],"closing":"Define primero los límites: cuando configuras un máximo porcentual y otro en euros, se aplica el más restrictivo. Los cambios afectan a nuevas negociaciones.","cta":"Solicitar acceso anticipado","image":"/assets/Estrategia%20negociaci%C3%B3%20Vinbot.png","image_alt":"Estrategia de negociación en Vinbot","side":"left"},
@@ -180,6 +184,13 @@
       "description": "Configura la renovación de tus artículos para sostener la actividad de tu armario sin tener que revisar cada anuncio uno a uno.",
       "image": "/assets/Vinbot%20app%20Renovaci%C3%B3%20articles.png",
       "image_alt": "Configuración de renovación automática de artículos"
+    },
+    {
+      "category": "MENSAJES",
+      "title": "Informa a tus compradores en cada etapa de la compra.",
+      "description": "Activa avisos de eventos y personaliza los mensajes de compra, envío, reservas, incidencias, devoluciones, ofertas y valoraciones.",
+      "image": "/assets/vinbot/mascota/vinbot-missatges.png",
+      "image_alt": "Mensajes automáticos de Vinbot para mantener informados a los compradores"
     },
     {
       "category": "NEGOCIACIÓN",
@@ -216,7 +227,7 @@
     "title": "Respuestas claras sobre Vinbot."
   },
   "faq": [
-    { "question": "¿Qué puede hacer Vinbot?", "answer": "Vinbot reúne herramientas para preparar publicaciones, mantener tus artículos activos, responder al interés de tus clientes y configurar automatizaciones según la forma en que vendes." },
+    { "question": "¿Qué puede hacer Vinbot?", "answer": "Vinbot reúne herramientas para preparar publicaciones, mantener tus artículos activos, informar a tus compradores en cada etapa de la compra y configurar automatizaciones según la forma en que vendes." },
     { "question": "¿Necesito configurar todas las funciones?", "answer": "No. Puedes activar solo las herramientas que encajen con tu operativa y dejar el resto deshabilitado hasta que quieras probarlas." },
     { "question": "¿Puedo revisar la configuración antes de activarla?", "answer": "Sí. Vinbot está pensado para que puedas definir reglas, márgenes y mensajes antes de activar una automatización." },
     { "question": "¿Vinbot está vinculado a Vinted?", "answer": "No. Vinbot es un servicio independiente y no está afiliado, asociado ni respaldado por Vinted." },

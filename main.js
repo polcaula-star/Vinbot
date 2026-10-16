@@ -17,12 +17,27 @@ let selectedBillingPeriod = 'monthly';
 let selectedRecommendedPlan = null;
 
 const featureProfiles = [
-  { id: 'drafts', category: 'borradores-ia', image: '/assets/vinbot/screenshots/01-borradores-ia.png', icon: 'sparkles' },
-  { id: 'renewals', category: 'renovacion-visibilidad', image: '/assets/vinbot/screenshots/02-renovaciones.png', icon: 'refresh-cw' },
-  { id: 'likes', category: 'respuestas-likes', image: '/assets/vinbot/screenshots/03-respuestas-likes.png', icon: 'heart' },
-  { id: 'negotiator', category: 'negociacion-reglas', image: '/assets/vinbot/screenshots/04-negociador.png', icon: 'handshake' },
-  { id: 'strategy', category: 'estrategia-negociacion', image: '/assets/vinbot/screenshots/05-estrategia-negociacion.png', icon: 'sliders-horizontal' },
-  { id: 'inventory', category: 'inventario-actividad', image: '/assets/vinbot/screenshots/06-inventario-demo.png', icon: 'package-search' },
+  { id: 'drafts', category: 'borradores-ia', catalogId: 'borradores-con-ia', blockId: 'borradores-con-ia', image: '/assets/vinbot/screenshots/01-borradores-ia.png', icon: 'sparkles' },
+  { id: 'renewals', category: 'renovacion-visibilidad', catalogId: 'renovaciones', blockId: 'renovaciones', image: '/assets/vinbot/screenshots/02-renovaciones.png', icon: 'refresh-cw' },
+  {
+    id: 'event-messages',
+    category: 'mensajes-automaticos',
+    catalogId: 'mensajes-automaticos',
+    blockId: 'mensajes-automaticos',
+    article: 'mensajes-automaticos-eventos',
+    image: '/assets/vinbot/mascota/vinbot-missatges.png',
+    icon: 'messages-square',
+    videoUrls: {
+      ca: 'https://www.youtube.com/embed/0oXR1CP4OYM',
+      es: 'https://www.youtube.com/embed/LD0AIUaJuF4',
+      en: 'https://www.youtube.com/embed/ylNBS9wyrvY',
+      fr: 'https://www.youtube.com/embed/brTk0nd6UXs',
+    },
+  },
+  { id: 'likes', category: 'respuestas-likes', catalogId: 'respuestas-a-likes', blockId: 'respuestas-a-likes', image: '/assets/vinbot/screenshots/03-respuestas-likes.png', icon: 'heart' },
+  { id: 'negotiator', category: 'negociacion-reglas', catalogId: 'negociador-vinbot', blockId: 'negociador-vinbot', image: '/assets/vinbot/screenshots/04-negociador.png', icon: 'handshake' },
+  { id: 'strategy', category: 'estrategia-negociacion', catalogId: 'estrategia-de-negociacion', blockId: 'estrategia-de-negociacion', image: '/assets/vinbot/screenshots/05-estrategia-negociacion.png', icon: 'sliders-horizontal' },
+  { id: 'inventory', category: 'inventario-actividad', catalogId: 'inventario-y-actividad', blockId: 'inventario-y-actividad', image: '/assets/vinbot/screenshots/06-inventario-demo.png', icon: 'package-search' },
 ];
 
 const copy = {
@@ -65,7 +80,7 @@ const copy = {
     plannerAutomation: '¿Qué nivel de automatización necesitas?',
     automationBasic: 'Herramientas básicas',
     automationSales: 'Automatizar mis ventas',
-    automationExclusive: 'Mensajes por favoritos o promoción avanzada',
+    automationExclusive: 'Mensajes por favoritos o posicionamiento avanzado',
     plannerAction: 'Ver mi recomendación',
     resultEmptyLabel: 'TU CONFIGURACIÓN',
     resultEmptyTitle: 'Encuentra el plan que cubre tus necesidades.',
@@ -108,11 +123,9 @@ const copy = {
         { label: 'Estadísticas de artículos', values: [false, true, true] },
       ] },
       { title: 'Funciones exclusivas y soporte', rows: [
-        { label: 'Gestión multicuenta', values: [false, false, true] },
         { label: 'Tercera cuenta adicional', values: [false, false, '29,99 €/mes'] },
         { label: 'Mensajes automáticos cuando se reciben likes', values: [false, false, 'coming-soon'] },
         { label: 'Posicionamiento de anuncios', values: [false, false, 'coming-soon'] },
-        { label: 'Promoción de anuncios', values: [false, false, 'coming-soon'] },
         { label: 'Soporte', values: ['Email', 'Prioritario', 'Dedicado'] },
       ] },
     ],
@@ -132,7 +145,7 @@ const copy = {
     stepThreeText: 'Vinbot se ocupa de las tareas repetitivas mientras tú preparas pedidos y compras.',
     guidesEyebrow: 'GUÍAS VINBOT',
     guidesTitle: 'Configura Vinbot paso a paso.',
-    guidesDescription: "Explicaciones y capturas paso a paso para configurar cada función. Los videotutoriales se añadirán próximamente.",
+    guidesDescription: 'Explicaciones paso a paso y videotutoriales disponibles para algunas funciones.',
     videoUpcoming: 'Vídeo próximamente',
     guideExpand: 'Ver explicación',
     guideWritten: 'Abrir guía escrita',
@@ -188,11 +201,9 @@ const copy = {
         features: [
           { label: 'Todas las funcionalidades del Pro' },
           { label: '2 cuentas de Vinted incluidas, con todas las funciones del Pro en ambas' },
-          { label: 'Gestión multicuenta' },
           { label: 'Posibilidad de añadir una tercera cuenta por 29,99 €/mes' },
           { label: 'Mensajes automáticos cuando se reciben likes', comingSoon: true },
           { label: 'Posicionamiento de anuncios', comingSoon: true },
-          { label: 'Promoción de anuncios', comingSoon: true },
         ],
       }
     ],
@@ -216,7 +227,7 @@ const copy = {
       ],
       [
         '¿Qué diferencias hay entre los tres planes?',
-        'Básico incluye una cuenta y renovaciones manuales de hasta 150 artículos. Pro añade renovaciones ilimitadas, automatizaciones y creación de títulos y descripciones con IA a partir de imágenes. Enterprise incluye dos cuentas con todas las funciones Pro en ambas y permite añadir una tercera por 29,99 €/mes. Los mensajes automáticos por likes, el posicionamiento y la promoción de anuncios estarán disponibles próximamente.'
+        'Básico incluye una cuenta y renovaciones manuales de hasta 150 artículos. Pro añade renovaciones ilimitadas, automatizaciones y creación de títulos y descripciones con IA a partir de imágenes. Enterprise incluye dos cuentas con todas las funciones Pro en ambas y permite añadir una tercera por 29,99 €/mes. Los mensajes automáticos por likes y el posicionamiento de anuncios estarán disponibles próximamente.'
       ],
       [
         '¿Qué plan permite gestionar varias cuentas?',
@@ -271,7 +282,7 @@ const copy = {
     plannerAutomation: 'Quin nivell d’automatització necessites?',
     automationBasic: 'Eines bàsiques',
     automationSales: 'Automatitzar les vendes',
-    automationExclusive: 'Missatges per likes o promoció avançada',
+    automationExclusive: 'Missatges per likes o posicionament avançat',
     plannerAction: 'Veure la meva recomanació',
     resultEmptyLabel: 'LA TEVA CONFIGURACIÓ',
     resultEmptyTitle: 'Troba el pla que cobreix les teves necessitats.',
@@ -314,11 +325,9 @@ const copy = {
         { label: 'Estadístiques dels articles', values: [false, true, true] },
       ] },
       { title: 'Funcions exclusives i suport', rows: [
-        { label: 'Gestió multicomptes', values: [false, false, true] },
         { label: 'Tercer compte addicional', values: [false, false, '29,99 €/mes'] },
         { label: 'Missatges automàtics quan es reben likes', values: [false, false, 'coming-soon'] },
         { label: 'Posicionament d’anuncis', values: [false, false, 'coming-soon'] },
-        { label: 'Promoció d’anuncis', values: [false, false, 'coming-soon'] },
         { label: 'Suport', values: ['Email', 'Prioritari', 'Dedicat'] },
       ] },
     ],
@@ -338,7 +347,7 @@ const copy = {
     stepThreeText: 'Vinbot s’ocupa de les tasques repetitives mentre tu prepares comandes i compres.',
     guidesEyebrow: 'GUIES VINBOT',
     guidesTitle: 'Configura Vinbot pas a pas.',
-    guidesDescription: "Explicacions i captures pas a pas per configurar cada funció. Els videotutorials s’hi afegiran pròximament.",
+    guidesDescription: 'Explicacions pas a pas i videotutorials disponibles per a algunes funcions.',
     videoUpcoming: 'Vídeo pròximament',
     guideExpand: 'Veure explicació',
     guideWritten: 'Obrir guia escrita',
@@ -394,11 +403,9 @@ const copy = {
         features: [
           { label: 'Totes les funcionalitats del Pro' },
           { label: '2 comptes de Vinted inclosos, amb totes les funcions del Pro en tots dos' },
-          { label: 'Gestió multicomptes' },
           { label: 'Possibilitat d’afegir un tercer compte per 29,99 €/mes' },
           { label: 'Missatges automàtics quan es reben likes', comingSoon: true },
           { label: 'Posicionament d’anuncis', comingSoon: true },
-          { label: 'Promoció d’anuncis', comingSoon: true },
         ],
       }
     ],
@@ -422,7 +429,7 @@ const copy = {
       ],
       [
         'Quines diferències hi ha entre els tres plans?',
-        'Básico inclou un compte i renovacions manuals de fins a 150 articles. Pro afegeix renovacions il·limitades, automatitzacions i creació de títols i descripcions amb IA a partir d’imatges. Enterprise inclou dos comptes amb totes les funcions Pro en tots dos i permet afegir un tercer per 29,99 €/mes. Els missatges automàtics per likes, el posicionament i la promoció d’anuncis arribaran pròximament.'
+        'Básico inclou un compte i renovacions manuals de fins a 150 articles. Pro afegeix renovacions il·limitades, automatitzacions i creació de títols i descripcions amb IA a partir d’imatges. Enterprise inclou dos comptes amb totes les funcions Pro en tots dos i permet afegir un tercer per 29,99 €/mes. Els missatges automàtics per likes i el posicionament d’anuncis arribaran pròximament.'
       ],
       [
         'Quin pla permet gestionar diversos comptes?',
@@ -477,7 +484,7 @@ const copy = {
     plannerAutomation: 'What level of automation do you need?',
     automationBasic: 'Basic tools',
     automationSales: 'Automate my sales',
-    automationExclusive: 'Favourite messages or advanced promotion',
+    automationExclusive: 'Automatic like messages or advanced listing positioning',
     plannerAction: 'See my recommendation',
     resultEmptyLabel: 'YOUR SETUP',
     resultEmptyTitle: 'Find the plan that covers your needs.',
@@ -520,11 +527,9 @@ const copy = {
         { label: 'Item statistics', values: [false, true, true] },
       ] },
       { title: 'Exclusive features and support', rows: [
-        { label: 'Multi-account management', values: [false, false, true] },
         { label: 'Additional third account', values: [false, false, '€29.99/month'] },
         { label: 'Automatic messages when items receive likes', values: [false, false, 'coming-soon'] },
         { label: 'Listing positioning', values: [false, false, 'coming-soon'] },
-        { label: 'Listing promotion', values: [false, false, 'coming-soon'] },
         { label: 'Support', values: ['Email', 'Priority', 'Dedicated'] },
       ] },
     ],
@@ -544,7 +549,7 @@ const copy = {
     stepThreeText: 'Vinbot handles repetitive tasks while you prepare orders and source inventory.',
     guidesEyebrow: 'VINBOT GUIDES',
     guidesTitle: 'Set up Vinbot step by step.',
-    guidesDescription: "Step-by-step explanations and screenshots to set up each feature. Video tutorials are coming soon.",
+    guidesDescription: 'Step-by-step explanations and video tutorials are available for selected features.',
     videoUpcoming: 'Video coming soon',
     guideExpand: 'See explanation',
     guideWritten: 'Open written guide',
@@ -600,11 +605,9 @@ const copy = {
         features: [
           { label: 'All Pro features' },
           { label: '2 Vinted accounts included, with all Pro features on both' },
-          { label: 'Multi-account management' },
           { label: 'Option to add a third account for €29.99/month' },
           { label: 'Automatic messages when items receive likes', comingSoon: true },
           { label: 'Listing positioning', comingSoon: true },
-          { label: 'Listing promotion', comingSoon: true },
         ],
       }
     ],
@@ -628,7 +631,7 @@ const copy = {
       ],
       [
         'What are the differences between the three plans?',
-        'Básico includes one account and manual renewals for up to 150 items. Pro adds unlimited renewals, automation, and AI-generated listing titles and descriptions from images. Enterprise includes two accounts with all Pro features on both and lets you add a third for €29.99/month. Automatic like messages, listing positioning, and listing promotion are coming soon.'
+        'Básico includes one account and manual renewals for up to 150 items. Pro adds unlimited renewals, automation, and AI-generated listing titles and descriptions from images. Enterprise includes two accounts with all Pro features on both and lets you add a third for €29.99/month. Automatic like messages and listing positioning are coming soon.'
       ],
       [
         'Which plan supports multiple accounts?',
@@ -683,7 +686,7 @@ const copy = {
     plannerAutomation: 'Quel niveau d’automatisation vous faut-il ?',
     automationBasic: 'Outils de base',
     automationSales: 'Automatiser mes ventes',
-    automationExclusive: 'Messages pour favoris ou promotion avancée',
+    automationExclusive: 'Messages automatiques pour les likes ou positionnement avancé',
     plannerAction: 'Voir ma recommandation',
     resultEmptyLabel: 'VOTRE CONFIGURATION',
     resultEmptyTitle: 'Trouvez la formule adaptée à vos besoins.',
@@ -726,11 +729,9 @@ const copy = {
         { label: 'Statistiques des articles', values: [false, true, true] },
       ] },
       { title: 'Fonctions exclusives et assistance', rows: [
-        { label: 'Gestion multi-comptes', values: [false, false, true] },
         { label: 'Troisième compte supplémentaire', values: [false, false, '29,99 €/mois'] },
         { label: 'Messages automatiques lors de nouveaux likes', values: [false, false, 'coming-soon'] },
         { label: 'Positionnement des annonces', values: [false, false, 'coming-soon'] },
-        { label: 'Promotion des annonces', values: [false, false, 'coming-soon'] },
         { label: 'Assistance', values: ['E-mail', 'Prioritaire', 'Dédiée'] },
       ] },
     ],
@@ -750,7 +751,7 @@ const copy = {
     stepThreeText: 'Vinbot gère les tâches répétitives pendant que vous préparez les commandes et sourcez des articles.',
     guidesEyebrow: 'GUIDES VINBOT',
     guidesTitle: 'Configurez Vinbot étape par étape.',
-    guidesDescription: "Des explications et captures étape par étape pour configurer chaque fonction. Les tutoriels vidéo seront ajoutés prochainement.",
+    guidesDescription: 'Des explications étape par étape et des tutoriels vidéo sont disponibles pour certaines fonctionnalités.',
     videoUpcoming: 'Vidéo prochainement',
     guideExpand: 'Voir l’explication',
     guideWritten: 'Ouvrir le guide écrit',
@@ -806,11 +807,9 @@ const copy = {
         features: [
           { label: 'Toutes les fonctions Pro' },
           { label: '2 comptes Vinted inclus, avec toutes les fonctions Pro sur les deux comptes' },
-          { label: 'Gestion multi-comptes' },
           { label: 'Possibilité d’ajouter un troisième compte pour 29,99 €/mois' },
           { label: 'Messages automatiques lors de nouveaux likes', comingSoon: true },
           { label: 'Positionnement des annonces', comingSoon: true },
-          { label: 'Promotion des annonces', comingSoon: true },
         ],
       }
     ],
@@ -834,7 +833,7 @@ const copy = {
       ],
       [
         'Quelles sont les différences entre les trois offres ?',
-        'Básico comprend un compte et les renouvellements manuels jusqu’à 150 articles. Pro ajoute les renouvellements illimités, l’automatisation et la création de titres et descriptions par IA à partir d’images. Enterprise inclut deux comptes avec toutes les fonctions Pro sur chacun et permet d’ajouter un troisième compte pour 29,99 €/mois. Les messages automatiques après un like, le positionnement et la promotion des annonces arriveront prochainement.'
+        'Básico comprend un compte et les renouvellements manuels jusqu’à 150 articles. Pro ajoute les renouvellements illimités, l’automatisation et la création de titres et descriptions par IA à partir d’images. Enterprise inclut deux comptes avec toutes les fonctions Pro sur chacun et permet d’ajouter un troisième compte pour 29,99 €/mois. Les messages automatiques après un like et le positionnement des annonces arriveront prochainement.'
       ],
       [
         'Quelle offre permet de gérer plusieurs comptes ?',
@@ -937,16 +936,43 @@ function makeIcon(name) {
 function normaliseItems(landing) {
   const catalogue = Array.isArray(landing.feature_catalog) ? landing.feature_catalog : [];
   const blocks = Array.isArray(landing.feature_blocks) ? landing.feature_blocks : [];
-  return featureProfiles.map((profile, index) => ({
-    ...profile,
-    title: catalogue[index]?.title || '',
-    description: catalogue[index]?.description || '',
-    longDescription: blocks[index]?.text || catalogue[index]?.description || '',
-    points: Array.isArray(blocks[index]?.points) ? blocks[index].points : [],
-    stepScreenshots: Array.isArray(blocks[index]?.step_screenshots) ? blocks[index].step_screenshots : [],
-    closing: blocks[index]?.closing || '',
-    videoUrl: blocks[index]?.video_url || '',
-  }));
+  const items = catalogue.map(entry => {
+    const catalogId = typeof entry.href === 'string' ? entry.href.slice(1) : '';
+    const profile = featureProfiles.find(item => item.catalogId === catalogId);
+    if (!profile) {
+      console.error(`Vinbot has no guide profile for "${catalogId}".`);
+      return null;
+    }
+    const block = blocks.find(item => item.id === profile.blockId);
+    if (!entry || !block) {
+      console.error(`Vinbot feature content is missing for "${profile.id}".`);
+      return {
+        ...profile,
+        title: entry.title || profile.id,
+        description: entry.description || '',
+        longDescription: entry.description || '',
+        points: [],
+        stepScreenshots: [],
+        closing: '',
+        videoUrl: '',
+      };
+    }
+    return {
+      ...profile,
+      title: entry.title,
+      description: entry.description || '',
+      longDescription: block.text || entry.description || '',
+      points: Array.isArray(block.points) ? block.points : [],
+      stepScreenshots: Array.isArray(block.step_screenshots) ? block.step_screenshots : [],
+      closing: block.closing || '',
+      videoUrl: profile.videoUrls?.[activeLocale] || block.video_url_by_locale?.[activeLocale] || block.video_url || '',
+    };
+  });
+  const validItems = items.filter(item => item !== null);
+  if (validItems.length !== featureProfiles.length) {
+    console.error(`Vinbot expected ${featureProfiles.length} guide cards but found ${validItems.length}.`);
+  }
+  return validItems;
 }
 
 function screenshotButton(src, alt, copy) {
@@ -1128,9 +1154,13 @@ function renderHeroOrbit(items) {
   const orbit = document.querySelector('#hero-orbit');
   if (!orbit) return;
 
-  orbit.replaceChildren(...items.map(item => {
+  orbit.replaceChildren(...items.map((item, index) => {
     const feature = document.createElement('div');
     feature.className = 'hero-orbit-feature';
+    feature.dataset.featureId = item.id;
+    const angle = (index / items.length) * Math.PI * 2 - Math.PI / 2;
+    feature.style.left = `${50 + Math.cos(angle) * 47}%`;
+    feature.style.top = `${50 + Math.sin(angle) * 47}%`;
 
     const content = document.createElement('span');
     content.className = 'hero-orbit-content';
@@ -1160,6 +1190,7 @@ function renderGuides(items, pageCopy) {
   grid.replaceChildren(...items.map((item, index) => {
     const detail = document.createElement('details');
     detail.className = 'guide-card';
+    detail.dataset.featureId = item.id;
     detail.id = 'guide-' + item.id;
     detail.tabIndex = -1;
 
@@ -1188,7 +1219,31 @@ function renderGuides(items, pageCopy) {
 
     const screenshot = document.createElement('figure');
     screenshot.className = 'guide-screenshot';
-    screenshot.append(screenshotButton(item.image, item.title, pageCopy));
+    if (item.id === 'event-messages' && item.videoUrl) {
+      let videoUrl;
+      try {
+        const parsedUrl = new URL(item.videoUrl);
+        if (parsedUrl.protocol !== 'https:' || !['www.youtube.com', 'www.youtube-nocookie.com'].includes(parsedUrl.hostname)) {
+          throw new Error('Unsupported video host');
+        }
+        videoUrl = parsedUrl.href;
+      } catch (error) {
+        console.error('Vinbot guide video URL must use a supported HTTPS video host.', error);
+      }
+      if (videoUrl) {
+        const frame = document.createElement('iframe');
+        frame.src = videoUrl;
+        frame.title = `${pageCopy.guideVideo}: ${item.title}`;
+        frame.loading = 'lazy';
+        frame.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        frame.allowFullscreen = true;
+        frame.referrerPolicy = 'strict-origin-when-cross-origin';
+        screenshot.classList.add('guide-video-frame');
+        screenshot.append(frame);
+      }
+    } else {
+      screenshot.append(screenshotButton(item.image, item.title, pageCopy));
+    }
     body.append(screenshot);
 
     if (item.points.length) {
@@ -1218,11 +1273,11 @@ function renderGuides(items, pageCopy) {
       body.append(tip);
     }
 
-    body.append(createGuideVideo(item, pageCopy));
+    if (item.id !== 'event-messages') body.append(createGuideVideo(item, pageCopy));
 
     const link = document.createElement('a');
     link.className = 'guide-link';
-    link.href = guideUrl(item.category);
+    link.href = guideUrl(item.article || item.category);
     link.append(document.createTextNode(pageCopy.guideWritten + ' '), makeIcon('arrow-up-right'));
     body.append(link);
 

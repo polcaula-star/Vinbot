@@ -1,11 +1,12 @@
 {
   "interface": {
     "es": {
-      "page_title": "Guía Vinbot | Centro de ayuda",
+      "page_title": "Guías de Vinbot | Configura tu operativa en Vinted",
       "guide_label": "Guía",
       "language_switch": "Cambiar idioma",
       "home_label": "Inicio",
       "access_label": "Solicitar acceso anticipado",
+      "mobile_cta": "Empieza con Vinbot",
       "category_heading": "Categorías",
       "category_select": "Seleccionar categoría",
       "articles_heading": "Guías publicadas",
@@ -21,6 +22,8 @@
       "updated_label": "Actualizado",
       "reading_time_suffix": "min de lectura",
       "video_heading": "Videotutorial",
+      "video_accessible_title": "Reproductor del videotutorial",
+      "video_youtube_link": "Ver en YouTube",
       "video_upcoming": "Videotutorial próximamente",
       "zoom_screenshot": "Ampliar captura",
       "close_screenshot": "Cerrar captura",
@@ -34,11 +37,12 @@
       "legal_notice": "Vinbot es un servicio independiente y no está afiliado, asociado ni respaldado por Vinted."
     },
     "ca": {
-      "page_title": "Guia Vinbot | Centre d’ajuda",
+      "page_title": "Guies de Vinbot | Configura la teva operativa a Vinted",
       "guide_label": "Guia",
       "language_switch": "Canviar idioma",
       "home_label": "Inici",
       "access_label": "Sol·licitar accés anticipat",
+      "mobile_cta": "Comença amb Vinbot",
       "category_heading": "Categories",
       "category_select": "Selecciona una categoria",
       "articles_heading": "Guies publicades",
@@ -54,6 +58,8 @@
       "updated_label": "Actualitzat",
       "reading_time_suffix": "min de lectura",
       "video_heading": "Videotutorial",
+      "video_accessible_title": "Reproductor del videotutorial",
+      "video_youtube_link": "Veure a YouTube",
       "video_upcoming": "Videotutorial pròximament",
       "zoom_screenshot": "Ampliar captura",
       "close_screenshot": "Tancar captura",
@@ -67,11 +73,12 @@
       "legal_notice": "Vinbot és un servei independent i no està afiliat, associat ni avalat per Vinted."
     },
     "en": {
-      "page_title": "Vinbot Guide | Help centre",
+      "page_title": "Vinbot Guides | Set up your Vinted workflow",
       "guide_label": "Guide",
       "language_switch": "Change language",
       "home_label": "Home",
       "access_label": "Request early access",
+      "mobile_cta": "Get started with Vinbot",
       "category_heading": "Categories",
       "category_select": "Choose a category",
       "articles_heading": "Published guides",
@@ -87,6 +94,8 @@
       "updated_label": "Updated",
       "reading_time_suffix": "min read",
       "video_heading": "Video tutorial",
+      "video_accessible_title": "Video tutorial player",
+      "video_youtube_link": "Watch on YouTube",
       "video_upcoming": "Video tutorial coming soon",
       "zoom_screenshot": "Enlarge screenshot",
       "close_screenshot": "Close screenshot",
@@ -100,11 +109,12 @@
       "legal_notice": "Vinbot is an independent service and is not affiliated with, associated with or endorsed by Vinted."
     },
     "fr": {
-      "page_title": "Guide Vinbot | Centre d’aide",
+      "page_title": "Guides Vinbot | Configurez votre activité sur Vinted",
       "guide_label": "Guide",
       "language_switch": "Changer de langue",
       "home_label": "Accueil",
       "access_label": "Demander un accès anticipé",
+      "mobile_cta": "Commencer avec Vinbot",
       "category_heading": "Catégories",
       "category_select": "Choisir une catégorie",
       "articles_heading": "Guides publiés",
@@ -120,6 +130,8 @@
       "updated_label": "Mis à jour",
       "reading_time_suffix": "min de lecture",
       "video_heading": "Tutoriel vidéo",
+      "video_accessible_title": "Lecteur du tutoriel vidéo",
+      "video_youtube_link": "Voir sur YouTube",
       "video_upcoming": "Tutoriel vidéo prochainement",
       "zoom_screenshot": "Agrandir la capture",
       "close_screenshot": "Fermer la capture",
@@ -135,28 +147,28 @@
   },
   "home": {
     "es": {
-        "page_title": "Guía Vinbot | Centro de ayuda",
+        "page_title": "Guías de Vinbot | Configura tu operativa en Vinted",
     "eyebrow": "GUÍAS VINBOT",
     "title": "Aprende a sacar más partido a cada función.",
-    "description": "Encuentra guías claras para configurar, revisar y adaptar Vinbot a tu forma de trabajar."
+    "description": "Consulta las guías de Vinbot para configurar publicaciones, renovaciones, mensajes automáticos y negociaciones en tu cuenta de Vinted."
     },
     "ca": {
-        "page_title": "Guia Vinbot | Centre d’ajuda",
+        "page_title": "Guies de Vinbot | Configura la teva operativa a Vinted",
       "eyebrow": "GUIES VINBOT",
       "title": "Aprèn a treure més partit de cada funció.",
-      "description": "Troba guies clares per configurar, revisar i adaptar Vinbot a la teva manera de treballar."
+      "description": "Consulta les guies de Vinbot per configurar publicacions, renovacions, missatges automàtics i negociacions al teu compte de Vinted."
     },
     "en": {
-        "page_title": "Vinbot Guide | Help centre",
+        "page_title": "Vinbot Guides | Set up your Vinted workflow",
       "eyebrow": "VINBOT GUIDES",
       "title": "Get more from every feature.",
-      "description": "Find clear guides to configure, review and adapt Vinbot to the way you work."
+      "description": "Use Vinbot guides to configure listings, renewals, automatic messages and negotiations in your Vinted account."
     },
     "fr": {
-        "page_title": "Guide Vinbot | Centre d’aide",
+        "page_title": "Guides Vinbot | Configurez votre activité sur Vinted",
       "eyebrow": "GUIDES VINBOT",
       "title": "Tirez le meilleur parti de chaque fonctionnalité.",
-      "description": "Trouvez des guides clairs pour configurer, vérifier et adapter Vinbot à votre manière de travailler."
+      "description": "Consultez les guides Vinbot pour configurer les annonces, renouvellements, messages automatiques et négociations dans votre compte Vinted."
     }
   },
   "categories": [
@@ -181,13 +193,23 @@
       }
     },
     {
+      "id": "mensajes-automaticos",
+      "icon": "messages-square",
+      "locales": {
+        "es": { "title": "Mensajes automáticos", "description": "Mantén informados a tus compradores en cada etapa de la compra con avisos que puedes activar y personalizar." },
+        "ca": { "title": "Missatges automàtics", "description": "Mantén els compradors informats en cada etapa de la compra amb avisos que pots activar i personalitzar." },
+        "en": { "title": "Automatic messages", "description": "Keep buyers informed at every stage of the purchase with updates you can activate and personalise." },
+        "fr": { "title": "Messages automatiques", "description": "Tenez les acheteurs informés à chaque étape de l’achat grâce à des messages que vous pouvez activer et personnaliser." }
+      }
+    },
+    {
       "id": "respuestas-likes",
       "icon": "message-circle",
       "locales": {
-        "es": { "title": "Respuestas a likes", "description": "Configura respuestas para atender el interés con más rapidez." },
-        "ca": { "title": "Respostes a likes", "description": "Configura respostes per atendre l’interès amb més rapidesa." },
-        "en": { "title": "Replies to likes", "description": "Set up replies to respond to interest more quickly." },
-        "fr": { "title": "Réponses aux likes", "description": "Configurez des réponses pour traiter l’intérêt plus rapidement." }
+        "es": { "title": "Mensajes automáticos por likes — Próximamente", "description": "La automatización de mensajes al recibir likes estará disponible próximamente." },
+        "ca": { "title": "Missatges automàtics per likes — Properament", "description": "L’automatització de missatges quan reps likes estarà disponible properament." },
+        "en": { "title": "Automatic messages for likes — Coming soon", "description": "Automatic messages when likes are received will be available soon." },
+        "fr": { "title": "Messages automatiques pour les likes — Bientôt", "description": "L’automatisation des messages lors de la réception de likes sera bientôt disponible." }
       }
     },
     {
@@ -226,6 +248,7 @@
     "category": "",
     "status": "draft",
     "video_url": "",
+    "video_url_by_locale": { "es": "", "ca": "", "en": "", "fr": "" },
     "date": null,
     "reading_time_minutes": null,
     "image_by_locale": { "es": "", "ca": "", "en": "", "fr": "" },
@@ -252,7 +275,7 @@
             { "title": "Accede a Vinbot", "body": "Entra en tu panel para tener una visión ordenada de tu operativa." },
             { "title": "Añade la información esencial de un artículo", "body": "Sube las fotografías y completa los datos básicos que necesitas para preparar una publicación." },
             { "title": "Revisa el borrador", "body": "Vinbot puede ayudarte a estructurar el título y la descripción. Antes de la primera publicación, tú revisas y decides el resultado." },
-            { "title": "Configura solo las herramientas que necesitas", "body": "Puedes organizar renovaciones, respuestas a likes y reglas de negociación según tu forma de vender." },
+            { "title": "Configura solo las herramientas que necesitas", "body": "Puedes organizar renovaciones y reglas de negociación según tu forma de vender. Los mensajes automáticos por likes estarán disponibles próximamente." },
             { "title": "Consulta la actividad desde tu panel", "body": "Revisa inventario, artículos activos, borradores y tareas pendientes desde una misma operativa." }
           ],
           "cta_title": "¿Quieres verlo en tu propia operativa?"
@@ -265,7 +288,7 @@
             { "title": "Accedeix a Vinbot", "body": "Entra al teu tauler per tenir una visió ordenada de la teva operativa." },
             { "title": "Afegeix la informació essencial d’un article", "body": "Puja les fotografies i completa les dades bàsiques que necessites per preparar una publicació." },
             { "title": "Revisa l’esborrany", "body": "Vinbot et pot ajudar a estructurar el títol i la descripció. Abans de la primera publicació, tu revises i decideixes el resultat." },
-            { "title": "Configura només les eines que necessites", "body": "Pots organitzar renovacions, respostes a likes i regles de negociació segons la teva manera de vendre." },
+            { "title": "Configura només les eines que necessites", "body": "Pots organitzar renovacions i regles de negociació segons la teva manera de vendre. Els missatges automàtics per likes estaran disponibles properament." },
             { "title": "Consulta l’activitat des del teu tauler", "body": "Revisa l’inventari, els articles actius, els esborranys i les tasques pendents des d’una mateixa operativa." }
           ],
           "cta_title": "Vols veure-ho en la teva pròpia operativa?"
@@ -278,7 +301,7 @@
             { "title": "Sign in to Vinbot", "body": "Open your dashboard for an organised view of your workflow." },
             { "title": "Add the essential details for an item", "body": "Upload photos and complete the basic details you need to prepare a listing." },
             { "title": "Review the draft", "body": "Vinbot can help structure the title and description. You review the result and decide what to publish." },
-            { "title": "Set up only the tools you need", "body": "Organise renewals, replies to likes and negotiation rules to match the way you sell." },
+            { "title": "Set up only the tools you need", "body": "Organise renewals and negotiation rules to match the way you sell. Automatic messages for likes will be available soon." },
             { "title": "Check activity from your dashboard", "body": "Review inventory, active items, drafts and pending tasks in one workflow." }
           ],
           "cta_title": "Want to see it in your own workflow?"
@@ -291,10 +314,81 @@
             { "title": "Accédez à Vinbot", "body": "Ouvrez votre tableau de bord pour avoir une vue organisée de votre activité." },
             { "title": "Ajoutez les informations essentielles d’un article", "body": "Ajoutez les photos et renseignez les informations de base nécessaires à la préparation d’une annonce." },
             { "title": "Vérifiez le brouillon", "body": "Vinbot peut vous aider à structurer le titre et la description. Vous vérifiez le résultat et décidez quoi publier." },
-            { "title": "Configurez uniquement les outils dont vous avez besoin", "body": "Organisez les renouvellements, les réponses aux likes et les règles de négociation selon votre manière de vendre." },
+            { "title": "Configurez uniquement les outils dont vous avez besoin", "body": "Organisez les renouvellements et les règles de négociation selon votre manière de vendre. Les messages automatiques pour les likes seront bientôt disponibles." },
             { "title": "Consultez l’activité depuis votre tableau de bord", "body": "Vérifiez l’inventaire, les articles actifs, les brouillons et les tâches en attente dans une même activité." }
           ],
           "cta_title": "Envie de le voir dans votre propre activité ?"
+        }
+      }
+    },
+    {
+      "slug": "mensajes-automaticos-eventos",
+      "category": "mensajes-automaticos",
+      "status": "published",
+      "video_url": "",
+      "video_url_by_locale": {
+        "ca": "https://www.youtube.com/embed/0oXR1CP4OYM",
+        "es": "https://www.youtube.com/embed/LD0AIUaJuF4",
+        "en": "https://www.youtube.com/embed/ylNBS9wyrvY",
+        "fr": "https://www.youtube.com/embed/brTk0nd6UXs"
+      },
+      "related": [],
+      "locales": {
+        "es": {
+          "title": "Configurar mensajes automáticos de eventos",
+          "summary": "Mantén informados a tus compradores con mensajes automáticos en cada etapa de la compra. Activa los avisos que necesites y personaliza los textos con tu propio estilo.",
+          "introduction": "Los mensajes de evento te permiten mantener informados a tus compradores durante la compra y después de ella. Elige qué avisos enviar y adapta cada texto a la voz de tu tienda.",
+          "steps": [
+            { "title": "Accede a Mensajes de evento", "body": "En Vinbot, abre Configuración y entra en el apartado Mensajes de evento para ver los avisos disponibles." },
+            { "title": "Activa los mensajes que quieras enviar", "body": "Marca la casilla de cada aviso que quieras activar. Puedes habilitar solo los mensajes que encajen con tu forma de gestionar los pedidos." },
+            { "title": "Personaliza el texto", "body": "Pulsa el icono del lápiz junto al mensaje que quieras editar, escribe el texto con tu propio estilo y guarda los cambios." },
+            { "title": "Elige los avisos para cada etapa", "body": "Configura los mensajes de compra y envío; reservas y retrasos; incidencias de pedidos; devoluciones y reembolsos; ofertas; y valoraciones." },
+            { "title": "Revisa el resumen de mensajes activados", "body": "Comprueba el resumen para confirmar qué avisos están activos y revisar los textos que recibirán tus compradores." },
+            { "title": "Vuelve a modificarlos cuando lo necesites", "body": "Regresa a Mensajes de evento para cambiar los textos o activar y desactivar avisos cuando cambie tu operativa." }
+          ],
+          "cta_title": "¿Quieres mantener informados a tus compradores?"
+        },
+        "ca": {
+          "title": "Configurar missatges automàtics d’esdeveniments",
+          "summary": "Mantén els teus compradors informats amb missatges automàtics en cada etapa de la compra. Activa els avisos que necessitis i personalitza els textos amb el teu estil.",
+          "introduction": "Els missatges d’esdeveniment et permeten mantenir els compradors informats durant la compra i després. Tria quins avisos vols enviar i adapta cada text a la veu de la teva botiga.",
+          "steps": [
+            { "title": "Accedeix a Missatges d’esdeveniment", "body": "A Vinbot, obre Configuració i entra a l’apartat Missatges d’esdeveniment per veure els avisos disponibles." },
+            { "title": "Activa els missatges que vulguis enviar", "body": "Marca la casella de cada avís que vulguis activar. Pots habilitar només els missatges que s’adaptin a la teva manera de gestionar les comandes." },
+            { "title": "Personalitza el text", "body": "Prem la icona del llapis al costat del missatge que vulguis editar, escriu el text amb el teu estil i desa els canvis." },
+            { "title": "Tria els avisos per a cada etapa", "body": "Configura els missatges de compra i enviament; reserves i retards; incidències de comandes; devolucions i reemborsaments; ofertes, i valoracions." },
+            { "title": "Revisa el resum dels missatges activats", "body": "Comprova el resum per confirmar quins avisos estan actius i revisar els textos que rebran els compradors." },
+            { "title": "Torna a modificar-los quan calgui", "body": "Torna a Missatges d’esdeveniment per canviar els textos o activar i desactivar avisos quan canviï la teva operativa." }
+          ],
+          "cta_title": "Vols mantenir els compradors informats?"
+        },
+        "en": {
+          "title": "Set up automatic event messages",
+          "summary": "Keep buyers informed with automatic messages at every stage of the purchase. Activate the updates you need and customise the wording in your own style.",
+          "introduction": "Event messages keep buyers informed during and after a purchase. Choose which updates to send and tailor each message to your shop’s voice.",
+          "steps": [
+            { "title": "Open Event messages", "body": "In Vinbot, open Settings and go to Event messages to see the available updates." },
+            { "title": "Activate the messages you want to send", "body": "Tick the checkbox next to each update you want to enable. You can activate only the messages that suit the way you manage orders." },
+            { "title": "Customise the wording", "body": "Click the pencil icon next to the message you want to edit, write it in your own style and save your changes." },
+            { "title": "Choose updates for each stage", "body": "Configure messages for purchases and shipping; reservations and delays; order issues; returns and refunds; offers; and ratings." },
+            { "title": "Review the active-message summary", "body": "Check the summary to confirm which updates are active and review the messages your buyers will receive." },
+            { "title": "Edit them again whenever needed", "body": "Return to Event messages to update the wording or turn notifications on and off as your workflow changes." }
+          ],
+          "cta_title": "Want to keep your buyers informed?"
+        },
+        "fr": {
+          "title": "Configurer les messages automatiques d’événement",
+          "summary": "Tenez vos acheteurs informés à chaque étape de l’achat grâce à des messages automatiques. Activez les notifications utiles et personnalisez les textes à votre façon.",
+          "introduction": "Les messages d’événement tiennent vos acheteurs informés pendant et après l’achat. Choisissez les notifications à envoyer et adaptez chaque texte au ton de votre boutique.",
+          "steps": [
+            { "title": "Accédez aux messages d’événement", "body": "Dans Vinbot, ouvrez les Paramètres et accédez à la rubrique Messages d’événement pour voir les notifications disponibles." },
+            { "title": "Activez les messages à envoyer", "body": "Cochez la case de chaque notification que vous souhaitez activer. Vous pouvez choisir uniquement les messages adaptés à votre gestion des commandes." },
+            { "title": "Personnalisez le texte", "body": "Cliquez sur l’icône du crayon à côté du message à modifier, rédigez-le à votre façon et enregistrez vos changements." },
+            { "title": "Choisissez les notifications pour chaque étape", "body": "Configurez les messages d’achat et d’expédition ; de réservation et de retard ; de problème de commande ; de retour et de remboursement ; d’offre ; et d’évaluation." },
+            { "title": "Vérifiez le récapitulatif des messages activés", "body": "Consultez le récapitulatif pour confirmer les notifications actives et relire les textes que vos acheteurs recevront." },
+            { "title": "Modifiez-les à nouveau si nécessaire", "body": "Revenez aux Messages d’événement pour modifier les textes ou activer et désactiver les notifications selon l’évolution de votre activité." }
+          ],
+          "cta_title": "Envie de tenir vos acheteurs informés ?"
         }
       }
     },

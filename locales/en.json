@@ -73,6 +73,7 @@
     "nodes": [
       { "icon": "sparkles", "label": "AI drafts" },
       { "icon": "refresh-cw", "label": "Renewals" },
+      { "icon": "messages-square", "label": "Automatic messages" },
       { "icon": "message-circle", "label": "Likes replies · Coming soon" },
       { "icon": "handshake", "label": "Negotiation" },
       { "icon": "package-search", "label": "Inventory" },
@@ -87,6 +88,7 @@
   "quick_features": [
     { "tag": "AI", "title": "AI draft generation", "description": "Prepare titles and descriptions for review before publishing." },
     { "tag": "VISIBILITY", "title": "Item renewals", "description": "Keep your listings active with a strategy you control." },
+    { "tag": "MESSAGES", "title": "Automatic messages", "description": "Keep buyers informed at every stage of the purchase with customisable updates." },
     { "tag": "COMING SOON", "title": "Automatic messages for likes", "description": "This feature will be available soon." },
     { "tag": "RULES", "title": "Rule-based negotiation", "description": "Define margins and conditions before automating each negotiation." },
     { "tag": "STRATEGY", "title": "Negotiation strategy", "description": "Adjust the behavior of each automation to fit how you sell." }
@@ -108,17 +110,18 @@
   ],
   "features_section": {
     "eyebrow": "VINBOT FEATURES",
-    "title": "Five tools for a more organised operation",
+    "title": "Tools for a more organised operation",
     "description": "Explore the tools you can activate and adapt to your workflow."
   },
   "feature_story": {
     "eyebrow": "VINBOT TOOLS",
     "title": "Your Vinted workflow, step by step and in one place",
-    "intro": "Vinbot helps you prepare listings, keep items active, respond to interest and negotiate according to the rules you define. You decide what to activate and when."
+    "intro": "Vinbot helps you prepare listings, keep items active, send messages at every stage of a purchase and negotiate according to the rules you define. You decide what to activate and when."
   },
   "feature_catalog": [
     { "tag": "AI", "title": "AI drafts", "description": "Prepare titles and descriptions before publishing.", "href": "#borradores-con-ia" },
     { "tag": "AUTOMATION", "title": "Item renewals", "description": "Keep your listings active with a routine you define.", "href": "#renovaciones" },
+    { "tag": "MESSAGES", "title": "Automatic messages", "description": "Keep buyers informed at every stage of the purchase with personalised messages.", "href": "#mensajes-automaticos" },
     { "tag": "COMING SOON", "title": "Automatic messages for likes", "description": "This feature will be available soon.", "href": "#respuestas-a-likes" },
     { "tag": "NEGOTIATION", "title": "Rule-based negotiation", "description": "Negotiate offers within the margins and conditions you define.", "href": "#negociador-vinbot" },
     { "tag": "STRATEGY", "title": "Negotiation strategy", "description": "Define how you want to negotiate before automating it.", "href": "#estrategia-de-negociacion" },
@@ -127,6 +130,7 @@
   "feature_blocks": [
     {"id":"borradores-con-ia","tag":"LISTING WITH AI","title":"Prepare each listing with a clearer base before publishing","text":"Upload product photos and add the essential details such as brand, size, measurements or price. Vinbot helps turn that information into a cleaner draft so you can review it before the first listing goes live.","points":["Open AI drafts and prepare an item using its real photos and details: brand, size, measurements and price.","In settings, fill in Store name if you want its hashtags included; leave it blank to use only item hashtags.","Fill in About your business if you want the AI to use that information in descriptions and keywords; review and edit the draft before publishing."],"closing":"Replace the example values with your shop details or leave optional fields blank. Always review generated text before publishing.","cta":"Request early access","image":"/assets/DRAFTS%20IA.png","image_alt":"AI-assisted listing drafts","side":"left"},
     {"id":"renovaciones","tag":"AUTOMATION","title":"Keep your items active without relying on daily memory","text":"When you manage many listings, renewing items manually ends up taking a huge share of the day. Vinbot lets you define a renewal routine so this repetitive task stays organised.","points":["Open Settings > Preferences and locate Item auto-renewal.","Turn on Enable auto-renewal and choose a frequency: daily, every 2 or 3 days, weekly, fortnightly, monthly or manual.","Set the daily limit per account and enable the accounts to include under Accounts to renew.","Search or filter the products and select the ones to renew; Select all and None apply to the item selection."],"closing":"Only selected items from enabled accounts are renewed. The daily limit applies per account; choose a cautious frequency and limit.","cta":"Request early access","image":"/assets/RENEWAL%20IA.png","image_alt":"Article renewal workflow in Vinbot","side":"right"},
+    {"id":"mensajes-automaticos","tag":"MESSAGES","title":"Keep buyers informed at every stage of the purchase","text":"Activate updates for purchase events and customise each message in your own style. You choose which communications to send and can review or adjust the setup whenever needed.","points":["Open Settings and go to Event messages.","Tick the checkbox next to each update you want to activate.","Click the pencil icon next to a message to customise its wording, then save your changes.","Configure messages for purchases and shipping, reservations and delays, order issues, returns and refunds, offers, and ratings.","Review the active-message summary and confirm the wording buyers will receive.","Return to the section whenever you need to edit a message or switch an update on or off."],"closing":"Activate only the messages that suit the way you manage orders. Messages triggered by likes are a separate feature and are coming soon.","cta":"Request early access","image":"/assets/vinbot/mascota/vinbot-missatges.png","image_alt":"Vinbot mascot for the automatic messages guide","side":"left"},
     {"id":"respuestas-a-likes","tag":"COMING SOON","title":"Automatic messages when likes are received","text":"Automatic messages when likes are received will be available soon. This feature cannot be enabled yet.","points":[],"closing":"Coming soon","cta":"Request early access","image":"/assets/LIKES%20IA.png","image_alt":"Preview of automatic messages for likes","side":"left"},
     {"id":"negociador-vinbot","tag":"NEGOTIATION","title":"Negotiate by your rules, not by random discounts","text":"Each item has a margin and every seller has a different way of negotiating. Vinbot helps apply a coherent logic to offers and conversations, based on the limits you have defined.","points":["Open Negotiator bot and review today’s negotiations, average discount and pending replies.","Use Master bot control to enable or disable all of its features at once.","Set Conversational replies and Negotiation bot separately, depending on whether you want product questions answered or offers negotiated.","Review activity for new conversations and negotiations."],"closing":"Configuration changes take effect immediately for new conversations and negotiations.","cta":"Request early access","image":"/assets/NEGITIATION%20IA.png","image_alt":"Vinbot negotiation bot","side":"right"},
     {"id":"estrategia-de-negociacion","tag":"SETTINGS","title":"Decide how you want to negotiate before the conversation begins","text":"Automation only makes sense when it reflects how you sell. This section lets you define a negotiation strategy before activating it: how much margin you want to keep, which discounts you consider, and how Vinbot should behave in each case.","points":["Open Negotiation strategy and enable Starting point strategy if you want the first counteroffer to apply a discount.","Adjust the initial discount with the visible control and choose Conservative, Moderate or Aggressive.","Set the number of negotiation rounds and the maximum discount limits in percent and euros.","Enable Send a message with each offer only if you also want the bot to message the buyer when it sends an offer."],"closing":"Set the limits first: when you configure both a percentage and a euro maximum, the more restrictive limit applies. Changes affect new negotiations.","cta":"Request early access","image":"/assets/STATS%20NEGOTIATION.png","image_alt":"Vinbot negotiation strategy settings","side":"left"},
@@ -135,6 +139,7 @@
   "features": [
     { "category": "LISTINGS", "title": "Create stronger listings, without starting from zero.", "description": "Generate titles and descriptions with AI from each item’s details. Review, adjust and leave every draft ready before publishing.", "image": "/assets/DRAFTS%20IA.png", "image_alt": "AI-assisted listing draft settings" },
     { "category": "VISIBILITY", "title": "Keep your catalogue moving.", "description": "Set up item renewals to maintain activity in your wardrobe without reviewing every listing one by one.", "image": "/assets/RENEWAL%20IA.png", "image_alt": "Automatic item renewal settings" },
+    { "category": "MESSAGES", "title": "Keep buyers informed at every stage of the purchase.", "description": "Activate event updates and customise messages for purchases, shipping, reservations, issues, returns, offers and ratings.", "image": "/assets/vinbot/mascota/vinbot-missatges.png", "image_alt": "Vinbot automatic messages keep buyers informed" },
     { "category": "NEGOTIATION", "title": "Reply with a strategy, not in a rush.", "description": "The negotiation bot responds according to the conditions you set for your account and helps keep commercial conversations consistent.", "image": "/assets/NEGITIATION%20IA.png", "image_alt": "Negotiation bot settings" },
     { "category": "CONTROL", "title": "Decide how far you want to negotiate.", "description": "Set margins, discounts and rules so every conversation respects the way you want to sell.", "image": "/assets/STATS%20NEGOTIATION.png", "image_alt": "Negotiation limits and strategy settings" },
     { "category": "COMING SOON", "title": "Automatic messages for likes — Coming soon", "description": "Automatic messages when likes are received will be available soon.", "image": "/assets/LIKES%20IA.png", "image_alt": "Preview of automatic messages for likes" }
@@ -162,7 +167,7 @@
     "title": "Clear answers about Vinbot."
   },
   "faq": [
-    { "question": "What can Vinbot do?", "answer": "Vinbot brings together tools to prepare listings, keep your items active, respond to buyer interest and configure automations according to how you sell." },
+    { "question": "What can Vinbot do?", "answer": "Vinbot brings together tools to prepare listings, keep your items active, keep buyers informed at every stage of a purchase and configure automations according to how you sell." },
     { "question": "Do I need to enable every feature?", "answer": "No. You can activate only the tools that fit your workflow and leave the rest off until you are ready to try them." },
     { "question": "Can I review the setup before activating it?", "answer": "Yes. Vinbot is designed so you can define rules, margins and messages before activating any automation." },
     { "question": "Is Vinbot affiliated with Vinted?", "answer": "No. Vinbot is an independent service and is not affiliated with, associated with or endorsed by Vinted." },
