@@ -1908,3 +1908,46 @@ h1::first-line { color: #0d2b51; }
 
 /* Keep the hero headline balanced across desktop and mobile. */
 .hero-copy h1 { font-size: clamp(2.25rem, 4.2vw, 3.5rem); line-height: 1.1; letter-spacing: -0.045em; text-wrap: balance; }
+
+/* Black Friday 2026: present the original price and the promotional rate. */
+.black-friday-hero,
+.hero-new-features {
+  margin: 12px 0 0;
+  padding: 12px 15px;
+  border-radius: 13px;
+  background: #e7f2ff;
+  color: #164b80;
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 700;
+}
+.black-friday-hero {
+  background: #173f79;
+  color: #fff;
+}
+.hero-new-features { font-weight: 600; }
+.black-friday-offer {
+  margin: 20px auto 22px;
+  max-width: 810px;
+  padding: 13px 19px;
+  border: 1px solid #b5d6ff;
+  border-radius: 15px;
+  background: #e7f2ff;
+  color: #134675;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 750;
+}
+.pricing-badge--black-friday {
+  background: #173f79;
+  color: #fff;
+}
+.pricing-original-price {
+  display: block;
+  margin: 0 0 2px;
+  color: #8192a5;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: line-through;
+}
