@@ -71,13 +71,38 @@
     "description": "Prepara publicacions, mantén el catàleg actiu i revisa l’activitat des d’un mateix entorn. Tu decideixes què activar i les regles que ha de seguir cada funció.",
     "diagram_label": "Funcions de Vinbot connectades al voltant d’un centre de control",
     "nodes": [
-      { "icon": "sparkles", "label": "Esborranys amb IA" },
-      { "icon": "refresh-cw", "label": "Renovacions" },
-      { "icon": "messages-square", "label": "Missatges automàtics" },
-      { "icon": "message-circle", "label": "Respostes a likes · Properament" },
-      { "icon": "handshake", "label": "Negociació" },
-      { "icon": "package-search", "label": "Inventari" },
-      { "icon": "activity", "label": "Activitat" }
+      {
+        "icon": "sparkles",
+        "label": "Esborranys amb IA"
+      },
+      {
+        "icon": "refresh-cw",
+        "label": "Renovacions"
+      },
+      {
+        "icon": "messages-square",
+        "label": "Missatges automàtics"
+      },
+      {
+        "icon": "message-circle",
+        "label": "Respostes a likes · Properament"
+      },
+      {
+        "icon": "handshake",
+        "label": "Negociació"
+      },
+      {
+        "icon": "package-search",
+        "label": "Inventari"
+      },
+      {
+        "icon": "activity",
+        "label": "Activitat"
+      },
+      {
+        "icon": "boxes",
+        "label": "Lots i rendibilitat"
+      }
     ]
   },
   "quick_catalog": {
@@ -86,12 +111,41 @@
     "description": "Explora les eines que pots activar i adaptar a la teva operativa."
   },
   "quick_features": [
-    { "tag": "IA", "title": "Esborranys amb IA", "description": "Prepara títols i descripcions per revisar abans de publicar." },
-    { "tag": "VISIBILITAT", "title": "Renovació d’articles", "description": "Mantén els teus anuncis actius amb una estratègia definida per tu." },
-    { "tag": "MISSATGES", "title": "Missatges automàtics", "description": "Informa els compradors en cada etapa de la compra amb avisos personalitzables." },
-    { "tag": "PROPERAMENT", "title": "Missatges automàtics per likes", "description": "Aquesta funció estarà disponible properament." },
-    { "tag": "REGLES", "title": "Negociació amb regles", "description": "Defineix marges i condicions abans d’automatitzar cada negociació." },
-    { "tag": "ESTRATÈGIA", "title": "Estratègia de negociació", "description": "Ajusta el comportament de cada automatització a la teva manera de vendre." }
+    {
+      "tag": "IA",
+      "title": "Esborranys amb IA",
+      "description": "Prepara títols i descripcions per revisar abans de publicar."
+    },
+    {
+      "tag": "VISIBILITAT",
+      "title": "Renovació d’articles",
+      "description": "Mantén els teus anuncis actius amb una estratègia definida per tu."
+    },
+    {
+      "tag": "MISSATGES",
+      "title": "Missatges automàtics",
+      "description": "Informa els compradors en cada etapa de la compra amb avisos personalitzables."
+    },
+    {
+      "tag": "PROPERAMENT",
+      "title": "Missatges automàtics per likes",
+      "description": "Aquesta funció estarà disponible properament."
+    },
+    {
+      "tag": "REGLES",
+      "title": "Negociació amb regles",
+      "description": "Defineix marges i condicions abans d’automatitzar cada negociació."
+    },
+    {
+      "tag": "ESTRATÈGIA",
+      "title": "Estratègia de negociació",
+      "description": "Ajusta el comportament de cada automatització a la teva manera de vendre."
+    },
+    {
+      "tag": "LOTES",
+      "title": "Editor de lots per revisar la rendibilitat de totes les compres",
+      "description": "Edita els lots de compra i comprova la rendibilitat de les adquisicions."
+    }
   ],
   "how_section": {
     "eyebrow": "COM FUNCIONA",
@@ -99,14 +153,38 @@
     "description": ""
   },
   "steps": [
-    { "icon": "layers-2", "title": "Organitza la teva operativa", "description": "Accedeix a Vinbot i treballa des d’un entorn preparat per al teu catàleg i els teus comptes." },
-    { "icon": "list-checks", "title": "Marca les teves regles", "description": "Decideix quines automatitzacions activar, quan actuar i quins límits ha de respectar cadascuna." },
-    { "icon": "scan-eye", "title": "Supervisa-ho des d’un sol lloc", "description": "Revisa l’activitat, ajusta l’estratègia i mantén el control sense tornar a fer les mateixes tasques." }
+    {
+      "icon": "layers-2",
+      "title": "Organitza la teva operativa",
+      "description": "Accedeix a Vinbot i treballa des d’un entorn preparat per al teu catàleg i els teus comptes."
+    },
+    {
+      "icon": "list-checks",
+      "title": "Marca les teves regles",
+      "description": "Decideix quines automatitzacions activar, quan actuar i quins límits ha de respectar cadascuna."
+    },
+    {
+      "icon": "scan-eye",
+      "title": "Supervisa-ho des d’un sol lloc",
+      "description": "Revisa l’activitat, ajusta l’estratègia i mantén el control sense tornar a fer les mateixes tasques."
+    }
   ],
   "benefits": [
-    { "icon": "sparkles", "title": "Publica amb coherència", "description": "Comença cada anunci amb una bona base i evita redactar sempre des de zero." },
-    { "icon": "eye", "title": "Mantén els articles visibles", "description": "Evita que les peces quedin oblidades mentre compres, prepares o envies comandes." },
-    { "icon": "messages-square", "title": "Respon sense perdre marge", "description": "Converteix l’interès en converses útils sense improvisar cada oferta." }
+    {
+      "icon": "sparkles",
+      "title": "Publica amb coherència",
+      "description": "Comença cada anunci amb una bona base i evita redactar sempre des de zero."
+    },
+    {
+      "icon": "eye",
+      "title": "Mantén els articles visibles",
+      "description": "Evita que les peces quedin oblidades mentre compres, prepares o envies comandes."
+    },
+    {
+      "icon": "messages-square",
+      "title": "Respon sense perdre marge",
+      "description": "Converteix l’interès en converses útils sense improvisar cada oferta."
+    }
   ],
   "features_section": {
     "eyebrow": "FUNCIONS DE VINBOT",
@@ -116,42 +194,238 @@
   "feature_story": {
     "eyebrow": "EINES VINBOT",
     "title": "La teva operativa de Vinted, pas a pas i en un mateix lloc",
-    "intro": "Vinbot t’ajuda a preparar publicacions, mantenir articles actius, enviar missatges en cada etapa de la compra i negociar seguint les regles que defines. Tu decideixes què activar i quan fer-ho."
+    "intro": "Vinbot t’ajuda a preparar publicacions, mantenir articles actius, enviar missatges en cada etapa de la compra i negociar seguint les regles que defines. Tu decideixes què activar i quan fer-ho. Inclou missatges automàtics quan t'envien un producte. Edita els lots de compra i comprova la rendibilitat de les adquisicions."
   },
   "feature_catalog": [
-    { "tag": "IA", "title": "Esborranys amb IA", "description": "Prepara títols i descripcions abans de publicar.", "href": "#borradores-con-ia" },
-    { "tag": "AUTOMATITZACIÓ", "title": "Renovació d’articles", "description": "Mantén els teus articles actius amb una rutina definida per tu.", "href": "#renovaciones" },
-    { "tag": "MISSATGES", "title": "Missatges automàtics", "description": "Mantén els compradors informats en cada etapa de la compra amb missatges personalitzats.", "href": "#mensajes-automaticos" },
-    { "tag": "PROPERAMENT", "title": "Missatges automàtics per likes", "description": "Aquesta funció estarà disponible properament.", "href": "#respuestas-a-likes" },
-    { "tag": "NEGOCIACIÓ", "title": "Negociació amb regles", "description": "Negocia ofertes segons els marges i les condicions que defineixes.", "href": "#negociador-vinbot" },
-    { "tag": "CONFIGURACIÓ", "title": "Estratègia de negociació", "description": "Configura com vols negociar abans d’automatitzar.", "href": "#estrategia-de-negociacion" },
-    { "tag": "CONTROL", "title": "Inventari i activitat", "description": "Revisa què està actiu, pendent i en revisió.", "href": "#inventario-y-actividad" }
+    {
+      "tag": "IA",
+      "title": "Esborranys amb IA",
+      "description": "Prepara títols i descripcions abans de publicar.",
+      "href": "#borradores-con-ia"
+    },
+    {
+      "tag": "AUTOMATITZACIÓ",
+      "title": "Renovació d’articles",
+      "description": "Mantén els teus articles actius amb una rutina definida per tu.",
+      "href": "#renovaciones"
+    },
+    {
+      "tag": "MISSATGES",
+      "title": "Missatges automàtics",
+      "description": "Mantén els compradors informats en cada etapa de la compra amb missatges personalitzats. Inclou missatges automàtics quan t'envien un producte.",
+      "href": "#mensajes-automaticos"
+    },
+    {
+      "tag": "PROPERAMENT",
+      "title": "Missatges automàtics per likes",
+      "description": "Aquesta funció estarà disponible properament.",
+      "href": "#respuestas-a-likes"
+    },
+    {
+      "tag": "NEGOCIACIÓ",
+      "title": "Negociació amb regles",
+      "description": "Negocia ofertes segons els marges i les condicions que defineixes.",
+      "href": "#negociador-vinbot"
+    },
+    {
+      "tag": "CONFIGURACIÓ",
+      "title": "Estratègia de negociació",
+      "description": "Configura com vols negociar abans d’automatitzar.",
+      "href": "#estrategia-de-negociacion"
+    },
+    {
+      "tag": "CONTROL",
+      "title": "Inventari i activitat",
+      "description": "Revisa què està actiu, pendent i en revisió. Edita els lots de compra i comprova la rendibilitat de les adquisicions.",
+      "href": "#inventario-y-actividad"
+    }
   ],
   "feature_blocks": [
-    {"id":"borradores-con-ia","tag":"PUBLICACIÓ AMB IA","title":"Prepara cada anunci amb una base clara abans de publicar-lo","text":"Puja les fotografies i introdueix les dades essencials de l’article, com la marca, la talla, les mesures o el preu. Vinbot t’ajuda a convertir aquesta informació en un esborrany més ordenat perquè el revisis abans de la primera publicació.","points":["Obre Esborranys amb IA i prepara l’article amb les seves fotos i dades reals: marca, talla, mesures i preu.","A la configuració, completa Nom de la botiga si vols que apareguin els seus hashtags; deixa’l buit per utilitzar només hashtags de l’article.","Completa Sobre el teu negoci si vols que la IA utilitzi aquesta informació a les descripcions i paraules clau; revisa i ajusta l’esborrany abans de publicar-lo."],"closing":"Substitueix les dades d’exemple per les de la teva botiga o deixa buits els camps opcionals. Comprova sempre el text generat abans de publicar.","cta":"Sol·licitar accés anticipat","image":"/assets/Esborranys%20IA.png","image_alt":"Esborranys amb IA per preparar publicacions","side":"left"},
-    {"id":"renovaciones","tag":"AUTOMATITZACIÓ","title":"Mantén els teus articles actius sense dependre d’acordar-te cada dia","text":"Quan gestiones molts anuncis, renovar articles manualment acaba ocupant una part enorme del dia. Vinbot et permet definir una rutina de renovació per mantenir organitzada aquesta tasca repetitiva.","points":["Entra a Configuració > Preferències i localitza Auto-renovació d’articles.","Activa l’interruptor Activar auto-renovació i tria una freqüència: diària, cada 2 o 3 dies, setmanal, quinzenal, mensual o manual.","Defineix el límit diari per compte i activa els comptes que vulguis incloure a Comptes a renovar.","Cerca o filtra els productes i marca els que vulguis renovar; Seleccionar tots i Cap afecten la selecció d’articles."],"closing":"Només es renoven els articles marcats i dels comptes activats. El límit diari s’aplica per compte; tria una freqüència i un límit prudents.","cta":"Sol·licitar accés anticipat","image":"/assets/AUTORENOVACI%C3%93%20IA.png","image_alt":"Eina de renovació d’articles","side":"right"},
-    {"id":"mensajes-automaticos","tag":"MISSATGES","title":"Mantén els compradors informats en cada etapa de la compra","text":"Activa avisos per als esdeveniments de compra i personalitza cada missatge amb el teu estil. Tu tries quines comunicacions enviar i pots revisar o ajustar la configuració quan ho necessitis.","points":["Entra a Configuració i obre Missatges d’esdeveniment.","Marca la casella de cada avís que vulguis activar.","Prem la icona del llapis al costat d’un missatge per personalitzar-ne el text i desa els canvis.","Configura missatges de compra i enviament, reserves i retards, incidències de comandes, devolucions i reemborsaments, ofertes i valoracions.","Revisa el resum dels missatges activats i confirma els textos que rebran els compradors.","Torna a l’apartat quan vulguis modificar un text o activar o desactivar un avís."],"closing":"Activa només els missatges que s’adaptin a la teva manera de gestionar les comandes. Els missatges per likes són una funció diferent i estaran disponibles properament.","cta":"Sol·licitar accés anticipat","image":"/assets/vinbot/mascota/vinbot-missatges.png","image_alt":"Mascota de Vinbot per a la guia de missatges automàtics","side":"left"},
-    {"id":"respuestas-a-likes","tag":"PROPERAMENT","title":"Missatges automàtics quan reps likes","text":"L’automatització de missatges quan reps likes estarà disponible properament. Aquesta funció encara no es pot activar.","points":[],"closing":"Properament","cta":"Sol·licitar accés anticipat","image":"/assets/RESPOSTA%20MG%20IA.png","image_alt":"Vista prèvia de missatges automàtics per likes","side":"left"},
-    {"id":"negociador-vinbot","tag":"NEGOCIACIÓ","title":"Negocia seguint les teves regles, no amb descomptes a l’atzar","text":"Cada article té un marge i cada venedor té una manera diferent de negociar. Vinbot t’ajuda a aplicar una lògica coherent en les converses i ofertes, partint dels límits que hagis definit.","points":["Obre Bot negociador i revisa els indicadors de negociacions d’avui, descompte mitjà i respostes pendents.","Utilitza Control mestre del bot per habilitar o deshabilitar totes les seves característiques alhora.","Configura per separat Respostes conversacionals i Bot de negociació segons si vols respondre preguntes sobre productes o negociar ofertes.","Revisa els canvis en l’activitat de les converses i negociacions noves."],"closing":"Els canvis de configuració s’apliquen immediatament a les converses i negociacions noves.","cta":"Sol·licitar accés anticipat","image":"/assets/BOT%20NEGOCIADOR%20IA.png","image_alt":"Bot negociador de Vinbot","side":"right"},
-    {"id":"estrategia-de-negociacion","tag":"CONFIGURACIÓ","title":"Decideix com vols negociar abans que comenci la conversa","text":"L’automatització només té sentit quan reflecteix la teva manera de vendre. Aquesta secció et permet definir una estratègia de negociació abans d’activar-la: quant marge vols mantenir, quins descomptes contemplar i com s’ha de comportar Vinbot en cada cas.","points":["Obre Estratègia de negociació i activa Estratègia de punt d’inici si vols que la primera contraoferta apliqui un descompte.","Ajusta el descompte inicial amb el control visible i tria una estratègia: Conservador, Moderat o Agressiu.","Defineix el nombre de rondes de negociació i els límits màxims de descompte en percentatge i en euros.","Activa Enviar un missatge amb cada oferta només si vols que el bot també escrigui al comprador quan envia una oferta."],"closing":"Defineix primer els límits: quan configures un màxim percentual i un altre en euros, s’aplica el més restrictiu. Els canvis afecten les negociacions noves.","cta":"Sol·licitar accés anticipat","image":"/assets/NEGOCIACI%C3%93%20IA.png","image_alt":"Estratègia de negociació a Vinbot","side":"left"},
-    {"id":"inventario-y-actividad","tag":"CONTROL DE L’OPERATIVA","title":"Tingues a la vista el que està actiu, el que està pendent i el que requereix revisió","text":"Des d’una mateixa vista pots consultar l’estat del teu catàleg i detectar ràpidament quins articles estan actius, quins segueixen en esborrany i quines publicacions necessiten una acció.","points":["Obre Inventari i revisa els totals d’articles actius, esborranys, ocults, venuts i reservats.","Comprova l’estat, el compte i les dades de cada article a les targetes; utilitza Buscar duplicats o Sincronitzar si necessites aquestes funcions.","Quan vulguis tornar a publicar un article, utilitza Republicar a la seva targeta i comprova que sigui l’article correcte abans de fer-ho."],"closing":"La captura conté articles de demostració. Al teu compte, revisa les dades i el compte de l’article abans de sincronitzar o republicar.","cta":"Sol·licitar accés anticipat","image":"/assets/inventario-vinbot-demo-ca.png","image_alt":"Inventari de Vinbot en una vista clara i ordenada","side":"left"}
+    {
+      "id": "borradores-con-ia",
+      "tag": "PUBLICACIÓ AMB IA",
+      "title": "Prepara cada anunci amb una base clara abans de publicar-lo",
+      "text": "Puja les fotografies i introdueix les dades essencials de l’article, com la marca, la talla, les mesures o el preu. Vinbot t’ajuda a convertir aquesta informació en un esborrany més ordenat perquè el revisis abans de la primera publicació.",
+      "points": [
+        "Obre Esborranys amb IA i prepara l’article amb les seves fotos i dades reals: marca, talla, mesures i preu.",
+        "A la configuració, completa Nom de la botiga si vols que apareguin els seus hashtags; deixa’l buit per utilitzar només hashtags de l’article.",
+        "Completa Sobre el teu negoci si vols que la IA utilitzi aquesta informació a les descripcions i paraules clau; revisa i ajusta l’esborrany abans de publicar-lo."
+      ],
+      "closing": "Substitueix les dades d’exemple per les de la teva botiga o deixa buits els camps opcionals. Comprova sempre el text generat abans de publicar.",
+      "cta": "Sol·licitar accés anticipat",
+      "image": "/assets/Esborranys%20IA.png",
+      "image_alt": "Esborranys amb IA per preparar publicacions",
+      "side": "left"
+    },
+    {
+      "id": "renovaciones",
+      "tag": "AUTOMATITZACIÓ",
+      "title": "Mantén els teus articles actius sense dependre d’acordar-te cada dia",
+      "text": "Quan gestiones molts anuncis, renovar articles manualment acaba ocupant una part enorme del dia. Vinbot et permet definir una rutina de renovació per mantenir organitzada aquesta tasca repetitiva.",
+      "points": [
+        "Entra a Configuració > Preferències i localitza Auto-renovació d’articles.",
+        "Activa l’interruptor Activar auto-renovació i tria una freqüència: diària, cada 2 o 3 dies, setmanal, quinzenal, mensual o manual.",
+        "Defineix el límit diari per compte i activa els comptes que vulguis incloure a Comptes a renovar.",
+        "Cerca o filtra els productes i marca els que vulguis renovar; Seleccionar tots i Cap afecten la selecció d’articles."
+      ],
+      "closing": "Només es renoven els articles marcats i dels comptes activats. El límit diari s’aplica per compte; tria una freqüència i un límit prudents.",
+      "cta": "Sol·licitar accés anticipat",
+      "image": "/assets/AUTORENOVACI%C3%93%20IA.png",
+      "image_alt": "Eina de renovació d’articles",
+      "side": "right"
+    },
+    {
+      "id": "mensajes-automaticos",
+      "tag": "MISSATGES",
+      "title": "Mantén els compradors informats en cada etapa de la compra",
+      "text": "Activa avisos per als esdeveniments de compra i personalitza cada missatge amb el teu estil. Tu tries quines comunicacions enviar i pots revisar o ajustar la configuració quan ho necessitis. Inclou missatges automàtics quan t'envien un producte.",
+      "points": [
+        "Entra a Configuració i obre Missatges d’esdeveniment.",
+        "Marca la casella de cada avís que vulguis activar.",
+        "Prem la icona del llapis al costat d’un missatge per personalitzar-ne el text i desa els canvis.",
+        "Configura missatges de compra i enviament, reserves i retards, incidències de comandes, devolucions i reemborsaments, ofertes i valoracions.",
+        "Revisa el resum dels missatges activats i confirma els textos que rebran els compradors.",
+        "Torna a l’apartat quan vulguis modificar un text o activar o desactivar un avís.",
+        "Configura el missatge automàtic que s'envia quan un comprador et comparteix un producte."
+      ],
+      "closing": "Activa només els missatges que s’adaptin a la teva manera de gestionar les comandes. Els missatges per likes són una funció diferent i estaran disponibles properament.",
+      "cta": "Sol·licitar accés anticipat",
+      "image": "/assets/vinbot/mascota/vinbot-missatges.png",
+      "image_alt": "Mascota de Vinbot per a la guia de missatges automàtics",
+      "side": "left"
+    },
+    {
+      "id": "respuestas-a-likes",
+      "tag": "PROPERAMENT",
+      "title": "Missatges automàtics quan reps likes",
+      "text": "L’automatització de missatges quan reps likes estarà disponible properament. Aquesta funció encara no es pot activar.",
+      "points": [],
+      "closing": "Properament",
+      "cta": "Sol·licitar accés anticipat",
+      "image": "/assets/RESPOSTA%20MG%20IA.png",
+      "image_alt": "Vista prèvia de missatges automàtics per likes",
+      "side": "left"
+    },
+    {
+      "id": "negociador-vinbot",
+      "tag": "NEGOCIACIÓ",
+      "title": "Negocia seguint les teves regles, no amb descomptes a l’atzar",
+      "text": "Cada article té un marge i cada venedor té una manera diferent de negociar. Vinbot t’ajuda a aplicar una lògica coherent en les converses i ofertes, partint dels límits que hagis definit.",
+      "points": [
+        "Obre Bot negociador i revisa els indicadors de negociacions d’avui, descompte mitjà i respostes pendents.",
+        "Utilitza Control mestre del bot per habilitar o deshabilitar totes les seves característiques alhora.",
+        "Configura per separat Respostes conversacionals i Bot de negociació segons si vols respondre preguntes sobre productes o negociar ofertes.",
+        "Revisa els canvis en l’activitat de les converses i negociacions noves."
+      ],
+      "closing": "Els canvis de configuració s’apliquen immediatament a les converses i negociacions noves.",
+      "cta": "Sol·licitar accés anticipat",
+      "image": "/assets/BOT%20NEGOCIADOR%20IA.png",
+      "image_alt": "Bot negociador de Vinbot",
+      "side": "right"
+    },
+    {
+      "id": "estrategia-de-negociacion",
+      "tag": "CONFIGURACIÓ",
+      "title": "Decideix com vols negociar abans que comenci la conversa",
+      "text": "L’automatització només té sentit quan reflecteix la teva manera de vendre. Aquesta secció et permet definir una estratègia de negociació abans d’activar-la: quant marge vols mantenir, quins descomptes contemplar i com s’ha de comportar Vinbot en cada cas.",
+      "points": [
+        "Obre Estratègia de negociació i activa Estratègia de punt d’inici si vols que la primera contraoferta apliqui un descompte.",
+        "Ajusta el descompte inicial amb el control visible i tria una estratègia: Conservador, Moderat o Agressiu.",
+        "Defineix el nombre de rondes de negociació i els límits màxims de descompte en percentatge i en euros.",
+        "Activa Enviar un missatge amb cada oferta només si vols que el bot també escrigui al comprador quan envia una oferta."
+      ],
+      "closing": "Defineix primer els límits: quan configures un màxim percentual i un altre en euros, s’aplica el més restrictiu. Els canvis afecten les negociacions noves.",
+      "cta": "Sol·licitar accés anticipat",
+      "image": "/assets/NEGOCIACI%C3%93%20IA.png",
+      "image_alt": "Estratègia de negociació a Vinbot",
+      "side": "left"
+    },
+    {
+      "id": "inventario-y-actividad",
+      "tag": "CONTROL DE L’OPERATIVA",
+      "title": "Tingues a la vista el que està actiu, el que està pendent i el que requereix revisió",
+      "text": "Des d’una mateixa vista pots consultar l’estat del teu catàleg i detectar ràpidament quins articles estan actius, quins segueixen en esborrany i quines publicacions necessiten una acció. Edita els lots de compra i comprova la rendibilitat de les adquisicions.",
+      "points": [
+        "Obre Inventari i revisa els totals d’articles actius, esborranys, ocults, venuts i reservats.",
+        "Comprova l’estat, el compte i les dades de cada article a les targetes; utilitza Buscar duplicats o Sincronitzar si necessites aquestes funcions.",
+        "Quan vulguis tornar a publicar un article, utilitza Republicar a la seva targeta i comprova que sigui l’article correcte abans de fer-ho.",
+        "Utilitza l'editor de lots per registrar i modificar les compres i revisar-ne la rendibilitat."
+      ],
+      "closing": "La captura conté articles de demostració. Al teu compte, revisa les dades i el compte de l’article abans de sincronitzar o republicar.",
+      "cta": "Sol·licitar accés anticipat",
+      "image": "/assets/inventario-vinbot-demo-ca.png",
+      "image_alt": "Inventari de Vinbot en una vista clara i ordenada",
+      "side": "left"
+    }
   ],
   "features": [
-    { "category": "PUBLICACIÓ", "title": "Publica millor, sense començar de zero.", "description": "Genera títols i descripcions amb IA a partir de les dades de cada peça. Revisa, ajusta i deixa l’esborrany llest abans de publicar.", "image": "/assets/Esborranys%20IA.png", "image_alt": "Esborranys amb IA per preparar publicacions" },
-    { "category": "VISIBILITAT", "title": "Mantén el catàleg en moviment.", "description": "Configura la renovació dels teus articles per mantenir l’activitat de l’armari sense haver de revisar cada anunci un per un.", "image": "/assets/AUTORENOVACI%C3%93%20IA.png", "image_alt": "Configuració de renovació automàtica d’articles" },
-    { "category": "MISSATGES", "title": "Informa els compradors en cada etapa de la compra.", "description": "Activa avisos d’esdeveniments i personalitza els missatges de compra, enviament, reserves, incidències, devolucions, ofertes i valoracions.", "image": "/assets/vinbot/mascota/vinbot-missatges.png", "image_alt": "Missatges automàtics de Vinbot per mantenir informats els compradors" },
-    { "category": "NEGOCIACIÓ", "title": "Respon amb estratègia, no amb presses.", "description": "El bot negociador respon segons les condicions que defineixis per al teu compte i t’ajuda a mantenir converses comercials coherents.", "image": "/assets/BOT%20NEGOCIADOR%20IA.png", "image_alt": "Configuració del bot negociador de Vinbot" },
-    { "category": "CONTROL", "title": "Decideix fins on vols negociar.", "description": "Defineix marges, descomptes i regles perquè cada conversa respecti la manera com vols vendre.", "image": "/assets/NEGOCIACI%C3%93%20IA.png", "image_alt": "Configuració de l’estratègia de negociació" },
-    { "category": "PROPERAMENT", "title": "Missatges automàtics per likes — Properament", "description": "L’automatització de missatges quan reps likes estarà disponible properament.", "image": "/assets/RESPOSTA%20MG%20IA.png", "image_alt": "Vista prèvia de missatges automàtics per likes" }
+    {
+      "category": "PUBLICACIÓ",
+      "title": "Publica millor, sense començar de zero.",
+      "description": "Genera títols i descripcions amb IA a partir de les dades de cada peça. Revisa, ajusta i deixa l’esborrany llest abans de publicar.",
+      "image": "/assets/Esborranys%20IA.png",
+      "image_alt": "Esborranys amb IA per preparar publicacions"
+    },
+    {
+      "category": "VISIBILITAT",
+      "title": "Mantén el catàleg en moviment.",
+      "description": "Configura la renovació dels teus articles per mantenir l’activitat de l’armari sense haver de revisar cada anunci un per un.",
+      "image": "/assets/AUTORENOVACI%C3%93%20IA.png",
+      "image_alt": "Configuració de renovació automàtica d’articles"
+    },
+    {
+      "category": "MISSATGES",
+      "title": "Informa els compradors en cada etapa de la compra.",
+      "description": "Activa avisos d’esdeveniments i personalitza els missatges de compra, enviament, reserves, incidències, devolucions, ofertes i valoracions.",
+      "image": "/assets/vinbot/mascota/vinbot-missatges.png",
+      "image_alt": "Missatges automàtics de Vinbot per mantenir informats els compradors"
+    },
+    {
+      "category": "NEGOCIACIÓ",
+      "title": "Respon amb estratègia, no amb presses.",
+      "description": "El bot negociador respon segons les condicions que defineixis per al teu compte i t’ajuda a mantenir converses comercials coherents.",
+      "image": "/assets/BOT%20NEGOCIADOR%20IA.png",
+      "image_alt": "Configuració del bot negociador de Vinbot"
+    },
+    {
+      "category": "CONTROL",
+      "title": "Decideix fins on vols negociar.",
+      "description": "Defineix marges, descomptes i regles perquè cada conversa respecti la manera com vols vendre.",
+      "image": "/assets/NEGOCIACI%C3%93%20IA.png",
+      "image_alt": "Configuració de l’estratègia de negociació"
+    },
+    {
+      "category": "PROPERAMENT",
+      "title": "Missatges automàtics per likes — Properament",
+      "description": "L’automatització de missatges quan reps likes estarà disponible properament.",
+      "image": "/assets/RESPOSTA%20MG%20IA.png",
+      "image_alt": "Vista prèvia de missatges automàtics per likes"
+    },
+    {
+      "category": "LOTES",
+      "title": "Editor de lots per revisar la rendibilitat de totes les compres",
+      "description": "Edita els lots de compra i comprova la rendibilitat de les adquisicions.",
+      "image": "/assets/inventario-vinbot-demo.png",
+      "image_alt": "Editor de lots per revisar la rendibilitat de totes les compres"
+    }
   ],
   "audience": {
     "eyebrow": "FET PER CRÉIXER",
     "title": "Per a venedors que ja es prenen Vinted seriosament.",
     "description": "Vinbot està pensat per a qui gestiona volum, vol professionalitzar la seva operativa i prefereix dedicar el temps a comprar i vendre, no a repetir tasques.",
     "cards": [
-      { "title": "Catàleg amb volum", "description": "Més articles no haurien d’implicar més caos." },
-      { "title": "Operativa amb mètode", "description": "Les teves regles, els teus marges i la teva manera de vendre continuen sent teus." },
-      { "title": "Creixement ordenat", "description": "Una base més clara per treballar amb un o diversos comptes." }
+      {
+        "title": "Catàleg amb volum",
+        "description": "Més articles no haurien d’implicar més caos."
+      },
+      {
+        "title": "Operativa amb mètode",
+        "description": "Les teves regles, els teus marges i la teva manera de vendre continuen sent teus."
+      },
+      {
+        "title": "Creixement ordenat",
+        "description": "Una base més clara per treballar amb un o diversos comptes."
+      }
     ]
   },
   "closing": {
@@ -167,19 +441,41 @@
     "title": "Respostes clares sobre Vinbot."
   },
   "faq": [
-    { "question": "Què pot fer Vinbot?", "answer": "Vinbot reuneix eines per preparar publicacions, mantenir els articles actius, informar els compradors en cada etapa de la compra i configurar automatitzacions segons la teva manera de vendre." },
-    { "question": "Necessito configurar totes les funcions?", "answer": "No. Pots activar només les eines que encaixin amb la teva operativa i deixar la resta desactivada fins que vulguis provar-les." },
-    { "question": "Puc revisar la configuració abans d’activar-la?", "answer": "Sí. Vinbot està pensat perquè puguis definir regles, marges i missatges abans d’activar una automatització." },
-    { "question": "Vinbot està vinculat a Vinted?", "answer": "No. Vinbot és un servei independent i no està afiliat, associat ni avalat per Vinted." },
-    { "question": "Com demano accés?", "answer": "Fes clic a “Sol·licitar accés anticipat” i completa el procés directament des de Vinbot." },
-    { "question": "En quins idiomes està disponible?", "answer": "Vinbot està disponible en català, espanyol, anglès i francès." }
+    {
+      "question": "Què pot fer Vinbot?",
+      "answer": "Vinbot reuneix eines per preparar publicacions, mantenir els articles actius, informar els compradors en cada etapa de la compra i configurar automatitzacions segons la teva manera de vendre. Inclou missatges automàtics quan t'envien un producte. Edita els lots de compra i comprova la rendibilitat de les adquisicions."
+    },
+    {
+      "question": "Necessito configurar totes les funcions?",
+      "answer": "No. Pots activar només les eines que encaixin amb la teva operativa i deixar la resta desactivada fins que vulguis provar-les."
+    },
+    {
+      "question": "Puc revisar la configuració abans d’activar-la?",
+      "answer": "Sí. Vinbot està pensat perquè puguis definir regles, marges i missatges abans d’activar una automatització."
+    },
+    {
+      "question": "Vinbot està vinculat a Vinted?",
+      "answer": "No. Vinbot és un servei independent i no està afiliat, associat ni avalat per Vinted."
+    },
+    {
+      "question": "Com demano accés?",
+      "answer": "Fes clic a “Sol·licitar accés anticipat” i completa el procés directament des de Vinbot."
+    },
+    {
+      "question": "En quins idiomes està disponible?",
+      "answer": "Vinbot està disponible en català, espanyol, anglès i francès."
+    }
   ],
   "testimonials": [],
   "testimonials_fallback": {
     "eyebrow": "DISSENYAT DES DE L’OPERATIVA REAL",
     "title": "Una eina creada per a qui gestiona un catàleg actiu",
     "description": "Vinbot neix de l’experiència de treballar cada dia amb publicacions, renovacions, missatges i negociacions. Per això cada funció està pensada per reduir tasques repetitives sense treure’t el control.",
-    "points": ["Configura les regles segons la teva manera de vendre.", "Revisa l’activitat des d’una operativa més ordenada.", "Activa només les eines que realment necessites."],
+    "points": [
+      "Configura les regles segons la teva manera de vendre.",
+      "Revisa l’activitat des d’una operativa més ordenada.",
+      "Activa només les eines que realment necessites."
+    ],
     "testimonials_eyebrow": "EXPERIÈNCIA D’ÚS",
     "testimonials_title": "Opinions de venedors que ja han provat Vinbot",
     "testimonials_description": "Opinions reals de persones que utilitzen Vinbot per organitzar millor la seva operativa."
