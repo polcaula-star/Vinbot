@@ -87,6 +87,10 @@ const copy = {
     resultEmptyText: 'Responde las preguntas para ver una recomendación personalizada.',
     basicVolumeNote: 'Has indicado {volume} anuncios. Básico cubre hasta 150; Pro admite anuncios ilimitados.',
     basicAutomationNote: "Si quieres el bot negociador y las herramientas avanzadas de automatización, consulta también el plan Pro.",
+    blackFridayHero: "BLACK FRIDAY · 50 % de descuento para los 50 primeros usuarios. Sin código: se aplica automáticamente.",
+    blackFridayOffer: "OFERTA BLACK FRIDAY: 50 % de descuento en los planes para los 50 primeros usuarios. Descuento aplicado automáticamente, sin introducir ningún código.",
+    blackFridayBadge: "BLACK FRIDAY · −50 %",
+    newFeatures: "NOVEDADES: mensaje automático cuando te envían un producto y editor de lotes para comprobar la rentabilidad de todas tus compras.",
     pricingEyebrow: 'PLANES VINBOT',
     pricingTitle: 'El plan adecuado para cada forma de vender.',
     pricingDescription: 'Básico para organizarte, Pro para automatizar y Enterprise para vendedores profesionales.',
@@ -107,7 +111,7 @@ const copy = {
     included: 'Incluida',
     notIncluded: 'No incluida',
     vatIncluded: 'IVA incluido',
-    comparisonAccountLabel: 'Enterprise incluye dos cuentas por 69,99 €/mes, IVA incluido. Puedes añadir una tercera cuenta por 29,99 €/mes. La integración del cargo adicional se realizará más adelante.',
+    comparisonAccountLabel: 'Enterprise incluye dos cuentas por 35,00 €/mes durante la oferta Black Friday (antes 69,99 €/mes), IVA incluido. Puedes añadir una tercera cuenta por 29,99 €/mes. La integración del cargo adicional se realizará más adelante.',
     comparisonGroups: [
       { title: 'Cuenta y gestión', rows: [
         { label: 'Cuentas de Vinted incluidas', values: ['1', '1', '2'] },
@@ -289,6 +293,10 @@ const copy = {
     resultEmptyText: 'Respon les preguntes per veure una recomanació personalitzada.',
     basicVolumeNote: 'Has indicat {volume} anuncis. Básico en cobreix fins a 150; Pro admet anuncis il·limitats.',
     basicAutomationNote: "Si vols el bot negociador i les eines avançades d’automatització, consulta també el pla Pro.",
+    blackFridayHero: "BLACK FRIDAY · 50 % de descompte per als 50 primers usuaris. Sense codi: s'aplica automàticament.",
+    blackFridayOffer: "OFERTA BLACK FRIDAY: 50 % de descompte en els plans per als 50 primers usuaris. Descompte aplicat automàticament, sense introduir cap codi.",
+    blackFridayBadge: "BLACK FRIDAY · −50 %",
+    newFeatures: "NOVETATS: missatge automàtic quan t'envien un producte i editor de lots per comprovar la rendibilitat de totes les compres.",
     pricingEyebrow: 'PLANS VINBOT',
     pricingTitle: 'El pla adequat per a cada manera de vendre.',
     pricingDescription: 'Básico per organitzar-te, Pro per automatitzar i Enterprise per a venedors professionals.',
@@ -309,7 +317,7 @@ const copy = {
     included: 'Inclosa',
     notIncluded: 'No inclosa',
     vatIncluded: 'IVA inclòs',
-    comparisonAccountLabel: 'Enterprise inclou dos comptes per 69,99 €/mes, IVA inclòs. Pots afegir-hi un tercer compte per 29,99 €/mes. La integració del càrrec addicional es farà més endavant.',
+    comparisonAccountLabel: 'Enterprise inclou dos comptes per 35,00 €/mes durant l'oferta Black Friday (abans 69,99 €/mes), IVA inclòs. Pots afegir-hi un tercer compte per 29,99 €/mes. La integració del càrrec addicional es farà més endavant.',
     comparisonGroups: [
       { title: 'Compte i gestió', rows: [
         { label: 'Comptes de Vinted inclosos', values: ['1', '1', '2'] },
@@ -491,6 +499,10 @@ const copy = {
     resultEmptyText: 'Answer the questions to see a tailored recommendation.',
     basicVolumeNote: 'You indicated {volume} listings. Básico covers up to 150; Pro supports unlimited listings.',
     basicAutomationNote: "For the negotiation bot and advanced automation tools, also consider Pro.",
+    blackFridayHero: "BLACK FRIDAY · 50% off for the first 50 users. No code needed: the discount is applied automatically.",
+    blackFridayOffer: "BLACK FRIDAY OFFER: 50% off plans for the first 50 users. Applied automatically, with no promo code required.",
+    blackFridayBadge: "BLACK FRIDAY · −50%",
+    newFeatures: "NEW: automatic messages when someone sends you a product, plus a lot editor to check the profitability of all your purchases.",
     pricingEyebrow: 'VINBOT PLANS',
     pricingTitle: 'The right plan for the way you sell.',
     pricingDescription: 'Básico to get organised, Pro to automate, and Enterprise for professional sellers.',
@@ -511,7 +523,7 @@ const copy = {
     included: 'Included',
     notIncluded: 'Not included',
     vatIncluded: 'VAT included',
-    comparisonAccountLabel: 'Enterprise includes two accounts for €69.99/month, VAT included. Add a third account for €29.99/month. Integration of the additional charge will be handled later.',
+    comparisonAccountLabel: 'Enterprise includes two accounts for €35.00/month during Black Friday (previously €69.99/month), VAT included. Add a third account for €29.99/month. Integration of the additional charge will be handled later.',
     comparisonGroups: [
       { title: 'Account and management', rows: [
         { label: 'Included Vinted accounts', values: ['1', '1', '2'] },
@@ -693,6 +705,10 @@ const copy = {
     resultEmptyText: 'Répondez aux questions pour obtenir une recommandation personnalisée.',
     basicVolumeNote: 'Vous avez indiqué {volume} annonces. Básico en couvre jusqu’à 150 ; Pro accepte un nombre illimité d’annonces.',
     basicAutomationNote: "Pour le bot négociateur et les outils d’automatisation avancés, consultez aussi Pro.",
+    blackFridayHero: "BLACK FRIDAY · −50 % pour les 50 premiers utilisateurs. Sans code : remise appliquée automatiquement.",
+    blackFridayOffer: "OFFRE BLACK FRIDAY : −50 % sur les formules pour les 50 premiers utilisateurs. Remise appliquée automatiquement, sans code promo.",
+    blackFridayBadge: "BLACK FRIDAY · −50 %",
+    newFeatures: "NOUVEAUTÉS : message automatique quand on vous envoie un produit et éditeur de lots pour suivre la rentabilité de tous vos achats.",
     pricingEyebrow: 'FORMULES VINBOT',
     pricingTitle: 'La formule adaptée à votre façon de vendre.',
     pricingDescription: 'Básico pour vous organiser, Pro pour automatiser et Enterprise pour les vendeurs professionnels.',
@@ -713,7 +729,7 @@ const copy = {
     included: 'Incluse',
     notIncluded: 'Non incluse',
     vatIncluded: 'TVA incluse',
-    comparisonAccountLabel: 'Enterprise inclut deux comptes pour 69,99 €/mois, TVA incluse. Vous pouvez ajouter un troisième compte pour 29,99 €/mois. L’intégration de la facturation supplémentaire sera réalisée ultérieurement.',
+    comparisonAccountLabel: 'Enterprise inclut deux comptes pour 35,00 €/mois pendant l'offre Black Friday (au lieu de 69,99 €/mois), TVA incluse. Vous pouvez ajouter un troisième compte pour 29,99 €/mois. L’intégration de la facturation supplémentaire sera réalisée ultérieurement.',
     comparisonGroups: [
       { title: 'Compte et gestion', rows: [
         { label: 'Comptes Vinted inclus', values: ['1', '1', '2'] },
@@ -989,6 +1005,11 @@ function screenshotButton(src, alt, copy) {
   return button;
 }
 
+function blackFridayPrice(regularPrice) {
+  const cents = Math.round(Number(regularPrice.replace(',', '.')) * 100);
+  return (Math.round(cents / 2) / 100).toFixed(2).replace('.', ',');
+}
+
 function renderPricing(pageCopy, recommendedPlanId = selectedRecommendedPlan) {
   const grid = document.querySelector('#pricing-grid');
   if (!grid) return;
@@ -999,6 +1020,10 @@ function renderPricing(pageCopy, recommendedPlanId = selectedRecommendedPlan) {
     card.dataset.planId = plan.id;
     const badges = document.createElement('div');
     badges.className = 'pricing-badges';
+    const blackFridayBadge = document.createElement('p');
+    blackFridayBadge.className = 'pricing-badge pricing-badge--black-friday';
+    blackFridayBadge.textContent = pageCopy.blackFridayBadge;
+    badges.append(blackFridayBadge);
     if (plan.id === 'pro') {
       const badge = document.createElement('p');
       badge.className = 'pricing-badge pricing-badge--popular';
@@ -1019,7 +1044,11 @@ function renderPricing(pageCopy, recommendedPlanId = selectedRecommendedPlan) {
     const price = document.createElement('p');
     price.className = 'pricing-price';
     const isAnnual = selectedBillingPeriod === 'annual';
-    price.append(document.createTextNode(`${isAnnual ? plan.annualPrice : plan.price} €`));
+    const regularPrice = isAnnual ? plan.annualPrice : plan.price;
+    const originalPrice = document.createElement('del');
+    originalPrice.className = 'pricing-original-price';
+    originalPrice.textContent = `${regularPrice} €`;
+    price.append(document.createTextNode(`${blackFridayPrice(regularPrice)} €`));
     const cadence = document.createElement('span');
     cadence.textContent = isAnnual ? pageCopy.annual : pageCopy.monthly;
     price.append(cadence);
@@ -1054,7 +1083,7 @@ function renderPricing(pageCopy, recommendedPlanId = selectedRecommendedPlan) {
     choose.dataset.planId = plan.id;
     choose.setAttribute('aria-label', `${pageCopy.choosePlan}: ${plan.name}`);
     choose.append(document.createTextNode(`${pageCopy.choosePlan} ${plan.name}`), makeIcon('arrow-right'));
-    card.append(badges, title, description, price, taxNote, priceNote, features, choose);
+    card.append(badges, title, description, originalPrice, price, taxNote, priceNote, features, choose);
     return card;
   }));
 }
@@ -1143,7 +1172,7 @@ function setUpBillingToggle(pageCopy) {
       if (recommendationPlan && recommendationPrice) {
         const price = selectedBillingPeriod === 'annual' ? recommendationPlan.annualPrice : recommendationPlan.price;
         const cadence = selectedBillingPeriod === 'annual' ? pageCopy.annual : pageCopy.monthly;
-        recommendationPrice.textContent = `${price} €${cadence}`;
+        recommendationPrice.textContent = `${blackFridayPrice(price)} €${cadence}`;
       }
       window.lucide?.createIcons();
     });
@@ -1381,7 +1410,7 @@ function setUpPlanner(pageCopy) {
     title.textContent = `Plan ${plan.name}`;
     const price = document.createElement('p');
     price.className = 'result-price';
-    price.textContent = `${selectedBillingPeriod === 'annual' ? plan.annualPrice : plan.price} €${selectedBillingPeriod === 'annual' ? pageCopy.annual : pageCopy.monthly}`;
+    price.textContent = `${blackFridayPrice(selectedBillingPeriod === 'annual' ? plan.annualPrice : plan.price)} €${selectedBillingPeriod === 'annual' ? pageCopy.annual : pageCopy.monthly}`;
     const description = document.createElement('p');
     description.className = 'result-why';
     const explanation = [reason];
